@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/src/robot_bringup/scripts/path_publisher_test.py

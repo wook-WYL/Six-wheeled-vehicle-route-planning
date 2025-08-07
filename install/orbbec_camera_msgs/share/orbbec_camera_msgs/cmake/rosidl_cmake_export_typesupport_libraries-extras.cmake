@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/build/orbbec_camera_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake

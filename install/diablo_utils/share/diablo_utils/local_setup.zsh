@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/build/diablo_utils/ament_cmake_environment_hooks/local_setup.zsh

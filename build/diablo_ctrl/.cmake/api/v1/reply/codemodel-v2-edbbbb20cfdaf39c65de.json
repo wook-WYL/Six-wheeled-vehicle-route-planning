@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-81ac2cc0fe589fcd4c91.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "diablo_ctrl",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "diablo_ctrl_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-diablo_ctrl_node-Release-890913503df1250192f7.json",
+					"name" : "diablo_ctrl_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "diablo_ctrl_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-diablo_ctrl_uninstall-Release-a2c26e48dc8a7d057b2f.json",
+					"name" : "diablo_ctrl_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-8cda9d85945dbe9357dc.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/wook/ros2/ros2_ws/build/diablo_ctrl",
+		"source" : "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_ctrl"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

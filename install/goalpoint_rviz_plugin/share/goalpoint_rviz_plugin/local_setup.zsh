@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/build/goalpoint_rviz_plugin/ament_cmake_environment_hooks/local_setup.zsh

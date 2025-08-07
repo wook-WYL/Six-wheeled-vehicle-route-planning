@@ -1,0 +1,48 @@
+[0.007s] Invoking command in '/home/wook/ros2/ros2_ws/build/tare_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/tare_planner -- -j32 -l32
+[0.051s] [  5%] Built target tsp_solver
+[0.053s] [ 10%] Built target graph
+[0.053s] [ 15%] Built target misc_utils
+[0.055s] [ 21%] Built target rolling_occupancy_grid
+[0.055s] [ 26%] Built target pointcloud_utils
+[0.056s] [ 31%] Built target lidar_model
+[0.056s] [ 36%] Built target pointcloud_manager
+[0.056s] [ 42%] Built target navigationBoundary
+[0.056s] [ 47%] Built target exploration_path
+[0.058s] [ 52%] Built target tare_visualizer
+[0.078s] [ 63%] Built target viewpoint
+[0.078s] [ 63%] Built target rolling_grid
+[0.081s] [ 68%] Built target planning_env
+[0.103s] [ 73%] Built target keypose_graph
+[0.132s] [ 78%] Built target grid_world
+[0.160s] [ 84%] Built target viewpoint_manager
+[0.186s] [ 89%] Built target local_coverage_planner
+[0.213s] [ 94%] Built target sensor_coverage_planner_ground
+[0.242s] [100%] Built target tare_planner_node
+[0.251s] Invoked command in '/home/wook/ros2/ros2_ws/build/tare_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/tare_planner -- -j32 -l32
+[0.252s] Invoking command in '/home/wook/ros2/ros2_ws/build/tare_planner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/tare_planner
+[0.258s] -- Install configuration: "Release"
+[0.258s] -- Execute custom install script
+[0.259s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/lib/tare_planner/navigationBoundary
+[0.259s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/lib/tare_planner/tare_planner_node
+[0.259s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner//explore.launch
+[0.259s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner//explore_world.launch
+[0.259s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner//tare_planner_ground.rviz
+[0.259s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/indoor.yaml
+[0.259s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/outdoor.yaml
+[0.260s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/boundary.ply
+[0.260s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/ament_index/resource_index/package_run_dependencies/tare_planner
+[0.260s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/ament_index/resource_index/parent_prefix_path/tare_planner
+[0.260s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/environment/ament_prefix_path.sh
+[0.260s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/environment/ament_prefix_path.dsv
+[0.260s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/environment/path.sh
+[0.260s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/environment/path.dsv
+[0.260s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/local_setup.bash
+[0.261s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/local_setup.sh
+[0.261s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/local_setup.zsh
+[0.261s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/local_setup.dsv
+[0.261s] -- Symlinking: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/package.dsv
+[0.267s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/ament_index/resource_index/packages/tare_planner
+[0.267s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/cmake/tare_plannerConfig.cmake
+[0.267s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/cmake/tare_plannerConfig-version.cmake
+[0.267s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/package.xml
+[0.269s] Invoked command in '/home/wook/ros2/ros2_ws/build/tare_planner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/tare_planner

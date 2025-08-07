@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/build/motion_msgs/rosidl_typesupport_introspection_c/motion_msgs/msg/detail/motion_ctrl__rosidl_typesupport_introspection_c.h

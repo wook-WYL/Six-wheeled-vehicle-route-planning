@@ -1,0 +1,262 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)
+-- Found rosbag2_cpp: 0.15.14 (/opt/ros/humble/share/rosbag2_cpp/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found zstd_vendor: 0.15.14 (/opt/ros/humble/share/zstd_vendor/cmake)
+-- Found zstd: /usr/lib/x86_64-linux-gnu/libzstd.so (found version "1.4.8") 
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Loaded RTI Connext DDS environment:
+-- - RTI Connext DDS Professional:
+--   - Found: TRUE
+--   - Version: 6.0.1.25
+--   - Directory: /opt/rti.com/rti_connext_dds-6.0.1
+--   - Architecture: x64Linux4gcc7.3.0
+-- - RTI Connext DDS Micro:
+--   - Found: false
+--   - Version: 
+--   - Directory: 
+--   - Architecture: 
+-- Detected CONNEXTDDS_DIR = '/opt/rti.com/rti_connext_dds-6.0.1'
+-- RTI Connext DDS installation directory: /opt/rti.com/rti_connext_dds-6.0.1
+-- RTI Connext DDS architecture: x64Linux4gcc7.3.0
+-- Found RTIConnextDDS: /opt/rti.com/rti_connext_dds-6.0.1 (found suitable version "6.0.1.25", minimum required is "5.3.1") found components: core 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wook/ros2/ros2_ws/build/domain_bridge
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  4%] Built target ament_cmake_python_symlink_domain_bridge
+running egg_info
+creating domain_bridge.egg-info
+writing domain_bridge.egg-info/PKG-INFO
+writing dependency_links to domain_bridge.egg-info/dependency_links.txt
+writing top-level names to domain_bridge.egg-info/top_level.txt
+writing manifest file 'domain_bridge.egg-info/SOURCES.txt'
+reading manifest file 'domain_bridge.egg-info/SOURCES.txt'
+[  4%] Built target domain_bridge__cpp
+writing manifest file 'domain_bridge.egg-info/SOURCES.txt'
+[  6%] [32mBuilding C object CMakeFiles/domain_bridge__rosidl_generator_c.dir/rosidl_generator_c/domain_bridge/msg/detail/compressed_msg__functions.c.o[0m
+[  9%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 13%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 13%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 13%] Built target ament_cmake_python_build_domain_bridge_egg
+[ 15%] [32m[1mLinking C shared library libdomain_bridge__rosidl_generator_c.so[0m
+[ 15%] Built target domain_bridge__rosidl_generator_c
+[ 20%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 20%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 22%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/domain_bridge__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/domain_bridge/msg/compressed_msg__type_support.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/domain_bridge__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/domain_bridge/msg/detail/dds_fastrtps/compressed_msg__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/domain_bridge__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/domain_bridge/msg/detail/compressed_msg__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/domain_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/domain_bridge/msg/compressed_msg__type_support.cpp.o[0m
+[ 34%] [32mBuilding C object CMakeFiles/domain_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/domain_bridge/msg/detail/compressed_msg__type_support.c.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/domain_bridge__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/domain_bridge/msg/detail/compressed_msg__type_support_c.cpp.o[0m
+[ 38%] [32m[1mLinking CXX shared library libdomain_bridge__rosidl_typesupport_c.so[0m
+[ 40%] [32m[1mLinking C shared library libdomain_bridge__rosidl_typesupport_introspection_c.so[0m
+[ 40%] Built target domain_bridge__rosidl_typesupport_c
+[ 40%] Built target domain_bridge__rosidl_typesupport_introspection_c
+[ 43%] [32m[1mLinking CXX shared library libdomain_bridge__rosidl_typesupport_cpp.so[0m
+[ 43%] Built target domain_bridge__rosidl_typesupport_cpp
+[ 50%] [32mBuilding CXX object CMakeFiles/domain_bridge_lib.dir/src/domain_bridge/compress_messages.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/domain_bridge_lib.dir/src/domain_bridge/component_manager.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/domain_bridge_lib.dir/src/domain_bridge/domain_bridge.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/domain_bridge_lib.dir/src/domain_bridge/qos_options.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/domain_bridge_lib.dir/src/domain_bridge/parse_domain_bridge_yaml_config.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/domain_bridge_lib.dir/src/domain_bridge/domain_bridge_options.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/domain_bridge_lib.dir/src/domain_bridge/topic_bridge_options.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/domain_bridge_lib.dir/src/domain_bridge/service_bridge_options.cpp.o[0m
+[ 63%] [32m[1mLinking CXX shared library libdomain_bridge__rosidl_typesupport_introspection_cpp.so[0m
+[ 65%] [32m[1mLinking CXX shared library libdomain_bridge__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 68%] [32m[1mLinking CXX shared library libdomain_bridge__rosidl_typesupport_fastrtps_c.so[0m
+[ 68%] Built target domain_bridge__rosidl_typesupport_introspection_cpp
+[ 68%] Built target domain_bridge__rosidl_typesupport_fastrtps_cpp
+[ 68%] Built target domain_bridge__rosidl_typesupport_fastrtps_c
+[ 68%] Built target domain_bridge
+[ 70%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 70%] Built target domain_bridge__py
+[ 72%] [32mBuilding C object CMakeFiles/domain_bridge__rosidl_generator_py.dir/rosidl_generator_py/domain_bridge/msg/_compressed_msg_s.c.o[0m
+[ 75%] [32m[1mLinking C shared library rosidl_generator_py/domain_bridge/libdomain_bridge__rosidl_generator_py.so[0m
+[ 75%] Built target domain_bridge__rosidl_generator_py
+[ 79%] [32mBuilding C object CMakeFiles/domain_bridge__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/domain_bridge/_domain_bridge_s.ep.rosidl_typesupport_c.c.o[0m
+[ 79%] [32mBuilding C object CMakeFiles/domain_bridge__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/domain_bridge/_domain_bridge_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 81%] [32mBuilding C object CMakeFiles/domain_bridge__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/domain_bridge/_domain_bridge_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 84%] [32m[1mLinking C shared library rosidl_generator_py/domain_bridge/domain_bridge_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 88%] [32m[1mLinking C shared library rosidl_generator_py/domain_bridge/domain_bridge_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 88%] [32m[1mLinking C shared library rosidl_generator_py/domain_bridge/domain_bridge_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 88%] Built target domain_bridge__rosidl_typesupport_c__pyext
+[ 88%] Built target domain_bridge__rosidl_typesupport_introspection_c__pyext
+[ 88%] Built target domain_bridge__rosidl_typesupport_fastrtps_c__pyext
+[ 90%] [32m[1mLinking CXX shared library libdomain_bridge.so[0m
+[ 90%] Built target domain_bridge_lib
+[ 93%] [32mBuilding CXX object CMakeFiles/domain_bridge_rti_exec.dir/src/domain_bridge_rti_qos.cpp.o[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/domain_bridge_exec.dir/src/domain_bridge.cpp.o[0m
+[ 97%] [32m[1mLinking CXX executable domain_bridge_rti_qos[0m
+[ 97%] Built target domain_bridge_rti_exec
+[100%] [32m[1mLinking CXX executable domain_bridge[0m
+[100%] Built target domain_bridge_exec
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/ament_index/resource_index/rosidl_interfaces/domain_bridge
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/compressed_msg.h
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/detail/compressed_msg__functions.h
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/detail/compressed_msg__struct.h
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/detail/compressed_msg__type_support.h
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/environment/library_path.sh
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/environment/library_path.dsv
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/detail/compressed_msg__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/compressed_msg.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/detail/compressed_msg__builder.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/detail/compressed_msg__struct.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/detail/compressed_msg__traits.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/detail/compressed_msg__type_support.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/detail/compressed_msg__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/detail/compressed_msg__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge/msg/detail/compressed_msg__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/environment/pythonpath.sh
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/environment/pythonpath.dsv
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge-0.5.0-py3.10.egg-info/PKG-INFO
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge-0.5.0-py3.10.egg-info/SOURCES.txt
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge-0.5.0-py3.10.egg-info/dependency_links.txt
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge-0.5.0-py3.10.egg-info/top_level.txt
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/__init__.py
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/_domain_bridge_s.ep.rosidl_typesupport_c.c
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/_domain_bridge_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/_domain_bridge_s.ep.rosidl_typesupport_introspection_c.c
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/domain_bridge_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/domain_bridge_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/domain_bridge_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/libdomain_bridge__rosidl_generator_py.so
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/msg/__init__.py
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/msg/_compressed_msg.py
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/msg/_compressed_msg_s.c
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/domain_bridge_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/domain_bridge_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/domain_bridge_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/msg/CompressedMsg.idl
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/msg/CompressedMsg.msg
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/component_manager.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/compress_messages.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge_config.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/domain_bridge_options.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/parse_domain_bridge_yaml_config.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/process_cmd_line_arguments.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/qos_options.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/service_bridge_impl.inc
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/service_bridge_options.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/topic_bridge.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/topic_bridge_options.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/include/domain_bridge/visibility_control.hpp
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/lib/domain_bridge/domain_bridge
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/lib/domain_bridge/domain_bridge_rti_qos
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/examples/example_bridge_config.yaml
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/launch/diablo_bridge.launch
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/config/diablo_bridge.yaml
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/ament_index/resource_index/package_run_dependencies/domain_bridge
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/ament_index/resource_index/parent_prefix_path/domain_bridge
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/environment/ament_prefix_path.sh
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/environment/ament_prefix_path.dsv
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/environment/path.sh
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/environment/path.dsv
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/local_setup.bash
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/local_setup.sh
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/local_setup.zsh
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/local_setup.dsv
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/package.dsv
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/ament_index/resource_index/packages/domain_bridge
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/domain_bridgeConfig.cmake
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/domain_bridgeConfig-version.cmake
+-- Symlinking: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/package.xml
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge__rosidl_generator_c.so
+-- Set runtime path of "/home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge__rosidl_generator_c.so" to ""
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge__rosidl_typesupport_c.so
+-- Set runtime path of "/home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge__rosidl_typesupport_c.so" to ""
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge__rosidl_typesupport_cpp.so" to ""
+Listing '/home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge'...
+Compiling '/home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/__init__.py'...
+Listing '/home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/msg'...
+Compiling '/home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/msg/__init__.py'...
+Compiling '/home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages/domain_bridge/msg/_compressed_msg.py'...
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge__rosidl_generator_py.so
+-- Set runtime path of "/home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge__rosidl_generator_py.so" to ""
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge.so
+-- Set runtime path of "/home/wook/ros2/ros2_ws/install/domain_bridge/lib/libdomain_bridge.so" to ""
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/export_domain_bridge__rosidl_generator_cExport.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/export_domain_bridge__rosidl_generator_cExport-release.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/export_domain_bridge__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/export_domain_bridge__rosidl_typesupport_fastrtps_cExport-release.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/export_domain_bridge__rosidl_generator_cppExport.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/export_domain_bridge__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/export_domain_bridge__rosidl_typesupport_fastrtps_cppExport-release.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/domain_bridge__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/domain_bridge__rosidl_typesupport_introspection_cExport-release.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/domain_bridge__rosidl_typesupport_cExport.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/domain_bridge__rosidl_typesupport_cExport-release.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/domain_bridge__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/domain_bridge__rosidl_typesupport_introspection_cppExport-release.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/domain_bridge__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/domain_bridge__rosidl_typesupport_cppExport-release.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/export_domain_bridge__rosidl_generator_pyExport.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/export_domain_bridge__rosidl_generator_pyExport-release.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/export_domain_bridgeExport.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/domain_bridge/share/domain_bridge/cmake/export_domain_bridgeExport-release.cmake

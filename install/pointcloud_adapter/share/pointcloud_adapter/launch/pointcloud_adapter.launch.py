@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/launch/pointcloud_adapter.launch.py

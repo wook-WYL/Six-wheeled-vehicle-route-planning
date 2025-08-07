@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/build/diablo_teleop_joy/ament_cmake_core/diablo_teleop_joyConfig-version.cmake

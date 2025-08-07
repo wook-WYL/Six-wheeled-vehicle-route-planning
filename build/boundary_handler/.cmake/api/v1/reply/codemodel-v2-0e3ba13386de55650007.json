@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-6174eca742db96fc3d85.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "boundary_handler",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "boundary_handler::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boundary_handler-Release-a2e1b7fc9f65c8308142.json",
+					"name" : "boundary_handler",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boundary_handler_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boundary_handler_uninstall-Release-680e4e9699c849110c20.json",
+					"name" : "boundary_handler_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-2f295e95989e20ca23db.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/wook/ros2/ros2_ws/build/boundary_handler",
+		"source" : "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/boundary_handler"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/wook/ros2/ros2_ws/build/diablo_utils/libdiablo_utils_core.so" "TARGETS" "diablo_utils_core" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

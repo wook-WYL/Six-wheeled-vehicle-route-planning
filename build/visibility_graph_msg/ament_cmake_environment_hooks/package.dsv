@@ -1,0 +1,4 @@
+source;share/visibility_graph_msg/local_setup.bash
+source;share/visibility_graph_msg/local_setup.dsv
+source;share/visibility_graph_msg/local_setup.sh
+source;share/visibility_graph_msg/local_setup.zsh

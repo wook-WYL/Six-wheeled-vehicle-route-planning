@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/wook/ros2/ros2_ws/build/local_planner/localPlanner" "/home/wook/ros2/ros2_ws/build/local_planner/pathFollower" "TARGETS" "localPlanner" "pathFollower" "DESTINATION" "lib/local_planner")

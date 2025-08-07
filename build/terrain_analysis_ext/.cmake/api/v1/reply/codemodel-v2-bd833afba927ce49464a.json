@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-92a5ef89932e208bc0a8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "terrain_analysis_ext",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "terrainAnalysisExt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-terrainAnalysisExt-Release-e87a3c32b33a84e73fe8.json",
+					"name" : "terrainAnalysisExt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "terrain_analysis_ext_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-terrain_analysis_ext_uninstall-Release-8c51cf16c3275c74c228.json",
+					"name" : "terrain_analysis_ext_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-7918c9ad693ae813ff63.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/wook/ros2/ros2_ws/build/terrain_analysis_ext",
+		"source" : "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis_ext"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

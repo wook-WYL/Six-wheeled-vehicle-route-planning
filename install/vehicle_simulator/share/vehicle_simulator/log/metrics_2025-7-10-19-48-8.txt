@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/vehicle_simulator/log/metrics_2025-7-10-19-48-8.txt

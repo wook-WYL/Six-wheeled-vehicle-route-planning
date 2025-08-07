@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/build/pointcloud_adapter/ament_cmake_core/pointcloud_adapterConfig.cmake

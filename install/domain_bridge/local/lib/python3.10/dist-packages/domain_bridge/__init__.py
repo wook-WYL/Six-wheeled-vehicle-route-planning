@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/build/domain_bridge/rosidl_generator_py/domain_bridge/__init__.py

@@ -1,0 +1,4 @@
+source;share/pointcloud_adapter/local_setup.bash
+source;share/pointcloud_adapter/local_setup.dsv
+source;share/pointcloud_adapter/local_setup.sh
+source;share/pointcloud_adapter/local_setup.zsh

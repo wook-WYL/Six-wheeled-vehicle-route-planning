@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-a412c11c599b791d6eb4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "diablo_utils",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "diablo_utils_core::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-diablo_utils_core-Release-ef65845b1e97f0953e01.json",
+					"name" : "diablo_utils_core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "diablo_utils_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-diablo_utils_uninstall-Release-61eb49880ec59993002c.json",
+					"name" : "diablo_utils_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-9b7119445dc400d294e8.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/wook/ros2/ros2_ws/build/diablo_utils",
+		"source" : "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common/diablo_utils"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

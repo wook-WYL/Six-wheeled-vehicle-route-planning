@@ -1,0 +1,41 @@
+[0.006s] Invoking command in '/home/wook/ros2/ros2_ws/build/visualization_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/visualization_tools -- -j32 -l32
+[0.051s] [  0%] Built target ament_cmake_python_symlink_visualization_tools
+[0.055s] [100%] Built target visualizationTools
+[0.180s] running egg_info
+[0.180s] writing visualization_tools.egg-info/PKG-INFO
+[0.180s] writing dependency_links to visualization_tools.egg-info/dependency_links.txt
+[0.181s] writing top-level names to visualization_tools.egg-info/top_level.txt
+[0.181s] reading manifest file 'visualization_tools.egg-info/SOURCES.txt'
+[0.182s] writing manifest file 'visualization_tools.egg-info/SOURCES.txt'
+[0.199s] [100%] Built target ament_cmake_python_build_visualization_tools_egg
+[0.208s] Invoked command in '/home/wook/ros2/ros2_ws/build/visualization_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/visualization_tools -- -j32 -l32
+[0.210s] Invoking command in '/home/wook/ros2/ros2_ws/build/visualization_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/visualization_tools
+[0.215s] -- Install configuration: "Release"
+[0.215s] -- Execute custom install script
+[0.216s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/lib/visualization_tools/visualizationTools
+[0.216s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/share/visualization_tools/launch/visualization_tools.launch
+[0.216s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/share/visualization_tools/environment/pythonpath.sh
+[0.216s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/share/visualization_tools/environment/pythonpath.dsv
+[0.216s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/local/lib/python3.10/dist-packages/visualization_tools-0.0.1-py3.10.egg-info/PKG-INFO
+[0.216s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/local/lib/python3.10/dist-packages/visualization_tools-0.0.1-py3.10.egg-info/SOURCES.txt
+[0.216s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/local/lib/python3.10/dist-packages/visualization_tools-0.0.1-py3.10.egg-info/dependency_links.txt
+[0.217s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/local/lib/python3.10/dist-packages/visualization_tools-0.0.1-py3.10.egg-info/top_level.txt
+[0.217s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/local/lib/python3.10/dist-packages/visualization_tools/__init__.py
+[0.217s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/lib/visualization_tools/realTimePlot.py
+[0.217s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/share/ament_index/resource_index/package_run_dependencies/visualization_tools
+[0.217s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/share/ament_index/resource_index/parent_prefix_path/visualization_tools
+[0.217s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/share/visualization_tools/environment/ament_prefix_path.sh
+[0.217s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/share/visualization_tools/environment/ament_prefix_path.dsv
+[0.217s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/share/visualization_tools/environment/path.sh
+[0.217s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/share/visualization_tools/environment/path.dsv
+[0.217s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/share/visualization_tools/local_setup.bash
+[0.217s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/share/visualization_tools/local_setup.sh
+[0.217s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/share/visualization_tools/local_setup.zsh
+[0.217s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/share/visualization_tools/local_setup.dsv
+[0.218s] -- Symlinking: /home/wook/ros2/ros2_ws/install/visualization_tools/share/visualization_tools/package.dsv
+[0.225s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/share/ament_index/resource_index/packages/visualization_tools
+[0.225s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/share/visualization_tools/cmake/visualization_toolsConfig.cmake
+[0.225s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/share/visualization_tools/cmake/visualization_toolsConfig-version.cmake
+[0.225s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/visualization_tools/share/visualization_tools/package.xml
+[0.246s] Listing '/home/wook/ros2/ros2_ws/install/visualization_tools/local/lib/python3.10/dist-packages/visualization_tools'...
+[0.250s] Invoked command in '/home/wook/ros2/ros2_ws/build/visualization_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/visualization_tools

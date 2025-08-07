@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/build/orbbec_camera_msgs/ament_cmake_environment_hooks/local_setup.sh

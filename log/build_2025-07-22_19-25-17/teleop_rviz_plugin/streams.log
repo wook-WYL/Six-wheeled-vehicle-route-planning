@@ -1,0 +1,28 @@
+[0.009s] Invoking command in '/home/wook/ros2/ros2_ws/build/teleop_rviz_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/teleop_rviz_plugin -- -j32 -l32
+[0.048s] [ 11%] [34m[1mAutomatic MOC for target teleop_rviz_plugin[0m
+[0.062s] [ 11%] Built target teleop_rviz_plugin_autogen
+[0.083s] [100%] Built target teleop_rviz_plugin
+[0.091s] Invoked command in '/home/wook/ros2/ros2_ws/build/teleop_rviz_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/teleop_rviz_plugin -- -j32 -l32
+[0.092s] Invoking command in '/home/wook/ros2/ros2_ws/build/teleop_rviz_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/teleop_rviz_plugin
+[0.098s] -- Install configuration: "Release"
+[0.098s] -- Execute custom install script
+[0.098s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/teleop_rviz_plugin//plugin_description.xml
+[0.098s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/ament_index/resource_index/package_run_dependencies/teleop_rviz_plugin
+[0.098s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/ament_index/resource_index/parent_prefix_path/teleop_rviz_plugin
+[0.098s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/teleop_rviz_plugin/environment/ament_prefix_path.sh
+[0.098s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/teleop_rviz_plugin/environment/ament_prefix_path.dsv
+[0.098s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/teleop_rviz_plugin/environment/path.sh
+[0.098s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/teleop_rviz_plugin/environment/path.dsv
+[0.099s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/teleop_rviz_plugin/local_setup.bash
+[0.099s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/teleop_rviz_plugin/local_setup.sh
+[0.099s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/teleop_rviz_plugin/local_setup.zsh
+[0.099s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/teleop_rviz_plugin/local_setup.dsv
+[0.099s] -- Symlinking: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/teleop_rviz_plugin/package.dsv
+[0.105s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/ament_index/resource_index/packages/teleop_rviz_plugin
+[0.105s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/ament_index/resource_index/rviz_common__pluginlib__plugin/teleop_rviz_plugin
+[0.105s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/teleop_rviz_plugin/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.106s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/teleop_rviz_plugin/cmake/teleop_rviz_pluginConfig.cmake
+[0.106s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/teleop_rviz_plugin/cmake/teleop_rviz_pluginConfig-version.cmake
+[0.106s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/share/teleop_rviz_plugin/package.xml
+[0.106s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/teleop_rviz_plugin/lib/teleop_rviz_plugin/libteleop_rviz_plugin.so
+[0.108s] Invoked command in '/home/wook/ros2/ros2_ws/build/teleop_rviz_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/teleop_rviz_plugin

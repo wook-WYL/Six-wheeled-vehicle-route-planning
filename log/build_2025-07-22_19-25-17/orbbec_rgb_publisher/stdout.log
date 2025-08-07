@@ -1,0 +1,23 @@
+[ 33%] Built target orbbec_rgb_node
+[ 66%] Built target orbbec_depth_node
+[100%] Built target orbbec_combined_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/lib/orbbec_rgb_publisher/orbbec_combined_node
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/lib/orbbec_rgb_publisher/orbbec_rgb_node
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/lib/orbbec_rgb_publisher/orbbec_depth_node
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/ament_index/resource_index/package_run_dependencies/orbbec_rgb_publisher
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/ament_index/resource_index/parent_prefix_path/orbbec_rgb_publisher
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/environment/path.sh
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/environment/path.dsv
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/local_setup.bash
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/local_setup.sh
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/local_setup.zsh
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/local_setup.dsv
+-- Symlinking: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/package.dsv
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/ament_index/resource_index/packages/orbbec_rgb_publisher
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/cmake/orbbec_rgb_publisherConfig.cmake
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/cmake/orbbec_rgb_publisherConfig-version.cmake
+-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/package.xml

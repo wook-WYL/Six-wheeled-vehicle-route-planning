@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/wook/ros2/ros2_ws/build/orbbec_rgb_publisher/orbbec_rgb_node" "/home/wook/ros2/ros2_ws/build/orbbec_rgb_publisher/orbbec_depth_node" "TARGETS" "orbbec_rgb_node" "orbbec_depth_node" "DESTINATION" "lib/orbbec_rgb_publisher")

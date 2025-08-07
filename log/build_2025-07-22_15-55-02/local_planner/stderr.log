@@ -1,0 +1,151 @@
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:[m[K In function ‘[01m[Kvoid odomHandler(nav_msgs::msg::Odometry_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:58:5:[m[K [01;31m[Kerror: [m[K‘[01m[KvehicleRoll[m[K’ was not declared in this scope
+   58 |     [01;31m[KvehicleRoll[m[K = roll;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:59:5:[m[K [01;31m[Kerror: [m[K‘[01m[KvehiclePitch[m[K’ was not declared in this scope
+   59 |     [01;31m[KvehiclePitch[m[K = pitch;
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:60:5:[m[K [01;31m[Kerror: [m[K‘[01m[KvehicleYaw[m[K’ was not declared in this scope; did you mean ‘[01m[KvehicleYawRate[m[K’?
+   60 |     [01;31m[KvehicleYaw[m[K = yaw;
+      |     [01;31m[K^~~~~~~~~~[m[K
+      |     [32m[KvehicleYawRate[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[KvehicleX[m[K’ was not declared in this scope
+   61 |     [01;31m[KvehicleX[m[K = odomIn->pose.pose.position.x - cos(yaw) * sensorOffsetX + sin(yaw) * sensorOffsetY;
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:62:5:[m[K [01;31m[Kerror: [m[K‘[01m[KvehicleY[m[K’ was not declared in this scope
+   62 |     [01;31m[KvehicleY[m[K = odomIn->pose.pose.position.y - sin(yaw) * sensorOffsetX - cos(yaw) * sensorOffsetY;
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:63:5:[m[K [01;31m[Kerror: [m[K‘[01m[KvehicleZ[m[K’ was not declared in this scope
+   63 |     [01;31m[KvehicleZ[m[K = odomIn->pose.pose.position.z;
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:[m[K In function ‘[01m[Kvoid pathHandler(nav_msgs::msg::Path_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:78:5:[m[K [01;31m[Kerror: [m[K‘[01m[KvehicleXRec[m[K’ was not declared in this scope; did you mean ‘[01m[KvehicleSpeed[m[K’?
+   78 |     [01;31m[KvehicleXRec[m[K = vehicleX;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[KvehicleSpeed[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:78:19:[m[K [01;31m[Kerror: [m[K‘[01m[KvehicleX[m[K’ was not declared in this scope
+   78 |     vehicleXRec = [01;31m[KvehicleX[m[K;
+      |                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:79:5:[m[K [01;31m[Kerror: [m[K‘[01m[KvehicleYRec[m[K’ was not declared in this scope; did you mean ‘[01m[KvehicleSpeed[m[K’?
+   79 |     [01;31m[KvehicleYRec[m[K = vehicleY;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[KvehicleSpeed[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[KvehicleY[m[K’ was not declared in this scope
+   79 |     vehicleYRec = [01;31m[KvehicleY[m[K;
+      |                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:80:5:[m[K [01;31m[Kerror: [m[K‘[01m[KvehicleZRec[m[K’ was not declared in this scope; did you mean ‘[01m[KvehicleSpeed[m[K’?
+   80 |     [01;31m[KvehicleZRec[m[K = vehicleZ;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[KvehicleSpeed[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:80:19:[m[K [01;31m[Kerror: [m[K‘[01m[KvehicleZ[m[K’ was not declared in this scope
+   80 |     vehicleZRec = [01;31m[KvehicleZ[m[K;
+      |                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:81:5:[m[K [01;31m[Kerror: [m[K‘[01m[KvehicleRollRec[m[K’ was not declared in this scope
+   81 |     [01;31m[KvehicleRollRec[m[K = vehicleRoll;
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:81:22:[m[K [01;31m[Kerror: [m[K‘[01m[KvehicleRoll[m[K’ was not declared in this scope
+   81 |     vehicleRollRec = [01;31m[KvehicleRoll[m[K;
+      |                      [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:82:5:[m[K [01;31m[Kerror: [m[K‘[01m[KvehiclePitchRec[m[K’ was not declared in this scope
+   82 |     [01;31m[KvehiclePitchRec[m[K = vehiclePitch;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:82:23:[m[K [01;31m[Kerror: [m[K‘[01m[KvehiclePitch[m[K’ was not declared in this scope
+   82 |     vehiclePitchRec = [01;31m[KvehiclePitch[m[K;
+      |                       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:83:5:[m[K [01;31m[Kerror: [m[K‘[01m[KvehicleYawRec[m[K’ was not declared in this scope; did you mean ‘[01m[KvehicleYawRate[m[K’?
+   83 |     [01;31m[KvehicleYawRec[m[K = vehicleYaw;
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[KvehicleYawRate[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:83:21:[m[K [01;31m[Kerror: [m[K‘[01m[KvehicleYaw[m[K’ was not declared in this scope; did you mean ‘[01m[KvehicleYawRate[m[K’?
+   83 |     vehicleYawRec = [01;31m[KvehicleYaw[m[K;
+      |                     [01;31m[K^~~~~~~~~~[m[K
+      |                     [32m[KvehicleYawRate[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:[m[K In function ‘[01m[Kvoid joystickHandler(sensor_msgs::msg::Joy_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:89:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kjoy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   89 | void joystickHandler([01;35m[Kconst sensor_msgs::msg::Joy::ConstSharedPtr joy[m[K)
+      |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:[m[K In function ‘[01m[Kvoid speedHandler(std_msgs::msg::Float32_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:95:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kspeed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   95 | void speedHandler([01;35m[Kconst std_msgs::msg::Float32::ConstSharedPtr speed[m[K)
+      |                   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:[m[K In function ‘[01m[Kvoid slowDownHandler(std_msgs::msg::Int8_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:106:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kslow[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  106 | void slowDownHandler([01;35m[Kconst std_msgs::msg::Int8::ConstSharedPtr slow[m[K)
+      |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:124:28:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+  124 |     auto subJoystick = nh->[01;31m[Kcreate_subscription<sensor_msgs::msg/Joy>[m[K("/joy", 5, joystickHandler);
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:124:69:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_subscription<<expression error> >(const char [5], int, void (&)(sensor_msgs::msg::Joy_<std::allocator<void> >::ConstSharedPtr))[m[K’
+  124 |     auto subJoystick = [01;31m[Knh->create_subscription<sensor_msgs::msg/Joy>("/joy", 5, joystickHandler)[m[K;
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:8[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+   92 | [01;36m[KNode[m[K::create_subscription(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:124:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  124 |     auto subJoystick = [01;31m[Knh->create_subscription<sensor_msgs::msg/Joy>("/joy", 5, joystickHandler)[m[K;
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:127:28:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+  127 |     auto subSlowDown = nh->[01;31m[Kcreate_subscription<std_msgs::msg/Int8>[m[K("/slow_down", 5, slowDownHandler);
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:127:67:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_subscription<<expression error> >(const char [11], int, void (&)(std_msgs::msg::Int8_<std::allocator<void> >::ConstSharedPtr))[m[K’
+  127 |     auto subSlowDown = [01;31m[Knh->create_subscription<std_msgs::msg/Int8>("/slow_down", 5, slowDownHandler)[m[K;
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:8[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+   92 | [01;36m[KNode[m[K::create_subscription(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:127:67:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  127 |     auto subSlowDown = [01;31m[Knh->create_subscription<std_msgs::msg/Int8>("/slow_down", 5, slowDownHandler)[m[K;
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:147:22:[m[K [01;31m[Kerror: [m[K‘[01m[KdirDiff[m[K’ was not declared in this scope
+  147 |             if (fabs([01;31m[KdirDiff[m[K) < dirDiffThre && dis > stopDisThre) {
+      |                      [01;31m[K^~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:147:33:[m[K [01;31m[Kerror: [m[K‘[01m[KdirDiffThre[m[K’ was not declared in this scope
+  147 |             if (fabs(dirDiff) < [01;31m[KdirDiffThre[m[K && dis > stopDisThre) {
+      |                                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:147:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kdis[m[K’ was not declared in this scope; did you mean ‘[01m[Kdiv[m[K’?
+  147 |             if (fabs(dirDiff) < dirDiffThre && [01;31m[Kdis[m[K > stopDisThre) {
+      |                                                [01;31m[K^~~[m[K
+      |                                                [32m[Kdiv[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:147:54:[m[K [01;31m[Kerror: [m[K‘[01m[KstopDisThre[m[K’ was not declared in this scope
+  147 |             if (fabs(dirDiff) < dirDiffThre && dis > [01;31m[KstopDisThre[m[K) {
+      |                                                      [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:148:36:[m[K [01;31m[Kerror: [m[K‘[01m[KjoySpeed3[m[K’ was not declared in this scope
+  148 |                 if (vehicleSpeed < [01;31m[KjoySpeed3[m[K) vehicleSpeed += maxAccel / 100.0;
+      |                                    [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:148:63:[m[K [01;31m[Kerror: [m[K‘[01m[KmaxAccel[m[K’ was not declared in this scope
+  148 |                 if (vehicleSpeed < joySpeed3) vehicleSpeed += [01;31m[KmaxAccel[m[K / 100.0;
+      |                                                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:149:68:[m[K [01;31m[Kerror: [m[K‘[01m[KmaxAccel[m[K’ was not declared in this scope
+  149 |                 else if (vehicleSpeed > joySpeed3) vehicleSpeed -= [01;31m[KmaxAccel[m[K / 100.0;
+      |                                                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:151:55:[m[K [01;31m[Kerror: [m[K‘[01m[KmaxAccel[m[K’ was not declared in this scope
+  151 |                 if (vehicleSpeed > 0) vehicleSpeed -= [01;31m[KmaxAccel[m[K / 100.0;
+      |                                                       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:152:60:[m[K [01;31m[Kerror: [m[K‘[01m[KmaxAccel[m[K’ was not declared in this scope
+  152 |                 else if (vehicleSpeed < 0) vehicleSpeed += [01;31m[KmaxAccel[m[K / 100.0;
+      |                                                            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:161:13:[m[K [01;31m[Kerror: [m[K‘[01m[KpubSkipCount[m[K’ was not declared in this scope
+  161 |             [01;31m[KpubSkipCount[m[K--;
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:164:43:[m[K [01;31m[Kerror: [m[K‘[01m[KmaxAccel[m[K’ was not declared in this scope
+  164 |                 if (fabs(vehicleSpeed) <= [01;31m[KmaxAccel[m[K / 100.0) cmd_vel.twist.linear.x = 0;
+      |                                           [01;31m[K^~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:180:32:[m[K [01;31m[Kerror: [m[K‘[01m[KpubSkipNum[m[K’ was not declared in this scope
+  180 |                 pubSkipCount = [01;31m[KpubSkipNum[m[K;
+      |                                [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pathFollower.dir/build.make:76: CMakeFiles/pathFollower.dir/src/pathFollower.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/pathFollower.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,612 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found tf2_sensor_msgs: 0.25.13 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wook/ros2/ros2_ws/build/pointcloud_adapter
+[ 50%] [32mBuilding CXX object CMakeFiles/adapter_node.dir/src/pointcloud_adapter.cpp.o[0m
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:259[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+/usr/local/include/eigen3/Eigen/src/Core/Product.h: In instantiation of ‘[01m[KEigen::Product<Lhs, Rhs, Option>::Product(const Lhs&, const Rhs&) [with _Lhs = Eigen::Matrix<float, 3, 1>; _Rhs = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; int Option = 0; Eigen::Product<Lhs, Rhs, Option>::Lhs = Eigen::Matrix<float, 3, 1>; Eigen::Product<Lhs, Rhs, Option>::Rhs = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>][m[K’:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/GeneralProduct.h:426:10:[m[K   required from ‘[01m[Kconst Eigen::Product<Derived, OtherDerived> Eigen::MatrixBase<Derived>::operator*(const Eigen::MatrixBase<OtherDerived>&) const [with OtherDerived = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; Derived = Eigen::Matrix<float, 3, 1>][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Transform.h:921:23:[m[K   required from ‘[01m[KEigen::Transform<Scalar, Dim, Mode, Options>& Eigen::Transform<Scalar, Dim, Mode, _Options>::pretranslate(const Eigen::MatrixBase<OtherDerived>&) [with OtherDerived = Eigen::Matrix<float, 3, 1>; _Scalar = float; int _Dim = 3; int _Mode = 1; int _Options = 0][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Translation.h:128:21:[m[K   required from ‘[01m[KEigen::Transform<_Scalar, Dim, Mode> Eigen::Translation<Scalar, Dim>::operator*(const Eigen::Transform<_Scalar, Dim, Mode, Options>&) const [with int Mode = 1; int Options = 0; _Scalar = float; int _Dim = 3][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Translation.h:107:18:[m[K   required from ‘[01m[KEigen::Translation<Scalar, Dim>::IsometryTransformType Eigen::Translation<Scalar, Dim>::operator*(const Eigen::RotationBase<Derived, Dim>&) const [with Derived = Eigen::Quaternion<float>; _Scalar = float; int _Dim = 3; Eigen::Translation<Scalar, Dim>::IsometryTransformType = Eigen::Transform<float, 3, 1>][m[K’
+[01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:100:63:[m[K   required from here
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Product.h:94:59:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>::Block(const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+   94 |     Product(const Lhs& lhs, const Rhs& rhs) : m_lhs(lhs), [01;35m[Km_rhs(rhs)[m[K
+      |                                                           [01;35m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:19[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1040:52:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>[m[K’ has user-provided ‘[01m[KEigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>& Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>::operator=(const Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>&) [with XprType = Eigen::Matrix<float, 4, 4>; int BlockRows = 1; int BlockCols = 4; bool InnerPanel = false][m[K’
+ 1040 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+      |                                                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1052:53:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+ 1052 | #define EIGEN_INHERIT_ASSIGNMENT_OPERATORS(Derived) [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived)
+      |                                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:161:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+  161 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:292[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:103:81:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::BlockImpl<Eigen::Matrix<float, 4, 4>, 1, 4, false, Eigen::Dense>::BlockImpl(const Eigen::BlockImpl<Eigen::Matrix<float, 4, 4>, 1, 4, false, Eigen::Dense>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+  103 | ame XprType, int BlockRows, int BlockCols, bool InnerPanel> class [01;35m[KBlock[m[K
+      |                                                                   [01;35m[K^~~~~[m[K
+
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:19[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1040:52:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::BlockImpl<Eigen::Matrix<float, 4, 4>, 1, 4, false, Eigen::Dense>[m[K’ has user-provided ‘[01m[KEigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>& Eigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>::operator=(const Eigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>&) [with XprType = Eigen::Matrix<float, 4, 4>; int BlockRows = 1; int BlockCols = 4; bool InnerPanel = false][m[K’
+ 1040 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+      |                                                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1052:53:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+ 1052 | #define EIGEN_INHERIT_ASSIGNMENT_OPERATORS(Derived) [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived)
+      |                                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:341:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+  341 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl_dense)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:292[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:154:7:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::internal::BlockImpl_dense<Eigen::Matrix<float, 4, 4>, 1, 4, false, true>::BlockImpl_dense(const Eigen::internal::BlockImpl_dense<Eigen::Matrix<float, 4, 4>, 1, 4, false, true>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+  154 | class [01;35m[KBlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Dense>[m[K
+      |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:289[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/MapBase.h:288:14:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::internal::BlockImpl_dense<Eigen::Matrix<float, 4, 4>, 1, 4, false, true>[m[K’ has user-provided ‘[01m[KDerived& Eigen::MapBase<Derived, 1>::operator=(const Eigen::MapBase<Derived, 1>&) [with Derived = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>][m[K’
+  288 |     Derived& [01;36m[Koperator[m[K=(const MapBase& other)
+      |              [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:292[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:329:7:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::MapBase<Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1>::MapBase(const Eigen::MapBase<Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+  329 | class [01;35m[KBlockImpl_dense<XprType,BlockRows,BlockCols, InnerPanel,true>[m[K
+      |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:265[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Assign.h:55:30:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::MapBase<Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1>[m[K’ has user-provided ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator=(const Eigen::MatrixBase<Derived>&) [with Derived = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>][m[K’
+   55 | EIGEN_STRONG_INLINE Derived& [01;36m[KMatrixBase<Derived>[m[K::operator=(const MatrixBase& other)
+      |                              [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:289[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/MapBase.h:219:34:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::MapBase<Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>::MapBase(const Eigen::MapBase<Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+  219 | template<typename Derived> class [01;35m[KMapBase<Derived, WriteAccessors>[m[K
+      |                                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:265[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Assign.h:55:30:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::MapBase<Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>[m[K’ has user-provided ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator=(const Eigen::MatrixBase<Derived>&) [with Derived = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>][m[K’
+   55 | EIGEN_STRONG_INLINE Derived& [01;36m[KMatrixBase<Derived>[m[K::operator=(const MatrixBase& other)
+      |                              [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:289[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/MapBase.h:37:34:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[Kconstexpr Eigen::MatrixBase<Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false> >::MatrixBase(const Eigen::MatrixBase<Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false> >&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+   37 | template<typename Derived> class [01;35m[KMapBase<Derived, ReadOnlyAccessors>[m[K
+      |                                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:265[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Assign.h:55:30:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::MatrixBase<Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false> >[m[K’ has user-provided ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator=(const Eigen::MatrixBase<Derived>&) [with Derived = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>][m[K’
+   55 | EIGEN_STRONG_INLINE Derived& [01;36m[KMatrixBase<Derived>[m[K::operator=(const MatrixBase& other)
+      |                              [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:289[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/MapBase.h:219:34:[m[K [01;36m[Knote: [m[Ksynthesized method ‘[01m[KEigen::MapBase<Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>::MapBase(const Eigen::MapBase<Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>&)[m[K’ first required here
+  219 | template<typename Derived> class [01;36m[KMapBase<Derived, WriteAccessors>[m[K
+      |                                  [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:292[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:329:7:[m[K [01;36m[Knote: [m[Ksynthesized method ‘[01m[KEigen::MapBase<Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1>::MapBase(const Eigen::MapBase<Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1>&)[m[K’ first required here
+  329 | class [01;36m[KBlockImpl_dense<XprType,BlockRows,BlockCols, InnerPanel,true>[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:154:7:[m[K [01;36m[Knote: [m[Ksynthesized method ‘[01m[KEigen::internal::BlockImpl_dense<Eigen::Matrix<float, 4, 4>, 1, 4, false, true>::BlockImpl_dense(const Eigen::internal::BlockImpl_dense<Eigen::Matrix<float, 4, 4>, 1, 4, false, true>&)[m[K’ first required here
+  154 | class [01;36m[KBlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Dense>[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:103:81:[m[K [01;36m[Knote: [m[Ksynthesized method ‘[01m[KEigen::BlockImpl<Eigen::Matrix<float, 4, 4>, 1, 4, false, Eigen::Dense>::BlockImpl(const Eigen::BlockImpl<Eigen::Matrix<float, 4, 4>, 1, 4, false, Eigen::Dense>&)[m[K’ first required here
+  103 | ame XprType, int BlockRows, int BlockCols, bool InnerPanel> class [01;36m[KBlock[m[K
+      |                                                                   [01;36m[K^~~~~[m[K
+
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:259[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Product.h:94:59:[m[K [01;36m[Knote: [m[Ksynthesized method ‘[01m[KEigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>::Block(const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>&)[m[K’ first required here
+   94 |     Product(const Lhs& lhs, const Rhs& rhs) : m_lhs(lhs), [01;36m[Km_rhs(rhs)[m[K
+      |                                                           [01;36m[K^~~~~~~~~~[m[K
+/usr/local/include/eigen3/Eigen/src/Core/Product.h: In instantiation of ‘[01m[KEigen::Product<Lhs, Rhs, Option>::Product(const Lhs&, const Rhs&) [with _Lhs = Eigen::Matrix<float, 3, 1>; _Rhs = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; int Option = 1; Eigen::Product<Lhs, Rhs, Option>::Lhs = Eigen::Matrix<float, 3, 1>; Eigen::Product<Lhs, Rhs, Option>::Rhs = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>][m[K’:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/GeneralProduct.h:462:10:[m[K   required from ‘[01m[Kconst Eigen::Product<Derived, OtherDerived, 1> Eigen::MatrixBase<Derived>::lazyProduct(const Eigen::MatrixBase<OtherDerived>&) const [with OtherDerived = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; Derived = Eigen::Matrix<float, 3, 1>][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/ProductEvaluators.h:397:50:[m[K   required from ‘[01m[Kstatic void Eigen::internal::generic_product_impl<Lhs, Rhs, Eigen::DenseShape, Eigen::DenseShape, 3>::evalTo(Dst&, const Lhs&, const Rhs&) [with Dst = Eigen::Matrix<float, 3, 4, 0, 3, 4>; Lhs = Eigen::Matrix<float, 3, 1>; Rhs = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/ProductEvaluators.h:148:43:[m[K   required from ‘[01m[Kstatic void Eigen::internal::Assignment<DstXprType, Eigen::Product<Lhs, Rhs, Options>, Eigen::internal::assign_op<Scalar, Scalar>, Eigen::internal::Dense2Dense, typename Eigen::internal::enable_if<((Options == Eigen::DefaultProduct) || (Options == Eigen::AliasFreeProduct))>::type>::run(DstXprType&, const SrcXprType&, const Eigen::internal::assign_op<Scalar, Scalar>&) [with DstXprType = Eigen::Matrix<float, 3, 4, 0, 3, 4>; Lhs = Eigen::Matrix<float, 3, 1>; Rhs = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; int Options = 0; Scalar = float; Eigen::internal::Assignment<DstXprType, Eigen::Product<Lhs, Rhs, Options>, Eigen::internal::assign_op<Scalar, Scalar>, Eigen::internal::Dense2Dense, typename Eigen::internal::enable_if<((Options == Eigen::DefaultProduct) || (Options == Eigen::AliasFreeProduct))>::type>::SrcXprType = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:862:49:[m[K   required from ‘[01m[Kvoid Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::Matrix<float, 3, 4, 0, 3, 4>; Src = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>; Func = Eigen::internal::assign_op<float, float>][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/PlainObjectBase.h:797:41:[m[K   required from ‘[01m[KDerived& Eigen::PlainObjectBase<Derived>::_set_noalias(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>; Derived = Eigen::Matrix<float, 3, 4, 0, 3, 4>][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/PlainObjectBase.h:883:25:[m[K   [ skipping 2 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:822:41:[m[K   required from ‘[01m[Kvoid Eigen::internal::call_assignment(Dst&, const Src&, const Func&, typename Eigen::internal::enable_if<Eigen::internal::evaluator_assume_aliasing<Src>::value, void*>::type) [with Dst = Eigen::Block<Eigen::Matrix<float, 4, 4>, 3, 4, false>; Src = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>; Func = Eigen::internal::add_assign_op<float, float>; typename Eigen::internal::enable_if<Eigen::internal::evaluator_assume_aliasing<Src>::value, void*>::type = void*; typename Eigen::internal::evaluator_traits<SrcXprType>::Shape = Eigen::DenseShape][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:183:18:[m[K   required from ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator+=(const Eigen::MatrixBase<OtherDerived>&) [with OtherDerived = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>; Derived = Eigen::Block<Eigen::Matrix<float, 4, 4>, 3, 4, false>][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Transform.h:921:14:[m[K   required from ‘[01m[KEigen::Transform<Scalar, Dim, Mode, Options>& Eigen::Transform<Scalar, Dim, Mode, _Options>::pretranslate(const Eigen::MatrixBase<OtherDerived>&) [with OtherDerived = Eigen::Matrix<float, 3, 1>; _Scalar = float; int _Dim = 3; int _Mode = 1; int _Options = 0][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Translation.h:128:21:[m[K   required from ‘[01m[KEigen::Transform<_Scalar, Dim, Mode> Eigen::Translation<Scalar, Dim>::operator*(const Eigen::Transform<_Scalar, Dim, Mode, Options>&) const [with int Mode = 1; int Options = 0; _Scalar = float; int _Dim = 3][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Translation.h:107:18:[m[K   required from ‘[01m[KEigen::Translation<Scalar, Dim>::IsometryTransformType Eigen::Translation<Scalar, Dim>::operator*(const Eigen::RotationBase<Derived, Dim>&) const [with Derived = Eigen::Quaternion<float>; _Scalar = float; int _Dim = 3; Eigen::Translation<Scalar, Dim>::IsometryTransformType = Eigen::Transform<float, 3, 1>][m[K’
+[01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:100:63:[m[K   required from here
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Product.h:94:59:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>::Block(const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:19[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1040:52:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>[m[K’ has user-provided ‘[01m[KEigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>& Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>::operator=(const Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>&) [with XprType = Eigen::Matrix<float, 4, 4>; int BlockRows = 1; int BlockCols = 4; bool InnerPanel = false][m[K’
+ 1040 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+      |                                                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1052:53:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+ 1052 | #define EIGEN_INHERIT_ASSIGNMENT_OPERATORS(Derived) [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived)
+      |                                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:161:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+  161 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:315[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+/usr/local/include/eigen3/Eigen/src/Core/ProductEvaluators.h: In instantiation of ‘[01m[KEigen::internal::product_evaluator<Eigen::Product<Lhs, Rhs, 1>, ProductTag, Eigen::DenseShape, Eigen::DenseShape>::product_evaluator(const XprType&) [with Lhs = Eigen::Matrix<float, 3, 1>; Rhs = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; int ProductTag = 4; typename Eigen::internal::traits<typename Eigen::Product<Lhs, Rhs, 1>::Rhs>::Scalar = float; typename Eigen::Product<Lhs, Rhs, 1>::Rhs = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; typename Eigen::internal::traits<typename Eigen::Product<Lhs, Rhs, 1>::Lhs>::Scalar = float; typename Eigen::Product<Lhs, Rhs, 1>::Lhs = Eigen::Matrix<float, 3, 1>; Eigen::internal::product_evaluator<Eigen::Product<Lhs, Rhs, 1>, ProductTag, Eigen::DenseShape, Eigen::DenseShape>::XprType = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1>][m[K’:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/ProductEvaluators.h:35:90:[m[K   required from ‘[01m[KEigen::internal::evaluator<Eigen::Product<Lhs, Rhs, Option> >::evaluator(const XprType&) [with Lhs = Eigen::Matrix<float, 3, 1>; Rhs = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; int Options = 1; Eigen::internal::evaluator<Eigen::Product<Lhs, Rhs, Option> >::XprType = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1>][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:756:20:[m[K   required from ‘[01m[Kvoid Eigen::internal::call_dense_assignment_loop(DstXprType&, const SrcXprType&, const Functor&) [with DstXprType = Eigen::Matrix<float, 3, 4, 0, 3, 4>; SrcXprType = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1>; Functor = Eigen::internal::assign_op<float, float>][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:926:31:[m[K   required from ‘[01m[Kstatic void Eigen::internal::Assignment<DstXprType, SrcXprType, Functor, Eigen::internal::Dense2Dense, Weak>::run(DstXprType&, const SrcXprType&, const Functor&) [with DstXprType = Eigen::Matrix<float, 3, 4, 0, 3, 4>; SrcXprType = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1>; Functor = Eigen::internal::assign_op<float, float>; Weak = void][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:862:49:[m[K   required from ‘[01m[Kvoid Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::Matrix<float, 3, 4, 0, 3, 4>; Src = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1>; Func = Eigen::internal::assign_op<float, float>][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/ProductEvaluators.h:397:29:[m[K   required from ‘[01m[Kstatic void Eigen::internal::generic_product_impl<Lhs, Rhs, Eigen::DenseShape, Eigen::DenseShape, 3>::evalTo(Dst&, const Lhs&, const Rhs&) [with Dst = Eigen::Matrix<float, 3, 4, 0, 3, 4>; Lhs = Eigen::Matrix<float, 3, 1>; Rhs = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/ProductEvaluators.h:148:43:[m[K   [ skipping 5 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:822:41:[m[K   required from ‘[01m[Kvoid Eigen::internal::call_assignment(Dst&, const Src&, const Func&, typename Eigen::internal::enable_if<Eigen::internal::evaluator_assume_aliasing<Src>::value, void*>::type) [with Dst = Eigen::Block<Eigen::Matrix<float, 4, 4>, 3, 4, false>; Src = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>; Func = Eigen::internal::add_assign_op<float, float>; typename Eigen::internal::enable_if<Eigen::internal::evaluator_assume_aliasing<Src>::value, void*>::type = void*; typename Eigen::internal::evaluator_traits<SrcXprType>::Shape = Eigen::DenseShape][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:183:18:[m[K   required from ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator+=(const Eigen::MatrixBase<OtherDerived>&) [with OtherDerived = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>; Derived = Eigen::Block<Eigen::Matrix<float, 4, 4>, 3, 4, false>][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Transform.h:921:14:[m[K   required from ‘[01m[KEigen::Transform<Scalar, Dim, Mode, Options>& Eigen::Transform<Scalar, Dim, Mode, _Options>::pretranslate(const Eigen::MatrixBase<OtherDerived>&) [with OtherDerived = Eigen::Matrix<float, 3, 1>; _Scalar = float; int _Dim = 3; int _Mode = 1; int _Options = 0][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Translation.h:128:21:[m[K   required from ‘[01m[KEigen::Transform<_Scalar, Dim, Mode> Eigen::Translation<Scalar, Dim>::operator*(const Eigen::Transform<_Scalar, Dim, Mode, Options>&) const [with int Mode = 1; int Options = 0; _Scalar = float; int _Dim = 3][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Translation.h:107:18:[m[K   required from ‘[01m[KEigen::Translation<Scalar, Dim>::IsometryTransformType Eigen::Translation<Scalar, Dim>::operator*(const Eigen::RotationBase<Derived, Dim>&) const [with Derived = Eigen::Quaternion<float>; _Scalar = float; int _Dim = 3; Eigen::Translation<Scalar, Dim>::IsometryTransformType = Eigen::Transform<float, 3, 1>][m[K’
+[01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:100:63:[m[K   required from here
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/ProductEvaluators.h:496:7:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>::Block(const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+  496 |       [01;35m[Km_rhs(xpr.rhs())[m[K,
+      |       [01;35m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:19[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1040:52:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>[m[K’ has user-provided ‘[01m[KEigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>& Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>::operator=(const Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>&) [with XprType = Eigen::Matrix<float, 4, 4>; int BlockRows = 1; int BlockCols = 4; bool InnerPanel = false][m[K’
+ 1040 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+      |                                                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1052:53:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+ 1052 | #define EIGEN_INHERIT_ASSIGNMENT_OPERATORS(Derived) [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived)
+      |                                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:161:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+  161 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:296[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+/usr/local/include/eigen3/Eigen/src/Core/Transpose.h: In instantiation of ‘[01m[KEigen::Transpose<MatrixType>::Transpose(MatrixType&) [with MatrixType = const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>][m[K’:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Transpose.h:195:10:[m[K   required from ‘[01m[KEigen::DenseBase<Derived>::ConstTransposeReturnType Eigen::DenseBase<Derived>::transpose() const [with Derived = Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>; Eigen::DenseBase<Derived>::ConstTransposeReturnType = const Eigen::Transpose<const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false> >][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/ProductEvaluators.h:601:37:[m[K   required from ‘[01m[Kconst CoeffReturnType Eigen::internal::product_evaluator<Eigen::Product<Lhs, Rhs, 1>, ProductTag, Eigen::DenseShape, Eigen::DenseShape>::coeff(Eigen::Index, Eigen::Index) const [with Lhs = Eigen::Matrix<float, 3, 1>; Rhs = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; int ProductTag = 4; typename Eigen::internal::traits<typename Eigen::Product<Lhs, Rhs, 1>::Rhs>::Scalar = float; typename Eigen::Product<Lhs, Rhs, 1>::Rhs = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; typename Eigen::internal::traits<typename Eigen::Product<Lhs, Rhs, 1>::Lhs>::Scalar = float; typename Eigen::Product<Lhs, Rhs, 1>::Lhs = Eigen::Matrix<float, 3, 1>; Eigen::internal::product_evaluator<Eigen::Product<Lhs, Rhs, 1>, ProductTag, Eigen::DenseShape, Eigen::DenseShape>::CoeffReturnType = float; Eigen::Index = long int][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:636:63:[m[K   required from ‘[01m[Kvoid Eigen::internal::generic_dense_assignment_kernel<DstEvaluatorTypeT, SrcEvaluatorTypeT, Functor, Version>::assignCoeff(Eigen::Index, Eigen::Index) [with DstEvaluatorTypeT = Eigen::internal::evaluator<Eigen::Matrix<float, 3, 4, 0, 3, 4> >; SrcEvaluatorTypeT = Eigen::internal::evaluator<Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1> >; Functor = Eigen::internal::assign_op<float, float>; int Version = 0; Eigen::Index = long int][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:650:16:[m[K   required from ‘[01m[Kvoid Eigen::internal::generic_dense_assignment_kernel<DstEvaluatorTypeT, SrcEvaluatorTypeT, Functor, Version>::assignCoeffByOuterInner(Eigen::Index, Eigen::Index) [with DstEvaluatorTypeT = Eigen::internal::evaluator<Eigen::Matrix<float, 3, 4, 0, 3, 4> >; SrcEvaluatorTypeT = Eigen::internal::evaluator<Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1> >; Functor = Eigen::internal::assign_op<float, float>; int Version = 0; Eigen::Index = long int][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:210:35:[m[K   required from ‘[01m[Kstatic void Eigen::internal::copy_using_evaluator_DefaultTraversal_CompleteUnrolling<Kernel, Index, Stop>::run(Kernel&) [with Kernel = Eigen::internal::generic_dense_assignment_kernel<Eigen::internal::evaluator<Eigen::Matrix<float, 3, 4, 0, 3, 4> >, Eigen::internal::evaluator<Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1> >, Eigen::internal::assign_op<float, float>, 0>; int Index = 0; int Stop = 12][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:342:107:[m[K   [ skipping 10 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:822:41:[m[K   required from ‘[01m[Kvoid Eigen::internal::call_assignment(Dst&, const Src&, const Func&, typename Eigen::internal::enable_if<Eigen::internal::evaluator_assume_aliasing<Src>::value, void*>::type) [with Dst = Eigen::Block<Eigen::Matrix<float, 4, 4>, 3, 4, false>; Src = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>; Func = Eigen::internal::add_assign_op<float, float>; typename Eigen::internal::enable_if<Eigen::internal::evaluator_assume_aliasing<Src>::value, void*>::type = void*; typename Eigen::internal::evaluator_traits<SrcXprType>::Shape = Eigen::DenseShape][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:183:18:[m[K   required from ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator+=(const Eigen::MatrixBase<OtherDerived>&) [with OtherDerived = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>; Derived = Eigen::Block<Eigen::Matrix<float, 4, 4>, 3, 4, false>][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Transform.h:921:14:[m[K   required from ‘[01m[KEigen::Transform<Scalar, Dim, Mode, Options>& Eigen::Transform<Scalar, Dim, Mode, _Options>::pretranslate(const Eigen::MatrixBase<OtherDerived>&) [with OtherDerived = Eigen::Matrix<float, 3, 1>; _Scalar = float; int _Dim = 3; int _Mode = 1; int _Options = 0][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Translation.h:128:21:[m[K   required from ‘[01m[KEigen::Transform<_Scalar, Dim, Mode> Eigen::Translation<Scalar, Dim>::operator*(const Eigen::Transform<_Scalar, Dim, Mode, Options>&) const [with int Mode = 1; int Options = 0; _Scalar = float; int _Dim = 3][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Translation.h:107:18:[m[K   required from ‘[01m[KEigen::Translation<Scalar, Dim>::IsometryTransformType Eigen::Translation<Scalar, Dim>::operator*(const Eigen::RotationBase<Derived, Dim>&) const [with Derived = Eigen::Quaternion<float>; _Scalar = float; int _Dim = 3; Eigen::Translation<Scalar, Dim>::IsometryTransformType = Eigen::Transform<float, 3, 1>][m[K’
+[01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:100:63:[m[K   required from here
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Transpose.h:64:66:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>::Block(const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+   64 | xplicit EIGEN_STRONG_INLINE Transpose(MatrixType& matrix) : [01;35m[Km_matrix(matrix)[m[K {}
+      |                                                             [01;35m[K^~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:19[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1040:52:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>[m[K’ has user-provided ‘[01m[KEigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>& Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>::operator=(const Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>&) [with XprType = const Eigen::Matrix<float, 3, 1>; int BlockRows = 1; int BlockCols = 1; bool InnerPanel = false][m[K’
+ 1040 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+      |                                                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1052:53:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+ 1052 | #define EIGEN_INHERIT_ASSIGNMENT_OPERATORS(Derived) [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived)
+      |                                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:161:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+  161 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:292[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:103:81:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::BlockImpl<const Eigen::Matrix<float, 3, 1>, 1, 1, false, Eigen::Dense>::BlockImpl(const Eigen::BlockImpl<const Eigen::Matrix<float, 3, 1>, 1, 1, false, Eigen::Dense>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+  103 | ame XprType, int BlockRows, int BlockCols, bool InnerPanel> class [01;35m[KBlock[m[K
+      |                                                                   [01;35m[K^~~~~[m[K
+
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:19[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1040:52:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::BlockImpl<const Eigen::Matrix<float, 3, 1>, 1, 1, false, Eigen::Dense>[m[K’ has user-provided ‘[01m[KEigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>& Eigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>::operator=(const Eigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>&) [with XprType = const Eigen::Matrix<float, 3, 1>; int BlockRows = 1; int BlockCols = 1; bool InnerPanel = false][m[K’
+ 1040 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+      |                                                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1052:53:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+ 1052 | #define EIGEN_INHERIT_ASSIGNMENT_OPERATORS(Derived) [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived)
+      |                                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:341:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+  341 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl_dense)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:292[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:154:7:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::internal::BlockImpl_dense<const Eigen::Matrix<float, 3, 1>, 1, 1, false, true>::BlockImpl_dense(const Eigen::internal::BlockImpl_dense<const Eigen::Matrix<float, 3, 1>, 1, 1, false, true>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+  154 | class [01;35m[KBlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Dense>[m[K
+      |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:265[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Assign.h:55:30:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::internal::BlockImpl_dense<const Eigen::Matrix<float, 3, 1>, 1, 1, false, true>[m[K’ has user-provided ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator=(const Eigen::MatrixBase<Derived>&) [with Derived = Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>][m[K’
+   55 | EIGEN_STRONG_INLINE Derived& [01;36m[KMatrixBase<Derived>[m[K::operator=(const MatrixBase& other)
+      |                              [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:292[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:329:7:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::MapBase<Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>, 0>::MapBase(const Eigen::MapBase<Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>, 0>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+  329 | class [01;35m[KBlockImpl_dense<XprType,BlockRows,BlockCols, InnerPanel,true>[m[K
+      |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:265[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Assign.h:55:30:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::MapBase<Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>, 0>[m[K’ has user-provided ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator=(const Eigen::MatrixBase<Derived>&) [with Derived = Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>][m[K’
+   55 | EIGEN_STRONG_INLINE Derived& [01;36m[KMatrixBase<Derived>[m[K::operator=(const MatrixBase& other)
+      |                              [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:289[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/MapBase.h:37:34:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[Kconstexpr Eigen::MatrixBase<Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false> >::MatrixBase(const Eigen::MatrixBase<Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false> >&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+   37 | template<typename Derived> class [01;35m[KMapBase<Derived, ReadOnlyAccessors>[m[K
+      |                                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:265[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Assign.h:55:30:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::MatrixBase<Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false> >[m[K’ has user-provided ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator=(const Eigen::MatrixBase<Derived>&) [with Derived = Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>][m[K’
+   55 | EIGEN_STRONG_INLINE Derived& [01;36m[KMatrixBase<Derived>[m[K::operator=(const MatrixBase& other)
+      |                              [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:292[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:329:7:[m[K [01;36m[Knote: [m[Ksynthesized method ‘[01m[KEigen::MapBase<Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>, 0>::MapBase(const Eigen::MapBase<Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>, 0>&)[m[K’ first required here
+  329 | class [01;36m[KBlockImpl_dense<XprType,BlockRows,BlockCols, InnerPanel,true>[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:154:7:[m[K [01;36m[Knote: [m[Ksynthesized method ‘[01m[KEigen::internal::BlockImpl_dense<const Eigen::Matrix<float, 3, 1>, 1, 1, false, true>::BlockImpl_dense(const Eigen::internal::BlockImpl_dense<const Eigen::Matrix<float, 3, 1>, 1, 1, false, true>&)[m[K’ first required here
+  154 | class [01;36m[KBlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Dense>[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:103:81:[m[K [01;36m[Knote: [m[Ksynthesized method ‘[01m[KEigen::BlockImpl<const Eigen::Matrix<float, 3, 1>, 1, 1, false, Eigen::Dense>::BlockImpl(const Eigen::BlockImpl<const Eigen::Matrix<float, 3, 1>, 1, 1, false, Eigen::Dense>&)[m[K’ first required here
+  103 | ame XprType, int BlockRows, int BlockCols, bool InnerPanel> class [01;36m[KBlock[m[K
+      |                                                                   [01;36m[K^~~~~[m[K
+
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:296[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Transpose.h:64:66:[m[K [01;36m[Knote: [m[Ksynthesized method ‘[01m[KEigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>::Block(const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>&)[m[K’ first required here
+   64 | xplicit EIGEN_STRONG_INLINE Transpose(MatrixType& matrix) : [01;36m[Km_matrix(matrix)[m[K {}
+      |                                                             [01;36m[K^~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:281[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h: In instantiation of ‘[01m[KEigen::CwiseBinaryOp<BinaryOp, Lhs, Rhs>::CwiseBinaryOp(const Lhs&, const Rhs&, const BinaryOp&) [with BinaryOp = Eigen::internal::scalar_product_op<float, float>; LhsType = const Eigen::Transpose<const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false> >; RhsType = const Eigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false>; Eigen::CwiseBinaryOp<BinaryOp, Lhs, Rhs>::Lhs = Eigen::Transpose<const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false> >; Eigen::CwiseBinaryOp<BinaryOp, Lhs, Rhs>::Rhs = Eigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false>][m[K’:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/../plugins/MatrixCwiseBinaryOps.h:25:10:[m[K   required from ‘[01m[Kconst Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<typename Eigen::internal::traits<T>::Scalar, typename Eigen::internal::traits<OtherDerived>::Scalar>, const Derived, const OtherDerived> Eigen::MatrixBase<Derived>::cwiseProduct(const Eigen::MatrixBase<OtherDerived>&) const [with OtherDerived = Eigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false>; Derived = Eigen::Transpose<const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false> >; typename Eigen::internal::traits<OtherDerived>::Scalar = float; typename Eigen::internal::traits<T>::Scalar = float][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/ProductEvaluators.h:601:52:[m[K   required from ‘[01m[Kconst CoeffReturnType Eigen::internal::product_evaluator<Eigen::Product<Lhs, Rhs, 1>, ProductTag, Eigen::DenseShape, Eigen::DenseShape>::coeff(Eigen::Index, Eigen::Index) const [with Lhs = Eigen::Matrix<float, 3, 1>; Rhs = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; int ProductTag = 4; typename Eigen::internal::traits<typename Eigen::Product<Lhs, Rhs, 1>::Rhs>::Scalar = float; typename Eigen::Product<Lhs, Rhs, 1>::Rhs = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; typename Eigen::internal::traits<typename Eigen::Product<Lhs, Rhs, 1>::Lhs>::Scalar = float; typename Eigen::Product<Lhs, Rhs, 1>::Lhs = Eigen::Matrix<float, 3, 1>; Eigen::internal::product_evaluator<Eigen::Product<Lhs, Rhs, 1>, ProductTag, Eigen::DenseShape, Eigen::DenseShape>::CoeffReturnType = float; Eigen::Index = long int][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:636:63:[m[K   required from ‘[01m[Kvoid Eigen::internal::generic_dense_assignment_kernel<DstEvaluatorTypeT, SrcEvaluatorTypeT, Functor, Version>::assignCoeff(Eigen::Index, Eigen::Index) [with DstEvaluatorTypeT = Eigen::internal::evaluator<Eigen::Matrix<float, 3, 4, 0, 3, 4> >; SrcEvaluatorTypeT = Eigen::internal::evaluator<Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1> >; Functor = Eigen::internal::assign_op<float, float>; int Version = 0; Eigen::Index = long int][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:650:16:[m[K   required from ‘[01m[Kvoid Eigen::internal::generic_dense_assignment_kernel<DstEvaluatorTypeT, SrcEvaluatorTypeT, Functor, Version>::assignCoeffByOuterInner(Eigen::Index, Eigen::Index) [with DstEvaluatorTypeT = Eigen::internal::evaluator<Eigen::Matrix<float, 3, 4, 0, 3, 4> >; SrcEvaluatorTypeT = Eigen::internal::evaluator<Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1> >; Functor = Eigen::internal::assign_op<float, float>; int Version = 0; Eigen::Index = long int][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:210:35:[m[K   required from ‘[01m[Kstatic void Eigen::internal::copy_using_evaluator_DefaultTraversal_CompleteUnrolling<Kernel, Index, Stop>::run(Kernel&) [with Kernel = Eigen::internal::generic_dense_assignment_kernel<Eigen::internal::evaluator<Eigen::Matrix<float, 3, 4, 0, 3, 4> >, Eigen::internal::evaluator<Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1> >, Eigen::internal::assign_op<float, float>, 0>; int Index = 0; int Stop = 12][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:342:107:[m[K   [ skipping 10 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:822:41:[m[K   required from ‘[01m[Kvoid Eigen::internal::call_assignment(Dst&, const Src&, const Func&, typename Eigen::internal::enable_if<Eigen::internal::evaluator_assume_aliasing<Src>::value, void*>::type) [with Dst = Eigen::Block<Eigen::Matrix<float, 4, 4>, 3, 4, false>; Src = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>; Func = Eigen::internal::add_assign_op<float, float>; typename Eigen::internal::enable_if<Eigen::internal::evaluator_assume_aliasing<Src>::value, void*>::type = void*; typename Eigen::internal::evaluator_traits<SrcXprType>::Shape = Eigen::DenseShape][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:183:18:[m[K   required from ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator+=(const Eigen::MatrixBase<OtherDerived>&) [with OtherDerived = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>; Derived = Eigen::Block<Eigen::Matrix<float, 4, 4>, 3, 4, false>][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Transform.h:921:14:[m[K   required from ‘[01m[KEigen::Transform<Scalar, Dim, Mode, Options>& Eigen::Transform<Scalar, Dim, Mode, _Options>::pretranslate(const Eigen::MatrixBase<OtherDerived>&) [with OtherDerived = Eigen::Matrix<float, 3, 1>; _Scalar = float; int _Dim = 3; int _Mode = 1; int _Options = 0][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Translation.h:128:21:[m[K   required from ‘[01m[KEigen::Transform<_Scalar, Dim, Mode> Eigen::Translation<Scalar, Dim>::operator*(const Eigen::Transform<_Scalar, Dim, Mode, Options>&) const [with int Mode = 1; int Options = 0; _Scalar = float; int _Dim = 3][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Translation.h:107:18:[m[K   required from ‘[01m[KEigen::Translation<Scalar, Dim>::IsometryTransformType Eigen::Translation<Scalar, Dim>::operator*(const Eigen::RotationBase<Derived, Dim>&) const [with Derived = Eigen::Quaternion<float>; _Scalar = float; int _Dim = 3; Eigen::Translation<Scalar, Dim>::IsometryTransformType = Eigen::Transform<float, 3, 1>][m[K’
+[01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:100:63:[m[K   required from here
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:111:9:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::Transpose<const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false> >::Transpose(const Eigen::Transpose<const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false> >&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+  111 |       : [01;35m[Km_lhs(aLhs)[m[K, m_rhs(aRhs), m_functor(func)
+      |         [01;35m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:265[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Assign.h:55:30:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::Transpose<const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false> >[m[K’ has user-provided ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator=(const Eigen::MatrixBase<Derived>&) [with Derived = Eigen::Transpose<const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false> >][m[K’
+   55 | EIGEN_STRONG_INLINE Derived& [01;36m[KMatrixBase<Derived>[m[K::operator=(const MatrixBase& other)
+      |                              [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:296[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Transpose.h:52:37:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[Kconstexpr Eigen::TransposeImpl<const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>, Eigen::Dense>::TransposeImpl(const Eigen::TransposeImpl<const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>, Eigen::Dense>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+   52 | template<typename MatrixType> class [01;35m[KTranspose[m[K
+      |                                     [01;35m[K^~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:265[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Assign.h:55:30:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::TransposeImpl<const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>, Eigen::Dense>[m[K’ has user-provided ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator=(const Eigen::MatrixBase<Derived>&) [with Derived = Eigen::Transpose<const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false> >][m[K’
+   55 | EIGEN_STRONG_INLINE Derived& [01;36m[KMatrixBase<Derived>[m[K::operator=(const MatrixBase& other)
+      |                              [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:296[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Transpose.h:52:37:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>::Block(const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+   52 | template<typename MatrixType> class [01;35m[KTranspose[m[K
+      |                                     [01;35m[K^~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:19[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1040:52:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false>[m[K’ has user-provided ‘[01m[KEigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>& Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>::operator=(const Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>&) [with XprType = const Eigen::Matrix<float, 3, 1>; int BlockRows = 1; int BlockCols = 1; bool InnerPanel = false][m[K’
+ 1040 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+      |                                                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1052:53:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+ 1052 | #define EIGEN_INHERIT_ASSIGNMENT_OPERATORS(Derived) [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived)
+      |                                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:161:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+  161 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:281[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:111:9:[m[K [01;36m[Knote: [m[Ksynthesized method ‘[01m[KEigen::Transpose<const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false> >::Transpose(const Eigen::Transpose<const Eigen::Block<const Eigen::Matrix<float, 3, 1>, 1, 1, false> >&)[m[K’ first required here
+  111 |       : [01;36m[Km_lhs(aLhs)[m[K, m_rhs(aRhs), m_functor(func)
+      |         [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:111:22:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false>::Block(const Eigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+  111 |       : m_lhs(aLhs), [01;35m[Km_rhs(aRhs)[m[K, m_functor(func)
+      |                      [01;35m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:19[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1040:52:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false>[m[K’ has user-provided ‘[01m[KEigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>& Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>::operator=(const Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>&) [with XprType = const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; int BlockRows = 1; int BlockCols = 1; bool InnerPanel = false][m[K’
+ 1040 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+      |                                                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1052:53:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+ 1052 | #define EIGEN_INHERIT_ASSIGNMENT_OPERATORS(Derived) [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived)
+      |                                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:161:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+  161 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:292[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:103:81:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::BlockImpl<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false, Eigen::Dense>::BlockImpl(const Eigen::BlockImpl<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false, Eigen::Dense>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+  103 | ame XprType, int BlockRows, int BlockCols, bool InnerPanel> class [01;35m[KBlock[m[K
+      |                                                                   [01;35m[K^~~~~[m[K
+
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:19[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1040:52:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::BlockImpl<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false, Eigen::Dense>[m[K’ has user-provided ‘[01m[KEigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>& Eigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>::operator=(const Eigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>&) [with XprType = const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; int BlockRows = 1; int BlockCols = 1; bool InnerPanel = false][m[K’
+ 1040 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+      |                                                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1052:53:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+ 1052 | #define EIGEN_INHERIT_ASSIGNMENT_OPERATORS(Derived) [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived)
+      |                                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:341:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+  341 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl_dense)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:292[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:154:7:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::internal::BlockImpl_dense<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false, true>::BlockImpl_dense(const Eigen::internal::BlockImpl_dense<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false, true>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+  154 | class [01;35m[KBlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Dense>[m[K
+      |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:265[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Assign.h:55:30:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::internal::BlockImpl_dense<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false, true>[m[K’ has user-provided ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator=(const Eigen::MatrixBase<Derived>&) [with Derived = Eigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false>][m[K’
+   55 | EIGEN_STRONG_INLINE Derived& [01;36m[KMatrixBase<Derived>[m[K::operator=(const MatrixBase& other)
+      |                              [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:292[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:329:7:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::MapBase<Eigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false>, 0>::MapBase(const Eigen::MapBase<Eigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false>, 0>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+  329 | class [01;35m[KBlockImpl_dense<XprType,BlockRows,BlockCols, InnerPanel,true>[m[K
+      |       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:265[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Assign.h:55:30:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::MapBase<Eigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false>, 0>[m[K’ has user-provided ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator=(const Eigen::MatrixBase<Derived>&) [with Derived = Eigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false>][m[K’
+   55 | EIGEN_STRONG_INLINE Derived& [01;36m[KMatrixBase<Derived>[m[K::operator=(const MatrixBase& other)
+      |                              [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:289[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/MapBase.h:37:34:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[Kconstexpr Eigen::MatrixBase<Eigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false> >::MatrixBase(const Eigen::MatrixBase<Eigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false> >&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+   37 | template<typename Derived> class [01;35m[KMapBase<Derived, ReadOnlyAccessors>[m[K
+      |                                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:265[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Assign.h:55:30:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::MatrixBase<Eigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false> >[m[K’ has user-provided ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator=(const Eigen::MatrixBase<Derived>&) [with Derived = Eigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false>][m[K’
+   55 | EIGEN_STRONG_INLINE Derived& [01;36m[KMatrixBase<Derived>[m[K::operator=(const MatrixBase& other)
+      |                              [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:292[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:329:7:[m[K [01;36m[Knote: [m[Ksynthesized method ‘[01m[KEigen::MapBase<Eigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false>, 0>::MapBase(const Eigen::MapBase<Eigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false>, 0>&)[m[K’ first required here
+  329 | class [01;36m[KBlockImpl_dense<XprType,BlockRows,BlockCols, InnerPanel,true>[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:329:7:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>::Block(const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:19[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1040:52:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>[m[K’ has user-provided ‘[01m[KEigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>& Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>::operator=(const Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>&) [with XprType = Eigen::Matrix<float, 4, 4>; int BlockRows = 1; int BlockCols = 4; bool InnerPanel = false][m[K’
+ 1040 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+      |                                                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1052:53:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+ 1052 | #define EIGEN_INHERIT_ASSIGNMENT_OPERATORS(Derived) [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived)
+      |                                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:161:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+  161 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:292[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:154:7:[m[K [01;36m[Knote: [m[Ksynthesized method ‘[01m[KEigen::internal::BlockImpl_dense<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false, true>::BlockImpl_dense(const Eigen::internal::BlockImpl_dense<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false, true>&)[m[K’ first required here
+  154 | class [01;36m[KBlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Dense>[m[K
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:103:81:[m[K [01;36m[Knote: [m[Ksynthesized method ‘[01m[KEigen::BlockImpl<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false, Eigen::Dense>::BlockImpl(const Eigen::BlockImpl<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false, Eigen::Dense>&)[m[K’ first required here
+  103 | ame XprType, int BlockRows, int BlockCols, bool InnerPanel> class [01;36m[KBlock[m[K
+      |                                                                   [01;36m[K^~~~~[m[K
+
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:281[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:111:22:[m[K [01;36m[Knote: [m[Ksynthesized method ‘[01m[KEigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false>::Block(const Eigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false>&)[m[K’ first required here
+  111 |       : m_lhs(aLhs), [01;36m[Km_rhs(aRhs)[m[K, m_functor(func)
+      |                      [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:292[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+/usr/local/include/eigen3/Eigen/src/Core/Block.h: In instantiation of ‘[01m[KEigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>::BlockImpl_dense(XprType&, Eigen::Index) [with XprType = const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; int BlockRows = 1; int BlockCols = 1; bool InnerPanel = false; Eigen::Index = long int][m[K’:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:162:88:[m[K   required from ‘[01m[KEigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>::BlockImpl(XprType&, Eigen::Index) [with XprType = const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; int BlockRows = 1; int BlockCols = 1; bool InnerPanel = false; Eigen::Index = long int][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:118:46:[m[K   required from ‘[01m[KEigen::Block<XprType, BlockRows, BlockCols, InnerPanel>::Block(XprType&, Eigen::Index) [with XprType = const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; int BlockRows = 1; int BlockCols = 1; bool InnerPanel = false; Eigen::Index = long int][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h:1106:10:[m[K   required from ‘[01m[KEigen::DenseBase<Derived>::ConstColXpr Eigen::DenseBase<Derived>::col(Eigen::Index) const [with Derived = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; Eigen::DenseBase<Derived>::ConstColXpr = const Eigen::Block<const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1, 1, false>; Eigen::Index = long int][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/ProductEvaluators.h:601:63:[m[K   required from ‘[01m[Kconst CoeffReturnType Eigen::internal::product_evaluator<Eigen::Product<Lhs, Rhs, 1>, ProductTag, Eigen::DenseShape, Eigen::DenseShape>::coeff(Eigen::Index, Eigen::Index) const [with Lhs = Eigen::Matrix<float, 3, 1>; Rhs = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; int ProductTag = 4; typename Eigen::internal::traits<typename Eigen::Product<Lhs, Rhs, 1>::Rhs>::Scalar = float; typename Eigen::Product<Lhs, Rhs, 1>::Rhs = Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>; typename Eigen::internal::traits<typename Eigen::Product<Lhs, Rhs, 1>::Lhs>::Scalar = float; typename Eigen::Product<Lhs, Rhs, 1>::Lhs = Eigen::Matrix<float, 3, 1>; Eigen::internal::product_evaluator<Eigen::Product<Lhs, Rhs, 1>, ProductTag, Eigen::DenseShape, Eigen::DenseShape>::CoeffReturnType = float; Eigen::Index = long int][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:636:63:[m[K   required from ‘[01m[Kvoid Eigen::internal::generic_dense_assignment_kernel<DstEvaluatorTypeT, SrcEvaluatorTypeT, Functor, Version>::assignCoeff(Eigen::Index, Eigen::Index) [with DstEvaluatorTypeT = Eigen::internal::evaluator<Eigen::Matrix<float, 3, 4, 0, 3, 4> >; SrcEvaluatorTypeT = Eigen::internal::evaluator<Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 1> >; Functor = Eigen::internal::assign_op<float, float>; int Version = 0; Eigen::Index = long int][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:650:16:[m[K   [ skipping 12 instantiation contexts, use -ftemplate-backtrace-limit=0 to disable ]
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h:822:41:[m[K   required from ‘[01m[Kvoid Eigen::internal::call_assignment(Dst&, const Src&, const Func&, typename Eigen::internal::enable_if<Eigen::internal::evaluator_assume_aliasing<Src>::value, void*>::type) [with Dst = Eigen::Block<Eigen::Matrix<float, 4, 4>, 3, 4, false>; Src = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>; Func = Eigen::internal::add_assign_op<float, float>; typename Eigen::internal::enable_if<Eigen::internal::evaluator_assume_aliasing<Src>::value, void*>::type = void*; typename Eigen::internal::evaluator_traits<SrcXprType>::Shape = Eigen::DenseShape][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:183:18:[m[K   required from ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator+=(const Eigen::MatrixBase<OtherDerived>&) [with OtherDerived = Eigen::Product<Eigen::Matrix<float, 3, 1>, Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>, 0>; Derived = Eigen::Block<Eigen::Matrix<float, 4, 4>, 3, 4, false>][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Transform.h:921:14:[m[K   required from ‘[01m[KEigen::Transform<Scalar, Dim, Mode, Options>& Eigen::Transform<Scalar, Dim, Mode, _Options>::pretranslate(const Eigen::MatrixBase<OtherDerived>&) [with OtherDerived = Eigen::Matrix<float, 3, 1>; _Scalar = float; int _Dim = 3; int _Mode = 1; int _Options = 0][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Translation.h:128:21:[m[K   required from ‘[01m[KEigen::Transform<_Scalar, Dim, Mode> Eigen::Translation<Scalar, Dim>::operator*(const Eigen::Transform<_Scalar, Dim, Mode, Options>&) const [with int Mode = 1; int Options = 0; _Scalar = float; int _Dim = 3][m[K’
+[01m[K/usr/local/include/eigen3/Eigen/src/Geometry/Translation.h:107:18:[m[K   required from ‘[01m[KEigen::Translation<Scalar, Dim>::IsometryTransformType Eigen::Translation<Scalar, Dim>::operator*(const Eigen::RotationBase<Derived, Dim>&) const [with Derived = Eigen::Quaternion<float>; _Scalar = float; int _Dim = 3; Eigen::Translation<Scalar, Dim>::IsometryTransformType = Eigen::Transform<float, 3, 1>][m[K’
+[01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:100:63:[m[K   required from here
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:351:9:[m[K [01;35m[Kwarning: [m[Kimplicitly-declared ‘[01m[KEigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>::Block(const Eigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-copy-Wdeprecated-copy]8;;[m[K]
+  351 |         [01;35m[Km_xpr(xpr)[m[K,
+      |         [01;35m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:19[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/local/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_sensor_msgs/tf2_sensor_msgs.hpp:44[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:7[m[K:
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1040:52:[m[K [01;36m[Knote: [m[Kbecause ‘[01m[KEigen::Block<Eigen::Matrix<float, 4, 4>, 1, 4, false>[m[K’ has user-provided ‘[01m[KEigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>& Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>::operator=(const Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>&) [with XprType = Eigen::Matrix<float, 4, 4>; int BlockRows = 1; int BlockCols = 4; bool InnerPanel = false][m[K’
+ 1040 |     EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Derived& [01;36m[Koperator[m[K=(const Derived& other) \
+      |                                                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h:1052:53:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K’
+ 1052 | #define EIGEN_INHERIT_ASSIGNMENT_OPERATORS(Derived) [01;36m[KEIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR[m[K(Derived)
+      |                                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/eigen3/Eigen/src/Core/Block.h:161:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K’
+  161 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable adapter_node[0m
+[100%] Built target adapter_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/lib/pointcloud_adapter/adapter_node
+[31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+  ament_cmake_symlink_install_directory() can't find
+  '/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/launch'
+Call Stack (most recent call first):
+  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:317 (ament_cmake_symlink_install_directory)
+  cmake_install.cmake:46 (include)
+
+[0m

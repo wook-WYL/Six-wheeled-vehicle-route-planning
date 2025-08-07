@@ -1,0 +1,11 @@
+{
+  "package_name": "motion_msgs",
+  "non_idl_tuples": [
+    "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/motion_msgs:msg/CtrlPlot.msg",
+    "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/motion_msgs:msg/LegMotors.msg",
+    "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/motion_msgs:msg/MotionCtrl.msg",
+    "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/motion_msgs:msg/RobotStatus.msg",
+    "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/motion_msgs:msg/MovementCtrlData.msg",
+    "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/motion_msgs:msg/MovementCtrlMode.msg"
+  ]
+}

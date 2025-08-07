@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/build/motion_msgs/rosidl_generator_py/motion_msgs/msg/_ctrl_plot_s.c

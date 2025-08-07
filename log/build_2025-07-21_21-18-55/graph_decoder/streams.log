@@ -1,0 +1,122 @@
+[0.008s] Invoking command in '/home/wook/ros2/ros2_ws/build/graph_decoder': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/graph_decoder -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/graph_decoder
+[0.041s] -- The C compiler identification is GNU 11.4.0
+[0.074s] -- The CXX compiler identification is GNU 11.4.0
+[0.079s] -- Detecting C compiler ABI info
+[0.122s] -- Detecting C compiler ABI info - done
+[0.126s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.126s] -- Detecting C compile features
+[0.126s] -- Detecting C compile features - done
+[0.128s] -- Detecting CXX compiler ABI info
+[0.177s] -- Detecting CXX compiler ABI info - done
+[0.181s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.181s] -- Detecting CXX compile features
+[0.181s] -- Detecting CXX compile features - done
+[0.183s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.266s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.298s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.316s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.342s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.345s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.350s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.357s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.366s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.392s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.393s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.449s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.466s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.492s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.498s] -- Looking for pthread.h
+[0.543s] -- Looking for pthread.h - found
+[0.543s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.589s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.589s] -- Found Threads: TRUE  
+[0.618s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[0.624s] -- Found visibility_graph_msg: 0.0.1 (/home/wook/ros2/ros2_ws/install/visibility_graph_msg/share/visibility_graph_msg/cmake)
+[0.641s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[0.677s] -- Checking for module 'eigen3'
+[0.686s] --   Found eigen3, version 3.3.90
+[0.707s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[0.707s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.732s] -- Checking for module 'flann'
+[0.740s] --   Found flann, version 1.9.1
+[0.765s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[0.765s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.313s] -- Checking for module 'libusb-1.0'
+[1.321s] --   Found libusb-1.0, version 1.0.25
+[1.343s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[1.343s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.379s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.464s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.468s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.473s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.556s] -- Found Qhull version 8.0.2
+[1.641s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.719s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[1.719s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[1.720s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[1.720s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[1.720s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[1.721s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[1.721s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[1.721s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[1.722s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[1.722s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[1.723s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[1.723s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[1.724s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[1.724s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[1.725s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[1.725s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[1.726s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[1.726s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[1.727s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[1.727s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[1.728s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[1.728s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[1.728s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[1.728s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[1.729s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[1.730s] [33mCMake Warning (dev) at CMakeLists.txt:19 (find_package):
+[1.730s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[1.730s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[1.730s]   command to set the policy and suppress this warning.
+[1.730s] 
+[1.730s]   CMake variable PCL_ROOT is set to:
+[1.730s] 
+[1.730s]     /usr
+[1.730s] 
+[1.730s]   For compatibility, CMake is ignoring the variable.
+[1.730s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.730s] [0m
+[1.735s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.792s] -- Configuring done
+[1.815s] -- Generating done
+[1.821s] -- Build files have been written to: /home/wook/ros2/ros2_ws/build/graph_decoder
+[1.832s] Invoked command in '/home/wook/ros2/ros2_ws/build/graph_decoder' returned '0': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/graph_decoder -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/graph_decoder
+[1.833s] Invoking command in '/home/wook/ros2/ros2_ws/build/graph_decoder': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/graph_decoder -- -j32 -l32
+[1.866s] [ 50%] [32mBuilding CXX object CMakeFiles/graph_decoder.dir/src/decoder_node.cpp.o[0m
+[11.469s] [100%] [32m[1mLinking CXX executable graph_decoder[0m
+[11.685s] [100%] Built target graph_decoder
+[11.694s] Invoked command in '/home/wook/ros2/ros2_ws/build/graph_decoder' returned '0': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/graph_decoder -- -j32 -l32
+[11.695s] Invoking command in '/home/wook/ros2/ros2_ws/build/graph_decoder': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/graph_decoder
+[11.699s] -- Install configuration: "Release"
+[11.699s] -- Execute custom install script
+[11.699s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/lib/graph_decoder/graph_decoder
+[11.706s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/share/graph_decoder/launch/decoder.launch
+[11.711s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/share/graph_decoder/config/default.yaml
+[11.716s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/share/ament_index/resource_index/package_run_dependencies/graph_decoder
+[11.722s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/share/ament_index/resource_index/parent_prefix_path/graph_decoder
+[11.727s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/share/graph_decoder/environment/ament_prefix_path.sh
+[11.732s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/share/graph_decoder/environment/ament_prefix_path.dsv
+[11.736s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/share/graph_decoder/environment/path.sh
+[11.741s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/share/graph_decoder/environment/path.dsv
+[11.746s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/share/graph_decoder/local_setup.bash
+[11.751s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/share/graph_decoder/local_setup.sh
+[11.756s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/share/graph_decoder/local_setup.zsh
+[11.761s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/share/graph_decoder/local_setup.dsv
+[11.765s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/share/graph_decoder/package.dsv
+[11.771s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/share/ament_index/resource_index/packages/graph_decoder
+[11.776s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/share/graph_decoder/cmake/graph_decoderConfig.cmake
+[11.781s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/share/graph_decoder/cmake/graph_decoderConfig-version.cmake
+[11.786s] -- Symlinking: /home/wook/ros2/ros2_ws/install/graph_decoder/share/graph_decoder/package.xml
+[11.792s] Invoked command in '/home/wook/ros2/ros2_ws/build/graph_decoder' returned '0': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/graph_decoder

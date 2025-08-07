@@ -1,0 +1,41 @@
+# In robot_bringup/config/path_follower.yaml
+
+path_follower: # 节点名，与启动文件中的 name='...' 对应
+  ros__parameters:
+    # --- 传感器偏移与发布频率 ---
+    sensorOffsetX: 0.0
+    sensorOffsetY: 0.0
+    pubSkipNum: 1
+    
+    # --- 核心跟踪参数 ---
+    twoWayDrive: false # 可以通过启动参数覆盖
+    lookAheadDis: 0.8
+    yawRateGain: 3
+    stopYawRateGain: 4.5
+    maxYawRate: 80.0
+    
+    # --- 速度与行为限制 ---
+    maxSpeed: 1.0 # 可以通过启动参数覆盖
+    maxAccel: 1.5
+    switchTimeThre: 1.0
+    dirDiffThre: 0.4
+    stopDisThre: 0.15
+    slowDwnDisThre: 1.0
+    noRotAtStop: false
+    noRotAtGoal: true
+    
+    # --- 安全保护机制 ---
+    useInclRateToSlow: false
+    inclRateThre: 120.0
+    slowRate1: 0.25
+    slowRate2: 0.5
+    slowTime1: 2.0
+    slowTime2: 2.0
+    useInclToStop: false
+    inclThre: 45.0
+    stopTime: 5.0
+    
+    # --- 自主模式 ---
+    autonomyMode: true # 可以通过启动参数覆盖
+    autonomySpeed: 0.5 # 可以通过启动参数覆盖
+    joyToSpeedDelay: 2.0 # 可以通过启动参数覆盖

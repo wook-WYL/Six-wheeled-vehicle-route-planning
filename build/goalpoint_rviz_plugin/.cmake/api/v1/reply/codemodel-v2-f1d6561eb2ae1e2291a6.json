@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-edd3be724308125d3d63.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "goalpoint_rviz_plugin",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "goalpoint_rviz_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-goalpoint_rviz_plugin-Release-296f868801589cb52bd9.json",
+					"name" : "goalpoint_rviz_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "goalpoint_rviz_plugin_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-goalpoint_rviz_plugin_autogen-Release-c868865c9ece55fdb923.json",
+					"name" : "goalpoint_rviz_plugin_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "goalpoint_rviz_plugin_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-goalpoint_rviz_plugin_uninstall-Release-bcd0f8dab468d5608b4d.json",
+					"name" : "goalpoint_rviz_plugin_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-56f3cd3d257c6b66d400.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/wook/ros2/ros2_ws/build/goalpoint_rviz_plugin",
+		"source" : "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/goalpoint_rviz_plugin"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

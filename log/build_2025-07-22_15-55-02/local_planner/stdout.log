@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target pathFollower[0m
+[ 50%] Built target localPlanner
+[ 75%] [32mBuilding CXX object CMakeFiles/pathFollower.dir/src/pathFollower.cpp.o[0m

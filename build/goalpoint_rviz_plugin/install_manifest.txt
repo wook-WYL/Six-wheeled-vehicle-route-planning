@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/install/goalpoint_rviz_plugin/lib/goalpoint_rviz_plugin/libgoalpoint_rviz_plugin.so

@@ -1,0 +1,48 @@
+[0.011s] Invoking command in '/home/wook/ros2/ros2_ws/build/tare_planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/tare_planner -- -j32 -l32
+[0.049s] [  5%] Built target tsp_solver
+[0.052s] [ 10%] Built target graph
+[0.053s] [ 23%] Built target pointcloud_utils
+[0.053s] [ 26%] Built target misc_utils
+[0.053s] [ 31%] Built target exploration_path
+[0.053s] [ 31%] Built target lidar_model
+[0.053s] [ 42%] Built target navigationBoundary
+[0.053s] [ 42%] Built target pointcloud_manager
+[0.054s] [ 47%] Built target rolling_occupancy_grid
+[0.056s] [ 52%] Built target tare_visualizer
+[0.073s] [ 57%] Built target rolling_grid
+[0.073s] [ 63%] Built target viewpoint
+[0.077s] [ 68%] Built target planning_env
+[0.096s] [ 73%] Built target keypose_graph
+[0.118s] [ 78%] Built target grid_world
+[0.139s] [ 84%] Built target viewpoint_manager
+[0.161s] [ 89%] Built target local_coverage_planner
+[0.183s] [ 94%] Built target sensor_coverage_planner_ground
+[0.206s] [100%] Built target tare_planner_node
+[0.214s] Invoked command in '/home/wook/ros2/ros2_ws/build/tare_planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/tare_planner -- -j32 -l32
+[0.215s] Invoking command in '/home/wook/ros2/ros2_ws/build/tare_planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/tare_planner
+[0.219s] -- Install configuration: "Release"
+[0.219s] -- Execute custom install script
+[0.219s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/lib/tare_planner/navigationBoundary
+[0.219s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/lib/tare_planner/tare_planner_node
+[0.220s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner//explore.launch
+[0.220s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner//explore_world.launch
+[0.220s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner//tare_planner_ground.rviz
+[0.220s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/indoor.yaml
+[0.220s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/outdoor.yaml
+[0.220s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/boundary.ply
+[0.220s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/ament_index/resource_index/package_run_dependencies/tare_planner
+[0.220s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/ament_index/resource_index/parent_prefix_path/tare_planner
+[0.220s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/environment/ament_prefix_path.sh
+[0.220s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/environment/ament_prefix_path.dsv
+[0.220s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/environment/path.sh
+[0.221s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/environment/path.dsv
+[0.221s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/local_setup.bash
+[0.221s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/local_setup.sh
+[0.221s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/local_setup.zsh
+[0.221s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/local_setup.dsv
+[0.221s] -- Symlinking: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/package.dsv
+[0.226s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/ament_index/resource_index/packages/tare_planner
+[0.227s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/cmake/tare_plannerConfig.cmake
+[0.227s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/cmake/tare_plannerConfig-version.cmake
+[0.227s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/tare_planner/share/tare_planner/package.xml
+[0.228s] Invoked command in '/home/wook/ros2/ros2_ws/build/tare_planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/tare_planner

@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/build/orbbec_camera_msgs/rosidl_generator_py/orbbec_camera_msgs/msg/_rgbd_s.c

@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-e829336e4bd3ae00c1e6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "orbbec_rgb_publisher",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_combined_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_combined_node-Release-2f8e137269219a51fa3d.json",
+					"name" : "orbbec_combined_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_depth_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_depth_node-Release-d5c83c9ae896be242d91.json",
+					"name" : "orbbec_depth_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_rgb_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_rgb_node-Release-159f0a0c17c8d3b1bf30.json",
+					"name" : "orbbec_rgb_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_rgb_publisher_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_rgb_publisher_uninstall-Release-b39f1a9f1ad2c8001f3b.json",
+					"name" : "orbbec_rgb_publisher_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-51483ecf1bf323ae9e54.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/wook/ros2/ros2_ws/build/orbbec_rgb_publisher",
+		"source" : "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/orbbec_rgb_publisher"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

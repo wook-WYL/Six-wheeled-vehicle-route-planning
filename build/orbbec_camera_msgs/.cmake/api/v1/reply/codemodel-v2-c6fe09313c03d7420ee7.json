@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-5bb596fd85d038df3a68.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "orbbec_camera_msgs__py",
+					"jsonFile" : "directory-orbbec_camera_msgs__py-Release-45d8e773e0fe8fc4b57a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/wook/ros2/ros2_ws/build/orbbec_camera_msgs/orbbec_camera_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "orbbec_camera_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_orbbec_camera_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_orbbec_camera_msgs_egg-Release-9038829ae093cf12c033.json",
+					"name" : "ament_cmake_python_build_orbbec_camera_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_orbbec_camera_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_orbbec_camera_msgs-Release-339aa9d2ed1681fe09ee.json",
+					"name" : "ament_cmake_python_symlink_orbbec_camera_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_camera_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_camera_msgs-Release-e51845a85553e31ed199.json",
+					"name" : "orbbec_camera_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_camera_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_camera_msgs__cpp-Release-d7fc18a68fb84f3aa17c.json",
+					"name" : "orbbec_camera_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "orbbec_camera_msgs__py::@b99f976d5a7686d60dd0",
+					"jsonFile" : "target-orbbec_camera_msgs__py-Release-87df1f6a3bd87644e5b0.json",
+					"name" : "orbbec_camera_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_camera_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_camera_msgs__rosidl_generator_c-Release-00e8d68de2f7a14d6a79.json",
+					"name" : "orbbec_camera_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_camera_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_camera_msgs__rosidl_generator_py-Release-d2c53b08ebf79da6e4a3.json",
+					"name" : "orbbec_camera_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_camera_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_camera_msgs__rosidl_typesupport_c-Release-921d79c7815959b63db2.json",
+					"name" : "orbbec_camera_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_camera_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_camera_msgs__rosidl_typesupport_c__pyext-Release-a71838079ac4dc8184c5.json",
+					"name" : "orbbec_camera_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_camera_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_camera_msgs__rosidl_typesupport_cpp-Release-75ac3b6f4ffa94cd9dec.json",
+					"name" : "orbbec_camera_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_camera_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_camera_msgs__rosidl_typesupport_fastrtps_c-Release-5e28728834b8c0de8e59.json",
+					"name" : "orbbec_camera_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_camera_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_camera_msgs__rosidl_typesupport_fastrtps_c__pyext-Release-7bcf46a697d35cb3abaf.json",
+					"name" : "orbbec_camera_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp-Release-4205065f55c37b6f85d8.json",
+					"name" : "orbbec_camera_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_camera_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_camera_msgs__rosidl_typesupport_introspection_c-Release-2b74280f4f7f86229b26.json",
+					"name" : "orbbec_camera_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_camera_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_camera_msgs__rosidl_typesupport_introspection_c__pyext-Release-2456120f6e2556bd2820.json",
+					"name" : "orbbec_camera_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_camera_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_camera_msgs__rosidl_typesupport_introspection_cpp-Release-06ecc8ed969f3ebea6a7.json",
+					"name" : "orbbec_camera_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orbbec_camera_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbbec_camera_msgs_uninstall-Release-32816f140d56159becd6.json",
+					"name" : "orbbec_camera_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-0f218218b07d007c8d37.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/wook/ros2/ros2_ws/build/orbbec_camera_msgs",
+		"source" : "/home/wook/ros2/ros2_ws/src/OrbbecSDK_ROS2/orbbec_camera_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

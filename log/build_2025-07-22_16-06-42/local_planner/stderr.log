@@ -1,0 +1,21 @@
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:[m[K In function ‘[01m[Kvoid joystickHandler(sensor_msgs::msg::Joy_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:153:24:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Krclcpp::Time[m[K’
+  153 |     joyTime = nh->now()[01;31m[K->[m[Kseconds();
+      |                        [01;31m[K^~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:[m[K In function ‘[01m[Kvoid speedHandler(std_msgs::msg::Float32_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:184:33:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Krclcpp::Time[m[K’
+  184 |     double speedTime = nh->now()[01;31m[K->[m[Kseconds();
+      |                                 [01;31m[K^~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:328:40:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Krclcpp::Time[m[K’
+  328 |                 double time = nh->now()[01;31m[K->[m[Kseconds();
+      |                                        [01;31m[K^~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:364:53:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K&&[m[K’ within ‘[01m[K||[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+  364 |             if ([01;35m[KodomTime < slowInitTime + slowTime1 && slowInitTime > 0[m[K || slowDown == 1) joySpeed3 *= slowRate1;
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:365:70:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K&&[m[K’ within ‘[01m[K||[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+  365 |             else if ([01;35m[KodomTime < slowInitTime + slowTime1 + slowTime2 && slowInitTime > 0[m[K || slowDown == 2) joySpeed3 *= slowRate2;
+      |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pathFollower.dir/build.make:76: CMakeFiles/pathFollower.dir/src/pathFollower.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/pathFollower.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

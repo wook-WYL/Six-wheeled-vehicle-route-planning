@@ -1,0 +1,10 @@
+# generated from colcon_core/shell/template/command_prefix.sh.em
+. "/home/wook/ros2/ros2_ws/install/ception_msgs/share/ception_msgs/package.sh"
+. "/home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/package.sh"
+. "/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs/share/orbbec_camera_msgs/package.sh"
+. "/home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/package.sh"
+. "/home/wook/ros2/ros2_ws/install/terrain_analysis/share/terrain_analysis/package.sh"
+. "/home/wook/ros2/ros2_ws/install/terrain_analysis_ext/share/terrain_analysis_ext/package.sh"
+. "/home/wook/ros2/ros2_ws/install/visualization_tools/share/visualization_tools/package.sh"
+. "/home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/package.sh"
+. "/home/wook/ros2/ros2_ws/install/orbbec_camera/share/orbbec_camera/package.sh"

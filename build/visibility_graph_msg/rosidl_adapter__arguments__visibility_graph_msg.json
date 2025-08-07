@@ -1,0 +1,7 @@
+{
+  "package_name": "visibility_graph_msg",
+  "non_idl_tuples": [
+    "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/visibility_graph_msg:msg/Node.msg",
+    "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/visibility_graph_msg:msg/Graph.msg"
+  ]
+}

@@ -1,0 +1,4 @@
+Invoking command in '/home/wook/ros2/ros2_ws/build/goalpoint_rviz_plugin': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/goalpoint_rviz_plugin -- -j32 -l32
+Invoked command in '/home/wook/ros2/ros2_ws/build/goalpoint_rviz_plugin' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/goalpoint_rviz_plugin -- -j32 -l32
+Invoking command in '/home/wook/ros2/ros2_ws/build/goalpoint_rviz_plugin': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/goalpoint_rviz_plugin
+Invoked command in '/home/wook/ros2/ros2_ws/build/goalpoint_rviz_plugin' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/goalpoint_rviz_plugin

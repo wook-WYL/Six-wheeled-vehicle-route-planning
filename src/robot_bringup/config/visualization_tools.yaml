@@ -1,0 +1,12 @@
+# In robot_bringup/config/visualization_tools.yaml
+
+visualizationTools: # 节点名
+  ros__parameters:
+    overallMapVoxelSize: 0.1
+    exploredAreaVoxelSize: 0.2
+    exploredVolumeVoxelSize: 1.0
+    transInterval: 0.1
+    yawInterval: 0.17
+    overallMapDisplayInterval: 2
+    exploredAreaDisplayInterval: 1
+    savePcd: false

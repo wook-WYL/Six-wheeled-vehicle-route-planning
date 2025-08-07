@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/build/domain_bridge/rosidl_generator_py/domain_bridge/_domain_bridge_s.ep.rosidl_typesupport_introspection_c.c

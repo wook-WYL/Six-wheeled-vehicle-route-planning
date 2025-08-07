@@ -1,0 +1,31 @@
+[0.006s] Invoking command in '/home/wook/ros2/ros2_ws/build/far_planner': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/far_planner -- -j32 -l32
+[0.076s] [100%] Built target far_planner
+[0.084s] Invoked command in '/home/wook/ros2/ros2_ws/build/far_planner' returned '0': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/far_planner -- -j32 -l32
+[0.085s] Invoking command in '/home/wook/ros2/ros2_ws/build/far_planner': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/far_planner
+[0.091s] -- Install configuration: "Release"
+[0.092s] -- Execute custom install script
+[0.092s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/lib/far_planner/far_planner
+[0.092s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/launch/far_planner.launch
+[0.092s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/rviz/default.rviz
+[0.093s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/config/indoor.yaml
+[0.093s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/config/outdoor.yaml
+[0.093s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/data/boundary.ply
+[0.093s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/data/boundary_graph.vgh
+[0.093s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/data/indoor.vgh
+[0.093s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/data/trajectory.txt
+[0.093s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/ament_index/resource_index/package_run_dependencies/far_planner
+[0.093s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/ament_index/resource_index/parent_prefix_path/far_planner
+[0.093s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/environment/ament_prefix_path.sh
+[0.093s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/environment/ament_prefix_path.dsv
+[0.093s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/environment/path.sh
+[0.094s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/environment/path.dsv
+[0.094s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/local_setup.bash
+[0.094s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/local_setup.sh
+[0.094s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/local_setup.zsh
+[0.094s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/local_setup.dsv
+[0.094s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/package.dsv
+[0.101s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/ament_index/resource_index/packages/far_planner
+[0.101s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/cmake/far_plannerConfig.cmake
+[0.101s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/cmake/far_plannerConfig-version.cmake
+[0.101s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/package.xml
+[0.103s] Invoked command in '/home/wook/ros2/ros2_ws/build/far_planner' returned '0': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/far_planner

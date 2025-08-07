@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/build/orbbec_camera_msgs/rosidl_generator_c/orbbec_camera_msgs/srv/detail/get_string__type_support.h

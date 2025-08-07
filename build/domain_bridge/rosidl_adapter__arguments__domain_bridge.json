@@ -1,0 +1,6 @@
+{
+  "package_name": "domain_bridge",
+  "non_idl_tuples": [
+    "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/domain_bridge:msg/CompressedMsg.msg"
+  ]
+}

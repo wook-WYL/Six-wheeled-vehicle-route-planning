@@ -1,0 +1,24 @@
+[0.006s] Invoking command in '/home/wook/ros2/ros2_ws/build/pointcloud_adapter': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/pointcloud_adapter -- -j32 -l32
+[0.034s] [35m[1mConsolidate compiler generated dependencies of target adapter_node[0m
+[0.048s] [100%] Built target adapter_node
+[0.055s] Invoked command in '/home/wook/ros2/ros2_ws/build/pointcloud_adapter' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/pointcloud_adapter -- -j32 -l32
+[0.061s] Invoking command in '/home/wook/ros2/ros2_ws/build/pointcloud_adapter': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/pointcloud_adapter
+[0.065s] -- Install configuration: "Release"
+[0.065s] -- Execute custom install script
+[0.066s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/lib/pointcloud_adapter/adapter_node
+[0.066s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/ament_index/resource_index/package_run_dependencies/pointcloud_adapter
+[0.066s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/ament_index/resource_index/parent_prefix_path/pointcloud_adapter
+[0.066s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/environment/ament_prefix_path.sh
+[0.066s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/environment/ament_prefix_path.dsv
+[0.066s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/environment/path.sh
+[0.066s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/environment/path.dsv
+[0.066s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/local_setup.bash
+[0.066s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/local_setup.sh
+[0.066s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/local_setup.zsh
+[0.066s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/local_setup.dsv
+[0.067s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/package.dsv
+[0.071s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/ament_index/resource_index/packages/pointcloud_adapter
+[0.072s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/cmake/pointcloud_adapterConfig.cmake
+[0.072s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/cmake/pointcloud_adapterConfig-version.cmake
+[0.072s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/package.xml
+[0.073s] Invoked command in '/home/wook/ros2/ros2_ws/build/pointcloud_adapter' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/pointcloud_adapter

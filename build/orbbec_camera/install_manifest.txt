@@ -1,0 +1,7 @@
+/home/wook/ros2/ros2_ws/install/orbbec_camera/lib//libdepthengine.so.2.0
+/home/wook/ros2/ros2_ws/install/orbbec_camera/lib//libob_usb.so
+/home/wook/ros2/ros2_ws/install/orbbec_camera/lib//libdepthengine.so
+/home/wook/ros2/ros2_ws/install/orbbec_camera/lib//libOrbbecSDK.so
+/home/wook/ros2/ros2_ws/install/orbbec_camera/lib//libOrbbecSDK.so.1.10
+/home/wook/ros2/ros2_ws/install/orbbec_camera/lib//liblive555.so
+/home/wook/ros2/ros2_ws/install/orbbec_camera/lib//libOrbbecSDK.so.1.10.22

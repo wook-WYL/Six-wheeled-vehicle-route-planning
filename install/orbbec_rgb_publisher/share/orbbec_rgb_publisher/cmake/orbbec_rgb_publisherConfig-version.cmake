@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/build/orbbec_rgb_publisher/ament_cmake_core/orbbec_rgb_publisherConfig-version.cmake

@@ -1,0 +1,1 @@
+/home/wook/ros2/ros2_ws/build/motion_msgs/rosidl_typesupport_introspection_c/motion_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h

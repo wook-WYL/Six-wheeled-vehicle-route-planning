@@ -1,0 +1,6 @@
+/home/wook/ros2/ros2_ws/build/motion_msgs/rosidl_adapter/motion_msgs:msg/CtrlPlot.idl
+/home/wook/ros2/ros2_ws/build/motion_msgs/rosidl_adapter/motion_msgs:msg/LegMotors.idl
+/home/wook/ros2/ros2_ws/build/motion_msgs/rosidl_adapter/motion_msgs:msg/MotionCtrl.idl
+/home/wook/ros2/ros2_ws/build/motion_msgs/rosidl_adapter/motion_msgs:msg/RobotStatus.idl
+/home/wook/ros2/ros2_ws/build/motion_msgs/rosidl_adapter/motion_msgs:msg/MovementCtrlData.idl
+/home/wook/ros2/ros2_ws/build/motion_msgs/rosidl_adapter/motion_msgs:msg/MovementCtrlMode.idl

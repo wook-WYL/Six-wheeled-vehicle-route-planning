@@ -1,0 +1,260 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-6b25292f96b4e730e49a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				},
+				{
+					"build" : "domain_bridge__py",
+					"jsonFile" : "directory-domain_bridge__py-Release-fa7c18c355552260e799.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/wook/ros2/ros2_ws/build/domain_bridge/domain_bridge__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "domain_bridge",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_domain_bridge_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_domain_bridge_egg-Release-dd6a3d15b43f791c150d.json",
+					"name" : "ament_cmake_python_build_domain_bridge_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_domain_bridge::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_domain_bridge-Release-5514b81fb6ef83e75d76.json",
+					"name" : "ament_cmake_python_symlink_domain_bridge",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "domain_bridge::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-domain_bridge-Release-e6291b151492f3ec06cf.json",
+					"name" : "domain_bridge",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "domain_bridge__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-domain_bridge__cpp-Release-ecdb044daf542583366b.json",
+					"name" : "domain_bridge__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "domain_bridge__py::@a1442da4963776c8822d",
+					"jsonFile" : "target-domain_bridge__py-Release-d8309f95361dfedc0432.json",
+					"name" : "domain_bridge__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "domain_bridge__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-domain_bridge__rosidl_generator_c-Release-6c37c744830ac98e51ae.json",
+					"name" : "domain_bridge__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "domain_bridge__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-domain_bridge__rosidl_generator_py-Release-ac5692fc434e10b2dcef.json",
+					"name" : "domain_bridge__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "domain_bridge__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-domain_bridge__rosidl_typesupport_c-Release-12a1200964e897bb284e.json",
+					"name" : "domain_bridge__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "domain_bridge__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-domain_bridge__rosidl_typesupport_c__pyext-Release-6c3ba1536bcdaeab2957.json",
+					"name" : "domain_bridge__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "domain_bridge__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-domain_bridge__rosidl_typesupport_cpp-Release-8267b38ceb04d3a08ee2.json",
+					"name" : "domain_bridge__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "domain_bridge__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-domain_bridge__rosidl_typesupport_fastrtps_c-Release-1d392161e7cfa31e373a.json",
+					"name" : "domain_bridge__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "domain_bridge__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-domain_bridge__rosidl_typesupport_fastrtps_c__pyext-Release-21c29ebc885bc904725e.json",
+					"name" : "domain_bridge__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "domain_bridge__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-domain_bridge__rosidl_typesupport_fastrtps_cpp-Release-e538f9b668b42e0304b7.json",
+					"name" : "domain_bridge__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "domain_bridge__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-domain_bridge__rosidl_typesupport_introspection_c-Release-d3311a4992f099b2e147.json",
+					"name" : "domain_bridge__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "domain_bridge__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-domain_bridge__rosidl_typesupport_introspection_c__pyext-Release-7dcc2439fa5d7f8cf887.json",
+					"name" : "domain_bridge__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "domain_bridge__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-domain_bridge__rosidl_typesupport_introspection_cpp-Release-287eba4001818fee335a.json",
+					"name" : "domain_bridge__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "domain_bridge_exec::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-domain_bridge_exec-Release-fbcac2635ae3cceeb6ca.json",
+					"name" : "domain_bridge_exec",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "domain_bridge_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-domain_bridge_lib-Release-4fe5935433fa5fd055c1.json",
+					"name" : "domain_bridge_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "domain_bridge_rti_exec::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-domain_bridge_rti_exec-Release-ddb51c29067d1d57af11.json",
+					"name" : "domain_bridge_rti_exec",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "domain_bridge_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-domain_bridge_uninstall-Release-c36dac37915b5def41c9.json",
+					"name" : "domain_bridge_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-e9af88d86c5f9f029245.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/wook/ros2/ros2_ws/build/domain_bridge",
+		"source" : "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/domain_bridge"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

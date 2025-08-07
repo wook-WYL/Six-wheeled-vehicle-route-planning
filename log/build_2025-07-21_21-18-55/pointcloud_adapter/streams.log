@@ -1,0 +1,124 @@
+[0.004s] Invoking command in '/home/wook/ros2/ros2_ws/build/pointcloud_adapter': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/pointcloud_adapter
+[0.036s] -- The C compiler identification is GNU 11.4.0
+[0.069s] -- The CXX compiler identification is GNU 11.4.0
+[0.073s] -- Detecting C compiler ABI info
+[0.116s] -- Detecting C compiler ABI info - done
+[0.120s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.120s] -- Detecting C compile features
+[0.120s] -- Detecting C compile features - done
+[0.122s] -- Detecting CXX compiler ABI info
+[0.170s] -- Detecting CXX compiler ABI info - done
+[0.174s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.174s] -- Detecting CXX compile features
+[0.175s] -- Detecting CXX compile features - done
+[0.176s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.258s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.291s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.308s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.333s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.336s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.341s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.347s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.357s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.381s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.383s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.439s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.458s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.488s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.494s] -- Looking for pthread.h
+[0.539s] -- Looking for pthread.h - found
+[0.539s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.585s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.586s] -- Found Threads: TRUE  
+[0.615s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.633s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[0.660s] -- Checking for module 'eigen3'
+[0.670s] --   Found eigen3, version 3.3.90
+[0.692s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[0.692s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.724s] -- Checking for module 'flann'
+[0.733s] --   Found flann, version 1.9.1
+[0.760s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[0.760s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.391s] -- Checking for module 'libusb-1.0'
+[1.401s] --   Found libusb-1.0, version 1.0.25
+[1.423s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[1.424s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.462s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.550s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.555s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.559s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.654s] -- Found Qhull version 8.0.2
+[1.745s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.827s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[1.828s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[1.835s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[1.836s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[1.836s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[1.837s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[1.837s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[1.837s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[1.838s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[1.838s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[1.839s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[1.839s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[1.840s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[1.841s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[1.841s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[1.842s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[1.842s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[1.843s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[1.843s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[1.844s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[1.844s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[1.844s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[1.845s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[1.845s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[1.846s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[1.848s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[1.868s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.869s] -- Found Eigen3: TRUE (found version "3.3.90") 
+[1.869s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.920s] [33mCMake Warning (dev) at CMakeLists.txt:19 (find_package):
+[1.920s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[1.920s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[1.920s]   command to set the policy and suppress this warning.
+[1.920s] 
+[1.920s]   CMake variable PCL_ROOT is set to:
+[1.920s] 
+[1.920s]     /usr
+[1.920s] 
+[1.920s]   For compatibility, CMake is ignoring the variable.
+[1.920s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.920s] [0m
+[1.964s] -- Configuring done
+[2.014s] -- Generating done
+[2.021s] -- Build files have been written to: /home/wook/ros2/ros2_ws/build/pointcloud_adapter
+[2.034s] Invoked command in '/home/wook/ros2/ros2_ws/build/pointcloud_adapter' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/pointcloud_adapter
+[2.035s] Invoking command in '/home/wook/ros2/ros2_ws/build/pointcloud_adapter': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/pointcloud_adapter -- -j32 -l32
+[2.069s] [ 50%] [32mBuilding CXX object CMakeFiles/pointcloud_adapter_node.dir/src/pointcloud_adapter_node.cpp.o[0m
+[9.984s] [100%] [32m[1mLinking CXX executable pointcloud_adapter_node[0m
+[10.503s] [100%] Built target pointcloud_adapter_node
+[10.512s] Invoked command in '/home/wook/ros2/ros2_ws/build/pointcloud_adapter' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/pointcloud_adapter -- -j32 -l32
+[10.513s] Invoking command in '/home/wook/ros2/ros2_ws/build/pointcloud_adapter': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/pointcloud_adapter
+[10.517s] -- Install configuration: "Release"
+[10.518s] -- Execute custom install script
+[10.518s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/lib/pointcloud_adapter/pointcloud_adapter_node
+[10.524s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/launch/pointcloud_adapter.launch.py
+[10.530s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/config/pointcloud_adapter.yaml
+[10.535s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/ament_index/resource_index/package_run_dependencies/pointcloud_adapter
+[10.540s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/ament_index/resource_index/parent_prefix_path/pointcloud_adapter
+[10.545s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/environment/ament_prefix_path.sh
+[10.551s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/environment/ament_prefix_path.dsv
+[10.556s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/environment/path.sh
+[10.561s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/environment/path.dsv
+[10.566s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/local_setup.bash
+[10.571s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/local_setup.sh
+[10.575s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/local_setup.zsh
+[10.580s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/local_setup.dsv
+[10.585s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/package.dsv
+[10.590s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/ament_index/resource_index/packages/pointcloud_adapter
+[10.595s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/cmake/pointcloud_adapterConfig.cmake
+[10.600s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/cmake/pointcloud_adapterConfig-version.cmake
+[10.605s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/package.xml
+[10.611s] Invoked command in '/home/wook/ros2/ros2_ws/build/pointcloud_adapter' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/pointcloud_adapter
