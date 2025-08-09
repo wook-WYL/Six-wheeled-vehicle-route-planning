@@ -1,4 +1,0 @@
-Invoking command in '/home/wook/ros2/ros2_ws/build/tare_planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/tare_planner -- -j32 -l32
-Invoked command in '/home/wook/ros2/ros2_ws/build/tare_planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/tare_planner -- -j32 -l32
-Invoking command in '/home/wook/ros2/ros2_ws/build/tare_planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/tare_planner
-Invoked command in '/home/wook/ros2/ros2_ws/build/tare_planner' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/tare_planner

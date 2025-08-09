@@ -1,0 +1,5 @@
+Received signal: 11
+Stack trace (most recent call last) in thread 15113:
+#2    Object "/home/wook/ros2/ros2_ws/install/orbbec_camera/lib/libOrbbecSDK.so.1.10", at 0x73f3fd2b7668, in 
+#1    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x73f40484251f, in 
+#0    Object "/home/wook/ros2/ros2_ws/install/orbbec_camera/lib/liborbbec_camera.so", at 0x73f3feb8de2f, in signalHandler(int)

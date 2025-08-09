@@ -50,7 +50,9 @@ def generate_launch_description():
         package='tf2_ros',
         executable='static_transform_publisher',
         name='static_tf_base_to_camera',
-        arguments=['0.1', '0.0', '0.2', '0.0', '0.0', '0.0', 'base_link', 'camera_link']
+       #arguments=[  x,     y,     z,  yaw_rad, pitch_rad, roll_rad, parent_frame, child_frame]
+        #arguments=['0.157', '-0.262', '0.548', '-1.570796', '0.0', '-1.570796', 'base_link', 'camera_link']
+        arguments=['0.157', '-0.262', '0.63', '0.0', '0.0', '0.0', 'base_link', 'camera_link']
     )
     
     static_tf_base_to_vehicle = Node(

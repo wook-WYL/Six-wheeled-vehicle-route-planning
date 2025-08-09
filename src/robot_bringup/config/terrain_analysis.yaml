@@ -22,9 +22,9 @@ terrainAnalysis: # 节点名，与XML中的 name='...' 对应
     noDataObstacle: false
     noDataBlockSkipNum: 0
     minBlockPointNum: 10
-    vehicleHeight: 1.5
+    vehicleHeight: 0.63
     voxelPointUpdateThre: 100
     voxelTimeUpdateThre: 2.0
-    minRelZ: -1.5
-    maxRelZ: 0.3
-    disRatioZ: 0.2
+    minRelZ: -0.10
+    maxRelZ: 0.15
+    disRatioZ: 0.0

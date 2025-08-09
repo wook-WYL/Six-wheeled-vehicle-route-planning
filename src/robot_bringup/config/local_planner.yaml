@@ -4,12 +4,12 @@ local_planner: # 节点名，与启动文件中的 name='...' 对应
   ros__parameters:
     # --- 文件与机器人尺寸 ---
     pathFolder: "" # 这个值需要在启动文件中动态设置
-    vehicleLength: 0.6
-    vehicleWidth: 0.6
+    vehicleLength: 0.74
+    vehicleWidth: 0.83
     
     # --- 传感器与坐标系 ---
-    sensorOffsetX: 0.0 # 可以通过启动参数覆盖
-    sensorOffsetY: 0.0 # 可以通过启动参数覆盖
+    sensorOffsetX: 0.16 # 可以通过启动参数覆盖
+    sensorOffsetY: -0.26 # 可以通过启动参数覆盖
     
     # --- 核心规划算法参数 ---
     twoWayDrive: false # 可以通过启动参数覆盖
@@ -22,14 +22,14 @@ local_planner: # 节点名，与启动文件中的 name='...' 对应
     pointPerPathThre: 2
 
     # --- 地形与成本参数 ---
-    obstacleHeightThre: 0.15
+    obstacleHeightThre: 0.25
     groundHeightThre: 0.05
     costHeightThre1: 0.1
     costHeightThre2: 0.05
     useCost: false
     
     # --- 路径评估与选择 ---
-    minRelZ: -0.4
+    minRelZ: -0.3
     maxRelZ: 0.3
     dirWeight: 0.02
     dirThre: 90.0
