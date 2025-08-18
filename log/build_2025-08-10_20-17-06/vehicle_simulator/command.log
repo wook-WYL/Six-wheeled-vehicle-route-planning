@@ -1,0 +1,1 @@
+Invoking command in '/home/wook/ros2/ros2_ws/build/vehicle_simulator': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/vehicle_simulator -- -j32 -l32

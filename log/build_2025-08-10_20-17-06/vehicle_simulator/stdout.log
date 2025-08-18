@@ -1,0 +1,6 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/sim_image_repub.dir/src/sim_image_repub.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/vehicleSimulator.dir/src/vehicleSimulator.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable sim_image_repub[0m
+[ 75%] Built target sim_image_repub
+[100%] [32m[1mLinking CXX executable vehicleSimulator[0m
+[100%] Built target vehicleSimulator

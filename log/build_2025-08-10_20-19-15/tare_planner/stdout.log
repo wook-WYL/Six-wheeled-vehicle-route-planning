@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target lidar_model[0m
+[35m[1mConsolidate compiler generated dependencies of target graph[0m
+[35m[1mConsolidate compiler generated dependencies of target tsp_solver[0m
+[35m[1mConsolidate compiler generated dependencies of target misc_utils[0m
+[35m[1mConsolidate compiler generated dependencies of target pointcloud_utils[0m
+[35m[1mConsolidate compiler generated dependencies of target exploration_path[0m
+[35m[1mConsolidate compiler generated dependencies of target pointcloud_manager[0m
+[35m[1mConsolidate compiler generated dependencies of target tare_visualizer[0m
+[35m[1mConsolidate compiler generated dependencies of target rolling_occupancy_grid[0m
+[35m[1mConsolidate compiler generated dependencies of target navigationBoundary[0m
+[  2%] [32mBuilding CXX object CMakeFiles/tsp_solver.dir/src/tsp_solver/tsp_solver.cpp.o[0m
+[  5%] [32mBuilding CXX object CMakeFiles/lidar_model.dir/src/lidar_model/lidar_model.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/exploration_path.dir/src/exploration_path/exploration_path.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/misc_utils.dir/src/utils/misc_utils.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/graph.dir/src/graph/graph.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/pointcloud_utils.dir/src/utils/pointcloud_utils.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/rolling_occupancy_grid.dir/src/rolling_occupancy_grid/rolling_occupancy_grid.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/pointcloud_manager.dir/src/pointcloud_manager/pointcloud_manager.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/navigationBoundary.dir/src/navigation_boundary_publisher/navigationBoundary.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/tare_visualizer.dir/src/tare_visualizer/tare_visualizer.cpp.o[0m

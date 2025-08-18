@@ -1,0 +1,37 @@
+// generated from rosidl_typesupport_fastrtps_c/resource/idl__rosidl_typesupport_fastrtps_c.h.em
+// with input from arise_slam_mid360_msgs:msg/IterationStats.idl
+// generated code does not contain a copyright notice
+#ifndef ARISE_SLAM_MID360_MSGS__MSG__DETAIL__ITERATION_STATS__ROSIDL_TYPESUPPORT_FASTRTPS_C_H_
+#define ARISE_SLAM_MID360_MSGS__MSG__DETAIL__ITERATION_STATS__ROSIDL_TYPESUPPORT_FASTRTPS_C_H_
+
+
+#include <stddef.h>
+#include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "arise_slam_mid360_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_arise_slam_mid360_msgs
+size_t get_serialized_size_arise_slam_mid360_msgs__msg__IterationStats(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_arise_slam_mid360_msgs
+size_t max_serialized_size_arise_slam_mid360_msgs__msg__IterationStats(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_arise_slam_mid360_msgs
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, arise_slam_mid360_msgs, msg, IterationStats)();
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // ARISE_SLAM_MID360_MSGS__MSG__DETAIL__ITERATION_STATS__ROSIDL_TYPESUPPORT_FASTRTPS_C_H_

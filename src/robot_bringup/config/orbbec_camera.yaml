@@ -1,0 +1,88 @@
+# -----------------------------------------------------------------------------
+# Orbbec Camera Configuration File for Autonomous Navigation
+# -----------------------------------------------------------------------------
+#
+# This file is designed for the RTAB-Map based navigation stack.
+# It prioritizes performance and providing the correct data streams.
+#
+# Node Name: 'camera' (as loaded in the composable launch file)
+# Namespace: 'camera' (as loaded in the composable launch file)
+#
+# To use this, load it in the ComposableNode definition for the camera driver.
+# -----------------------------------------------------------------------------
+
+camera: # 这里的顶层名称，必须与您在 ComposableNode 中为相机设置的 'name' 参数完全匹配
+  ros__parameters:
+
+    # #################################################
+    # ##          核心数据流与性能配置             ##
+    # #################################################
+
+    # --- 点云 (Point Cloud) ---
+    # 彻底禁用由驱动生成的点云。点云将由下游节点(如RTAB-Map)在需要时生成。
+    # 这是最重要的性能优化，可以极大地降低USB带宽和CPU负载。
+    enable_point_cloud: false
+    enable_colored_point_cloud: false
+
+    # --- 图像流 (Image Streams) ---
+    # 启用我们需要的所有原始图像流
+    enable_color: true
+    enable_depth: true
+    enable_left_ir: false   # 通常导航不需要红外图像，禁用以节省带宽
+    enable_right_ir: false  # 同上
+
+    # --- 帧率 (FPS) ---
+    # 将帧率降低到一个合理的水平(15Hz)，以防止系统过载。
+    # 30Hz是上限，10-15Hz是导航的理想范围。
+    color_fps: 15
+    depth_fps: 15
+
+    # --- 分辨率 (Resolution) ---
+    # 640x480是一个很好的性能与精度的平衡点。如果CPU吃力，可以考虑降低到424x240。
+    color_width: 640
+    color_height: 480
+    depth_width: 640
+    depth_height: 480
+
+    # --- 图像格式 (Format) ---
+    # 保持默认值通常是最好的选择
+    color_format: "MJPG" # MJPG是压缩格式，能降低带宽，但增加CPU解码负担。如果带宽充足，可尝试 "RGB8"
+    depth_format: "Y16"  # 16位深度图，这是标准格式
+
+    # #################################################
+    # ##             IMU 与 同步配置               ##
+    # #################################################
+
+    # --- 惯性测量单元 (IMU) ---
+    # 启用加速度计和陀螺仪，并启用它们的同步输出模式。
+    # RTAB-Map会使用这个融合后的数据。
+    enable_accel: true
+    enable_gyro: true
+    enable_sync_output_accel_gyro: true
+
+    # --- 同步 (Synchronization) ---
+    # 启用驱动内部的硬件时间戳同步，这能让数据帧尽可能对齐
+    enable_frame_sync: true
+    
+    # [关键] 启用深度图到彩色图的配准。
+    # 这会使驱动发布一个已经对齐的深度图话题，极大地简化了RTAB-Map的工作。
+    depth_registration: true
+    
+    # #################################################
+    # ##               坐标系与TF配置                ##
+    # #################################################
+    
+    # 发布相机内部的TF树 (例如 camera_link -> camera_color_optical_frame)
+    # 这对于RTAB-Map和RViz至关重要。
+    publish_tf: true
+    tf_publish_rate: 10.0 # 以10Hz的频率发布TF
+
+    # #################################################
+    # ##             其他推荐设置                  ##
+    # #################################################
+    
+    # 启用激光发射器 (对于主动深度相机是必需的)
+    enable_laser: true
+    
+    # 使用硬件时间戳，而不是ROS接收到的时间，以获得最高精度
+    use_hardware_time: true

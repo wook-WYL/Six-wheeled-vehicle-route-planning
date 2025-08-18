@@ -1,0 +1,124 @@
+[0.000000] (-) TimerEvent: {}
+[0.000511] (-) JobUnselected: {'identifier': 'arise_slam_mid360'}
+[0.000530] (-) JobUnselected: {'identifier': 'arise_slam_mid360_msgs'}
+[0.000541] (-) JobUnselected: {'identifier': 'boundary_handler'}
+[0.000553] (-) JobUnselected: {'identifier': 'ception_msgs'}
+[0.000570] (-) JobUnselected: {'identifier': 'diablo_body'}
+[0.000582] (-) JobUnselected: {'identifier': 'diablo_ctrl'}
+[0.000606] (-) JobUnselected: {'identifier': 'diablo_teleop'}
+[0.000616] (-) JobUnselected: {'identifier': 'diablo_teleop_joy'}
+[0.000627] (-) JobUnselected: {'identifier': 'diablo_utils'}
+[0.000638] (-) JobUnselected: {'identifier': 'domain_bridge'}
+[0.000649] (-) JobUnselected: {'identifier': 'far_planner'}
+[0.000660] (-) JobUnselected: {'identifier': 'goalpoint_rviz_plugin'}
+[0.000672] (-) JobUnselected: {'identifier': 'graph_decoder'}
+[0.000683] (-) JobUnselected: {'identifier': 'livox_ros_driver2'}
+[0.000695] (-) JobUnselected: {'identifier': 'local_planner'}
+[0.000706] (-) JobUnselected: {'identifier': 'motion_msgs'}
+[0.000718] (-) JobUnselected: {'identifier': 'orbbec_camera'}
+[0.000729] (-) JobUnselected: {'identifier': 'orbbec_camera_msgs'}
+[0.000741] (-) JobUnselected: {'identifier': 'orbbec_description'}
+[0.000753] (-) JobUnselected: {'identifier': 'orbbec_rgb_publisher'}
+[0.000763] (-) JobUnselected: {'identifier': 'osr_bringup'}
+[0.000775] (-) JobUnselected: {'identifier': 'osr_control'}
+[0.000787] (-) JobUnselected: {'identifier': 'osr_gazebo'}
+[0.000799] (-) JobUnselected: {'identifier': 'osr_interfaces'}
+[0.000811] (-) JobUnselected: {'identifier': 'receive_theta'}
+[0.000822] (-) JobUnselected: {'identifier': 'robot_bringup'}
+[0.000832] (-) JobUnselected: {'identifier': 'ros_tcp_endpoint'}
+[0.000844] (-) JobUnselected: {'identifier': 'sensor_scan_generation'}
+[0.000855] (-) JobUnselected: {'identifier': 'tare_planner'}
+[0.000867] (-) JobUnselected: {'identifier': 'teleop_rviz_plugin'}
+[0.000877] (-) JobUnselected: {'identifier': 'teleop_rviz_plugin_plus'}
+[0.000889] (-) JobUnselected: {'identifier': 'terrain_analysis'}
+[0.000900] (-) JobUnselected: {'identifier': 'terrain_analysis_ext'}
+[0.000911] (-) JobUnselected: {'identifier': 'vehicle_simulator'}
+[0.000921] (-) JobUnselected: {'identifier': 'visibility_graph_msg'}
+[0.000932] (-) JobUnselected: {'identifier': 'visualization_tools'}
+[0.000943] (-) JobUnselected: {'identifier': 'waypoint_example'}
+[0.000955] (-) JobUnselected: {'identifier': 'waypoint_rviz_plugin'}
+[0.000970] (pointcloud_adapter) JobQueued: {'identifier': 'pointcloud_adapter', 'dependencies': OrderedDict()}
+[0.000987] (pointcloud_adapter) JobStarted: {'identifier': 'pointcloud_adapter'}
+[0.007415] (pointcloud_adapter) JobProgress: {'identifier': 'pointcloud_adapter', 'progress': 'cmake'}
+[0.008401] (pointcloud_adapter) JobProgress: {'identifier': 'pointcloud_adapter', 'progress': 'build'}
+[0.008846] (pointcloud_adapter) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wook/ros2/ros2_ws/build/pointcloud_adapter', '--', '-j32', '-l32'], 'cwd': '/home/wook/ros2/ros2_ws/build/pointcloud_adapter', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'wook'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wook/orbbec_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wook'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('CONNEXTDDS_DIR', '/opt/rti.com/rti_connext_dds-6.0.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('NDDSHOME', '/opt/rti.com/rti_connext_dds-6.0.1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2012'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0f93820081a106d5f888d012689b1e45'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'wook'), ('http_proxy', 'http://127.0.0.1:7890:8080/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wook'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/bin:/home/wook/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wook:@/tmp/.ICE-unix/2012,unix/wook:/tmp/.ICE-unix/2012'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/892ce027_809d_4848_92a4_3ec2c5d37eb6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ORB_SLAM3_ROOT_DIR', '/home/wook/ros2/orb_slam3/ORB_SLAM3'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('CONNEXTDDS_ARCH', 'x64Linux4gcc7.3.0'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wook/ros2/ros2_ws/build/pointcloud_adapter'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=0f93820081a106d5f888d012689b1e45'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890:8080/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.076708] (pointcloud_adapter) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target adapter_node\x1b[0m\n'}
+[0.099746] (-) TimerEvent: {}
+[0.136577] (pointcloud_adapter) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/adapter_node.dir/src/pointcloud_adapter.cpp.o\x1b[0m\n'}
+[0.199825] (-) TimerEvent: {}
+[0.299968] (-) TimerEvent: {}
+[0.400128] (-) TimerEvent: {}
+[0.500252] (-) TimerEvent: {}
+[0.600397] (-) TimerEvent: {}
+[0.700561] (-) TimerEvent: {}
+[0.800735] (-) TimerEvent: {}
+[0.900896] (-) TimerEvent: {}
+[1.001118] (-) TimerEvent: {}
+[1.101354] (-) TimerEvent: {}
+[1.201482] (-) TimerEvent: {}
+[1.301641] (-) TimerEvent: {}
+[1.401772] (-) TimerEvent: {}
+[1.501918] (-) TimerEvent: {}
+[1.602062] (-) TimerEvent: {}
+[1.702208] (-) TimerEvent: {}
+[1.802365] (-) TimerEvent: {}
+[1.902527] (-) TimerEvent: {}
+[2.002697] (-) TimerEvent: {}
+[2.102863] (-) TimerEvent: {}
+[2.203004] (-) TimerEvent: {}
+[2.303164] (-) TimerEvent: {}
+[2.403296] (-) TimerEvent: {}
+[2.503445] (-) TimerEvent: {}
+[2.603608] (-) TimerEvent: {}
+[2.703738] (-) TimerEvent: {}
+[2.803909] (-) TimerEvent: {}
+[2.904074] (-) TimerEvent: {}
+[3.004239] (-) TimerEvent: {}
+[3.104404] (-) TimerEvent: {}
+[3.203531] (pointcloud_adapter) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KPointCloudAdapter::PointCloudAdapter()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.203689] (pointcloud_adapter) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:30:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[3.203751] (pointcloud_adapter) StderrLine: {'line': b'   30 |         subscription_ = this->\x1b[01;31m\x1b[Kcreate_subscription<sensor_msgs::msg/PointCloud2>\x1b[m\x1b[K(\n'}
+[3.203794] (pointcloud_adapter) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.204482] (-) TimerEvent: {}
+[3.206090] (pointcloud_adapter) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:30:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KPointCloudAdapter::create_subscription<<expression error> >(const char [32], int, std::_Bind_helper<false, void (PointCloudAdapter::*)(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >), PointCloudAdapter*, const std::_Placeholder<1>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.206158] (pointcloud_adapter) StderrLine: {'line': b'   30 | ubscription_ = \x1b[01;31m\x1b[Kthis->create_subscription<sensor_msgs::msg/PointCloud2>(\x1b[m\x1b[K\n'}
+[3.206193] (pointcloud_adapter) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[3.206223] (pointcloud_adapter) StderrLine: {'line': b'\n'}
+[3.206250] (pointcloud_adapter) StderrLine: {'line': b'   31 | \x1b[01;31m\x1b[K   "/camera/depth_registered/points", 10, // <--- \xe5\xbb\xba\xe8\xae\xae\xe8\xae\xa2\xe9\x98\x85\xe8\xbf\x99\xe4\xb8\xaa\xef\xbc\x8c\xe5\xae\x83\xe9\x80\x9a\xe5\xb8\xb8\xe6\x98\xaf\xe9\x85\x8d\xe5\x87\x86\xe5\xa5\xbd\xe7\x9a\x84\x1b[m\x1b[K\n'}
+[3.206279] (pointcloud_adapter) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.206306] (pointcloud_adapter) StderrLine: {'line': b'\n'}
+[3.206331] (pointcloud_adapter) StderrLine: {'line': b'   32 | \x1b[01;31m\x1b[K   std::bind(&PointCloudAdapter::cloud_callback, this, std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[3.206357] (pointcloud_adapter) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.206383] (pointcloud_adapter) StderrLine: {'line': b'\n'}
+[3.213164] (pointcloud_adapter) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[3.213257] (pointcloud_adapter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[3.213317] (pointcloud_adapter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.213360] (pointcloud_adapter) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:2\x1b[m\x1b[K:\n'}
+[3.213399] (pointcloud_adapter) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.213450] (pointcloud_adapter) StderrLine: {'line': b'  219 |   \x1b[01;36m\x1b[Kcreate_subscription\x1b[m\x1b[K(\n'}
+[3.213487] (pointcloud_adapter) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.213514] (pointcloud_adapter) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.213540] (pointcloud_adapter) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:30:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.213565] (pointcloud_adapter) StderrLine: {'line': b'   30 | ubscription_ = \x1b[01;31m\x1b[Kthis->create_subscription<sensor_msgs::msg/PointCloud2>(\x1b[m\x1b[K\n'}
+[3.213601] (pointcloud_adapter) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[3.213785] (pointcloud_adapter) StderrLine: {'line': b'\n'}
+[3.213844] (pointcloud_adapter) StderrLine: {'line': b'   31 | \x1b[01;31m\x1b[K   "/camera/depth_registered/points", 10, // <--- \xe5\xbb\xba\xe8\xae\xae\xe8\xae\xa2\xe9\x98\x85\xe8\xbf\x99\xe4\xb8\xaa\xef\xbc\x8c\xe5\xae\x83\xe9\x80\x9a\xe5\xb8\xb8\xe6\x98\xaf\xe9\x85\x8d\xe5\x87\x86\xe5\xa5\xbd\xe7\x9a\x84\x1b[m\x1b[K\n'}
+[3.213878] (pointcloud_adapter) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.213918] (pointcloud_adapter) StderrLine: {'line': b'\n'}
+[3.213945] (pointcloud_adapter) StderrLine: {'line': b'   32 | \x1b[01;31m\x1b[K   std::bind(&PointCloudAdapter::cloud_callback, this, std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[3.213971] (pointcloud_adapter) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.213997] (pointcloud_adapter) StderrLine: {'line': b'\n'}
+[3.304637] (-) TimerEvent: {}
+[3.404933] (-) TimerEvent: {}
+[3.505228] (-) TimerEvent: {}
+[3.605506] (-) TimerEvent: {}
+[3.705804] (-) TimerEvent: {}
+[3.806071] (-) TimerEvent: {}
+[3.906357] (-) TimerEvent: {}
+[4.006668] (-) TimerEvent: {}
+[4.020265] (pointcloud_adapter) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/adapter_node.dir/build.make:76: CMakeFiles/adapter_node.dir/src/pointcloud_adapter.cpp.o] Error 1\n'}
+[4.020538] (pointcloud_adapter) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/adapter_node.dir/all] Error 2\n'}
+[4.020817] (pointcloud_adapter) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.022908] (pointcloud_adapter) CommandEnded: {'returncode': 2}
+[4.033123] (pointcloud_adapter) JobEnded: {'identifier': 'pointcloud_adapter', 'rc': 2}
+[4.033667] (-) EventReactorShutdown: {}

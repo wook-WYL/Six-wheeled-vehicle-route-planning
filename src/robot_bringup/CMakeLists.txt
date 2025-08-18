@@ -27,23 +27,16 @@ endif()
 
 
 install(
-  DIRECTORY launch
+  DIRECTORY 
+  launch
+  rviz
+  scripts
+  maps
+  config
+  data
   DESTINATION share/${PROJECT_NAME}
 )
 
-install(
-  DIRECTORY rviz
-  DESTINATION share/${PROJECT_NAME}
-)
 
-install(
-  DIRECTORY scripts
-  DESTINATION lib/${PROJECT_NAME}
-)
-
-install(
-  DIRECTORY maps
-  DESTINATION share/${PROJECT_NAME}
-)
 
 ament_package()

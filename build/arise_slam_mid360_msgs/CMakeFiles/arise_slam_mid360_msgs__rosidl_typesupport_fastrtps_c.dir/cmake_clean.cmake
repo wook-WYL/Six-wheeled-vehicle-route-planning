@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/arise_slam_mid360_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arise_slam_mid360_msgs/msg/detail/iteration_stats__type_support_c.cpp.o"
+  "CMakeFiles/arise_slam_mid360_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arise_slam_mid360_msgs/msg/detail/iteration_stats__type_support_c.cpp.o.d"
+  "CMakeFiles/arise_slam_mid360_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arise_slam_mid360_msgs/msg/detail/laser_feature__type_support_c.cpp.o"
+  "CMakeFiles/arise_slam_mid360_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arise_slam_mid360_msgs/msg/detail/laser_feature__type_support_c.cpp.o.d"
+  "CMakeFiles/arise_slam_mid360_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arise_slam_mid360_msgs/msg/detail/optimization_stats__type_support_c.cpp.o"
+  "CMakeFiles/arise_slam_mid360_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/arise_slam_mid360_msgs/msg/detail/optimization_stats__type_support_c.cpp.o.d"
+  "libarise_slam_mid360_msgs__rosidl_typesupport_fastrtps_c.pdb"
+  "libarise_slam_mid360_msgs__rosidl_typesupport_fastrtps_c.so"
+  "rosidl_typesupport_fastrtps_c/arise_slam_mid360_msgs/msg/detail/iteration_stats__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/arise_slam_mid360_msgs/msg/detail/iteration_stats__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/arise_slam_mid360_msgs/msg/detail/laser_feature__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/arise_slam_mid360_msgs/msg/detail/laser_feature__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/arise_slam_mid360_msgs/msg/detail/optimization_stats__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/arise_slam_mid360_msgs/msg/detail/optimization_stats__type_support_c.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/arise_slam_mid360_msgs__rosidl_typesupport_fastrtps_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

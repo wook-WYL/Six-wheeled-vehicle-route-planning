@@ -1,0 +1,58 @@
+[35m[1mConsolidate compiler generated dependencies of target domain_bridge__rosidl_generator_c[0m
+[  2%] Built target domain_bridge__cpp
+[  9%] Built target domain_bridge__rosidl_generator_c
+[35m[1mConsolidate compiler generated dependencies of target domain_bridge__rosidl_typesupport_fastrtps_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target domain_bridge__rosidl_typesupport_cpp[0m
+[  9%] Built target ament_cmake_python_symlink_domain_bridge
+[35m[1mConsolidate compiler generated dependencies of target domain_bridge__rosidl_typesupport_introspection_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target domain_bridge__rosidl_typesupport_fastrtps_c[0m
+[35m[1mConsolidate compiler generated dependencies of target domain_bridge__rosidl_typesupport_c[0m
+[35m[1mConsolidate compiler generated dependencies of target domain_bridge__rosidl_typesupport_introspection_c[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/domain_bridge__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/domain_bridge/msg/detail/dds_fastrtps/compressed_msg__type_support.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/domain_bridge__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/domain_bridge/msg/compressed_msg__type_support.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/domain_bridge__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/domain_bridge/msg/detail/compressed_msg__type_support.cpp.o[0m
+[ 22%] Built target domain_bridge__rosidl_typesupport_c
+[ 25%] [32mBuilding CXX object CMakeFiles/domain_bridge__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/domain_bridge/msg/detail/compressed_msg__type_support_c.cpp.o[0m
+[ 31%] Built target domain_bridge__rosidl_typesupport_introspection_c
+running egg_info
+writing domain_bridge.egg-info/PKG-INFO
+writing dependency_links to domain_bridge.egg-info/dependency_links.txt
+writing top-level names to domain_bridge.egg-info/top_level.txt
+reading manifest file 'domain_bridge.egg-info/SOURCES.txt'
+writing manifest file 'domain_bridge.egg-info/SOURCES.txt'
+[ 31%] Built target ament_cmake_python_build_domain_bridge_egg
+[ 34%] [32m[1mLinking CXX shared library libdomain_bridge__rosidl_typesupport_cpp.so[0m
+[ 36%] Built target domain_bridge__rosidl_typesupport_cpp
+[ 38%] [32m[1mLinking CXX shared library libdomain_bridge__rosidl_typesupport_fastrtps_c.so[0m
+[35m[1mConsolidate compiler generated dependencies of target domain_bridge_lib[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/domain_bridge_lib.dir/src/domain_bridge/compress_messages.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/domain_bridge_lib.dir/src/domain_bridge/domain_bridge_options.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/domain_bridge_lib.dir/src/domain_bridge/domain_bridge.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/domain_bridge_lib.dir/src/domain_bridge/component_manager.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/domain_bridge_lib.dir/src/domain_bridge/qos_options.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/domain_bridge_lib.dir/src/domain_bridge/parse_domain_bridge_yaml_config.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/domain_bridge_lib.dir/src/domain_bridge/topic_bridge_options.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/domain_bridge_lib.dir/src/domain_bridge/service_bridge_options.cpp.o[0m
+[ 59%] [32m[1mLinking CXX shared library libdomain_bridge__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 61%] [32m[1mLinking CXX shared library libdomain_bridge__rosidl_typesupport_introspection_cpp.so[0m
+[ 63%] Built target domain_bridge__rosidl_typesupport_fastrtps_c
+[ 65%] Built target domain_bridge__rosidl_typesupport_fastrtps_cpp
+[ 68%] Built target domain_bridge__rosidl_typesupport_introspection_cpp
+[ 68%] Built target domain_bridge
+[ 70%] Built target domain_bridge__py
+[35m[1mConsolidate compiler generated dependencies of target domain_bridge__rosidl_generator_py[0m
+[ 72%] [32mBuilding C object CMakeFiles/domain_bridge__rosidl_generator_py.dir/rosidl_generator_py/domain_bridge/msg/_compressed_msg_s.c.o[0m
+[ 75%] [32m[1mLinking C shared library rosidl_generator_py/domain_bridge/libdomain_bridge__rosidl_generator_py.so[0m
+[ 75%] Built target domain_bridge__rosidl_generator_py
+[35m[1mConsolidate compiler generated dependencies of target domain_bridge__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target domain_bridge__rosidl_typesupport_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target domain_bridge__rosidl_typesupport_introspection_c__pyext[0m
+[ 77%] [32mBuilding C object CMakeFiles/domain_bridge__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/domain_bridge/_domain_bridge_s.ep.rosidl_typesupport_c.c.o[0m
+[ 79%] [32mBuilding C object CMakeFiles/domain_bridge__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/domain_bridge/_domain_bridge_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 81%] [32mBuilding C object CMakeFiles/domain_bridge__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/domain_bridge/_domain_bridge_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 84%] [32m[1mLinking C shared library rosidl_generator_py/domain_bridge/domain_bridge_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 86%] [32m[1mLinking C shared library rosidl_generator_py/domain_bridge/domain_bridge_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 88%] [32m[1mLinking C shared library rosidl_generator_py/domain_bridge/domain_bridge_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 88%] Built target domain_bridge__rosidl_typesupport_c__pyext
+[ 88%] Built target domain_bridge__rosidl_typesupport_fastrtps_c__pyext
+[ 88%] Built target domain_bridge__rosidl_typesupport_introspection_c__pyext

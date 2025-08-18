@@ -1,0 +1,49 @@
+[0.545s] Invoking command in '/home/wook/ros2/ros2_ws/build/sensor_scan_generation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/sensor_scan_generation -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/sensor_scan_generation
+[1.765s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.765s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.768s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.768s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.768s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.768s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.768s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.768s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.768s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.769s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.769s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.769s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.769s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.769s] -- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.787s] -- Found tf2_geometry_msgs: 0.25.13 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.790s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.791s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.793s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.828s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.861s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.221s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.227s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.400s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.410s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.417s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.637s] -- Found Qhull version 8.0.2
+[2.874s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.130s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[3.154s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.284s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.285s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.288s] -- Configured cppcheck include dirs: 
+[3.288s] -- Configured cppcheck exclude dirs and/or files: 
+[3.288s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.288s] -- Configured cpplint exclude dirs and/or files: 
+[3.288s] -- Added test 'lint_cmake' to check CMake code style
+[3.289s] -- Added test 'uncrustify' to check C / C++ code style
+[3.289s] -- Configured uncrustify additional arguments: 
+[3.289s] -- Added test 'xmllint' to check XML markup files
+[3.292s] -- Configuring done
+[3.402s] -- Generating done
+[3.426s] -- Build files have been written to: /home/wook/ros2/ros2_ws/build/sensor_scan_generation
+[3.521s] Invoked command in '/home/wook/ros2/ros2_ws/build/sensor_scan_generation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/sensor_scan_generation -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/sensor_scan_generation
+[3.531s] Invoking command in '/home/wook/ros2/ros2_ws/build/sensor_scan_generation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/sensor_scan_generation -- -j32 -l32
+[4.467s] [35m[1mConsolidate compiler generated dependencies of target sensorScanGeneration[0m
+[4.467s] [ 50%] [32mBuilding CXX object CMakeFiles/sensorScanGeneration.dir/src/sensorScanGeneration.cpp.o[0m
+[19.783s] [100%] [32m[1mLinking CXX executable sensorScanGeneration[0m
+[20.094s] [100%] Built target sensorScanGeneration

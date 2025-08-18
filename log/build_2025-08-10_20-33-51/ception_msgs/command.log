@@ -1,0 +1,5 @@
+Invoking command in '/home/wook/ros2/ros2_ws/build/ception_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/ception_msgs -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/ception_msgs
+Invoked command in '/home/wook/ros2/ros2_ws/build/ception_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/ception_msgs -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/ception_msgs
+Invoking command in '/home/wook/ros2/ros2_ws/build/ception_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/ception_msgs -- -j32 -l32
+Invoked command in '/home/wook/ros2/ros2_ws/build/ception_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/ception_msgs -- -j32 -l32
+Invoking command in '/home/wook/ros2/ros2_ws/build/ception_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/ception_msgs

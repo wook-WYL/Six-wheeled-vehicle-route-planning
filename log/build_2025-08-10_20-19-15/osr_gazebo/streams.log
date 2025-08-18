@@ -1,0 +1,2 @@
+[0.227s] Invoking command in '/home/wook/ros2/ros2_ws/build/osr_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/osr_gazebo -- -j32 -l32
+[0.288s] [ 50%] [32mBuilding CXX object CMakeFiles/osr_controller.dir/src/osr_controller.cpp.o[0m

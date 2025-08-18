@@ -1,0 +1,4 @@
+[0.410s] Invoking command in '/home/wook/ros2/ros2_ws/build/terrain_analysis_ext': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/terrain_analysis_ext -- -j32 -l32
+[0.715s] [ 50%] [32mBuilding CXX object CMakeFiles/terrainAnalysisExt.dir/src/terrainAnalysisExt.cpp.o[0m
+[20.514s] [100%] [32m[1mLinking CXX executable terrainAnalysisExt[0m
+[20.963s] [100%] Built target terrainAnalysisExt

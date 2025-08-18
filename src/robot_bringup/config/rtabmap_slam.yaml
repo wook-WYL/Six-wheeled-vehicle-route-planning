@@ -1,0 +1,83 @@
+# -----------------------------------------------------------------------------
+# RTAB-Map SLAM Node Configuration File
+# -----------------------------------------------------------------------------
+#
+# This file configures the core SLAM functionalities of RTAB-Map.
+# It works in conjunction with a separate odometry node (e.g., rgbd_odometry).
+#
+# Node Name: 'rtabmap' (as loaded in the launch file)
+# -----------------------------------------------------------------------------
+
+rtabmap:
+  ros__parameters:
+
+    # #################################################
+    # ##              核心模式与框架设置             ##
+    # #################################################
+    
+    # --- 坐标系框架 ---
+    frame_id: "base_link"         # 机器人基座标系
+    map_frame_id: "map"           # SLAM输出的地图坐标系
+    
+    # --- 订阅设置 ---
+    # 我们只从里程计节点订阅信息，不再自己处理原始图像
+    subscribe_depth: false
+    subscribe_rgb: false
+    subscribe_odom_info: true
+    approx_sync: false            # 里程计信息已经是同步好的，使用精确同步
+
+    # --- SLAM 模式 ---
+    # Mem/IncrementalMemory=true : 标准的SLAM模式
+    # Mem/IncrementalMemory=false: 定位模式（需要预先加载地图）
+    Mem/IncrementalMemory: true
+    
+    # #################################################
+    # ##             回环检测 (Loop Closure)          ##
+    # #################################################
+    
+    # 使用词袋模型进行视觉回环检测
+    Kp/DetectorStrategy: 0  # 0=SURF, 6=ORB. ORB速度更快，SURF在某些场景下更鲁棒
+    
+    # 词袋模型相关参数
+    Kp/MaxFeatures: 1000       # 每张图像提取的关键点数量
+    Kp/NNStrategy: 1           # 1=FLANN_KDTree, 推荐
+    Vis/MinInliers: 15         # 匹配成功所需的最小内点数，这是个关键调试参数
+    Vis/InlierDistance: 0.02   # RANSAC匹配时的内点距离阈值(米)
+    
+    # 回环检测频率，每隔多少帧检测一次
+    Rtabmap/DetectionRate: 1.0
+
+    # #################################################
+    # ##               图优化 (Graph Optimization)    ##
+    # #################################################
+    
+    # 图优化器类型。0=TORO(2D), 1=g2o(3D), 2=GTSAM(3D)
+    # GTSAM 通常是性能和精度最好的选择
+    Optimizer/Strategy: 2 
+    
+    # 是否在每次回环检测成功后都进行一次图优化
+    Optimizer/Robust: true
+    
+    # #################################################
+    # ##            地图生成 (Map Generation)          ##
+    # #################################################
+    
+    # 是否生成2D栅格地图(Occupancy Grid)，这对于Nav2等导航框架是必需的
+    Grid/FromDepth: false # 我们不从深度图直接生成，而是从优化后的点云生成
+    Grid/FromCloud: true
+    
+    # 2D栅格地图参数
+    Grid/CellSize: 0.05          # 栅格地图分辨率(米)
+    Grid/RangeMax: 5.0           # 用于生成栅格地图的点云的最大距离(米)
+    Grid/ClusterRadius: 0.1      # 对点云进行聚类以填充栅格
+    Grid/GroundIsObstacle: false # 将地面视为可通过区域
+
+    # #################################################
+    # ##             数据库与其他设置                ##
+    # #################################################
+    
+    # 数据库路径。~/.ros/rtabmap.db 是默认路径
+    # Database/Path: "~/.ros/rtabmap.db"
+    
+    # 是否在关闭时自动保存数据库
+    Mem/SaveDbAsync: true

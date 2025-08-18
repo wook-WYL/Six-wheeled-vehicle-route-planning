@@ -1,0 +1,6 @@
+Invoking command in '/home/wook/ros2/ros2_ws/build/osr_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wook/ros2/ros2_ws/src/osr-rover-code/ROS/osr_bringup -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/osr_bringup
+Invoked command in '/home/wook/ros2/ros2_ws/build/osr_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wook/ros2/ros2_ws/src/osr-rover-code/ROS/osr_bringup -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/osr_bringup
+Invoking command in '/home/wook/ros2/ros2_ws/build/osr_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/osr_bringup -- -j32 -l32
+Invoked command in '/home/wook/ros2/ros2_ws/build/osr_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/osr_bringup -- -j32 -l32
+Invoking command in '/home/wook/ros2/ros2_ws/build/osr_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/osr_bringup
+Invoked command in '/home/wook/ros2/ros2_ws/build/osr_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/osr_bringup

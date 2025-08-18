@@ -1,0 +1,51 @@
+[0.502s] Invoking command in '/home/wook/ros2/ros2_ws/build/osr_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wook/ros2/ros2_ws/src/osr-rover-code/ROS/osr_bringup -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/osr_bringup
+[0.751s] -- The C compiler identification is GNU 11.4.0
+[0.961s] -- The CXX compiler identification is GNU 11.4.0
+[0.983s] -- Detecting C compiler ABI info
+[1.203s] -- Detecting C compiler ABI info - done
+[1.221s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.221s] -- Detecting C compile features
+[1.221s] -- Detecting C compile features - done
+[1.223s] -- Detecting CXX compiler ABI info
+[1.444s] -- Detecting CXX compiler ABI info - done
+[1.462s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.462s] -- Detecting CXX compile features
+[1.462s] -- Detecting CXX compile features - done
+[1.465s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.673s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.763s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.857s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.859s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.859s] -- Added test 'lint_cmake' to check CMake code style
+[1.860s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.861s] -- Added test 'xmllint' to check XML markup files
+[1.862s] -- Configuring done
+[1.866s] -- Generating done
+[1.868s] -- Build files have been written to: /home/wook/ros2/ros2_ws/build/osr_bringup
+[1.877s] Invoked command in '/home/wook/ros2/ros2_ws/build/osr_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wook/ros2/ros2_ws/src/osr-rover-code/ROS/osr_bringup -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/osr_bringup
+[1.877s] Invoking command in '/home/wook/ros2/ros2_ws/build/osr_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/osr_bringup -- -j32 -l32
+[2.226s] Invoked command in '/home/wook/ros2/ros2_ws/build/osr_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/osr_bringup -- -j32 -l32
+[2.229s] Invoking command in '/home/wook/ros2/ros2_ws/build/osr_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/osr_bringup
+[2.935s] -- Install configuration: ""
+[2.937s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/launch
+[2.937s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/launch/.gitignore
+[2.937s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/launch/osr_launch.py
+[2.937s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/config
+[2.937s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/config/roboclaw_params.yaml
+[2.937s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/config/osr_params.yaml
+[2.937s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/ament_index/resource_index/package_run_dependencies/osr_bringup
+[2.937s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/ament_index/resource_index/parent_prefix_path/osr_bringup
+[2.937s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/environment/ament_prefix_path.sh
+[2.937s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/environment/ament_prefix_path.dsv
+[2.937s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/environment/path.sh
+[2.937s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/environment/path.dsv
+[2.938s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/local_setup.bash
+[2.938s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/local_setup.sh
+[2.945s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/local_setup.zsh
+[2.945s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/local_setup.dsv
+[2.945s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/package.dsv
+[2.945s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/ament_index/resource_index/packages/osr_bringup
+[2.945s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/cmake/osr_bringupConfig.cmake
+[2.945s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/cmake/osr_bringupConfig-version.cmake
+[2.945s] -- Installing: /home/wook/ros2/ros2_ws/install/osr_bringup/share/osr_bringup/package.xml
+[3.029s] Invoked command in '/home/wook/ros2/ros2_ws/build/osr_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/osr_bringup

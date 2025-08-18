@@ -1,0 +1,4 @@
+source;share/receive_theta/local_setup.bash
+source;share/receive_theta/local_setup.dsv
+source;share/receive_theta/local_setup.sh
+source;share/receive_theta/local_setup.zsh

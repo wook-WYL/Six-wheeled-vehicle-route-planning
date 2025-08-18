@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "arise_slam_mid360_msgs__py",
+		"source" : "/home/wook/ros2/ros2_ws/build/arise_slam_mid360_msgs/arise_slam_mid360_msgs__py"
+	}
+}

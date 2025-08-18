@@ -1,0 +1,18 @@
+Received signal: 11
+Stack trace (most recent call last) in thread 26020:
+#2    Object "/home/wook/ros2/ros2_ws/install/orbbec_camera/lib/libOrbbecSDK.so.1.10", at 0x79220e8b7668, in 
+#1    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x79222a04251f, in 
+#0    Object "/home/wook/ros2/ros2_ws/install/orbbec_camera/lib/liborbbec_camera.so", at 0x79222458de2f, in signalHandler(int)
+Received signal: 11
+Stack trace (most recent call last):
+#10   Object "[0xffffffffffffffff]", at 0xffffffffffffffff, in 
+#9    Object "/opt/ros/humble/lib/rclcpp_components/component_container", at 0x5f39dc0c9774, in 
+#8    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x79222a029e3f, in __libc_start_main
+#7    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x79222a029d8f, in 
+#6    Object "/opt/ros/humble/lib/rclcpp_components/component_container", at 0x5f39dc0c95d6, in 
+#5    Object "/opt/ros/humble/lib/librclcpp.so", at 0x79222a8adac0, in rclcpp::executors::SingleThreadedExecutor::spin()
+#4    Object "/opt/ros/humble/lib/librclcpp.so", at 0x79222a8a6512, in rclcpp::Executor::get_next_executable(rclcpp::AnyExecutable&, std::chrono::duration<long, std::ratio<1l, 1000000000l> >)
+#3    Object "/opt/ros/humble/lib/librclcpp.so", at 0x79222a8a3849, in rclcpp::Executor::wait_for_work(std::chrono::duration<long, std::ratio<1l, 1000000000l> >)
+#2    Object "/opt/ros/humble/lib/librclcpp.so", at 0x79222a8b0330, in 
+#1    Object "/lib/x86_64-linux-gnu/libc.so.6", at 0x79222a04251f, in 
+#0    Object "/home/wook/ros2/ros2_ws/install/orbbec_camera/lib/liborbbec_camera.so", at 0x79222458de2f, in signalHandler(int)

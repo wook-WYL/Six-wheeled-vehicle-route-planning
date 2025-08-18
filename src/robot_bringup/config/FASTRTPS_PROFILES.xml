@@ -1,0 +1,19 @@
+<!-- In robot_bringup/config/pc_fastdds_filter.xml -->
+<?xml version="1.0" encoding="UTF-8" ?>
+<profiles>
+    <participant profile_name="pc_profile" is_default_profile="true">
+        <rtps>
+            <topic_filters>
+                <mode>ALLOW</mode> 
+                <topics>
+                    <topic>rt/parameter_events</topic>
+                    <topic>rq/.*</topic>
+                    <topic>rr/.*</topic>
+                    <topic>rt/rosout</topic>
+                    <topic>rt/tf</topic>
+                    <topic>rt/tf_static</topic>
+                </topics>
+            </topic_filters>
+        </rtps>
+    </participant>
+</profiles>

@@ -2,10 +2,10 @@
 
 import os
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
-from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
-from launch_ros.actions import Node
+from launch_ros.actions import ComposableNodeContainer, LoadComposableNodes, Node
+from launch_ros.descriptions import ComposableNode
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
@@ -14,15 +14,16 @@ def generate_launch_description():
     # == 1. 路径与配置定义
     # =================================================================================
     bringup_dir = get_package_share_directory('robot_bringup')
-    # ... (获取其他包的路径) ...
     vehicle_simulator_dir = get_package_share_directory('vehicle_simulator')
     boundary_handler_dir = get_package_share_directory('boundary_handler')
     far_planner_dir = get_package_share_directory('far_planner')
     graph_decoder_dir = get_package_share_directory('graph_decoder')
     local_planner_dir = get_package_share_directory('local_planner')
-    orbbec_camera_dir = get_package_share_directory('orbbec_camera')
     
     # 加载所有YAML配置文件
+    camera_config = os.path.join(bringup_dir, 'config', 'orbbec_camera.yaml')
+    rtabmap_odom_config = os.path.join(bringup_dir, 'config', 'rtabmap_odom.yaml')
+    rtabmap_slam_config = os.path.join(bringup_dir, 'config', 'rtabmap_slam.yaml') # 建议为slam也创建一个
     local_planner_config = os.path.join(bringup_dir, 'config', 'local_planner.yaml')
     path_follower_config = os.path.join(bringup_dir, 'config', 'path_follower.yaml')
     terrain_analysis_config = os.path.join(bringup_dir, 'config', 'terrain_analysis.yaml')
@@ -38,144 +39,99 @@ def generate_launch_description():
     world_name_arg = DeclareLaunchArgument('world_name', default_value='garage', description='...')
     check_terrain_conn_arg = DeclareLaunchArgument('checkTerrainConn', default_value='true', description='...')
 
-
     # =================================================================================
-    # == 2. 硬件驱动层 (使用官方确认的参数)
+    # == 2. 创建一个共享的组件容器
     # =================================================================================
-    orbbec_camera_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(get_package_share_directory('orbbec_camera'), 'launch', 'gemini_330_series.launch.py')
-        ),
-        launch_arguments={
-            'camera_name': 'camera',
-            
-            # [关键] 禁用驱动端的点云生成
-            'enable_point_cloud': 'false',
-            'enable_colored_point_cloud': 'false',
-            
-            # [关键] 设置合理的帧率
-            'color_fps': '15',
-            'depth_fps': '15',
-            
-            # [关键] 启用IMU同步输出
-            'enable_sync_output_accel_gyro': 'true',
-            
-            # [关键] 启用深度图到彩色图的配准！
-            'depth_registration': 'true',
-            
-            # 确保相机发布内部的TF树
-            'publish_tf': 'true'
-        }.items()
+    shared_container = ComposableNodeContainer(
+        name='shared_container',
+        namespace='',
+        package='rclcpp_components',
+        executable='component_container_mt',
+        output='screen'
     )
 
+    # =================================================================================
+    # == 3. 定义并加载高带宽组件
+    # =================================================================================
+    load_composable_nodes = LoadComposableNodes(
+        target_container='shared_container',
+        composable_node_descriptions=[
+            # 3.1 相机组件
+            ComposableNode(
+                package='orbbec_camera',
+                plugin='orbbec_camera::OBCameraNodeDriver',
+                name='camera',
+                namespace='camera',
+                parameters=[camera_config]
+            ),
+            # 3.2 RTAB-Map视觉里程计组件
+            ComposableNode(
+                package='rtabmap_odom',
+                plugin='rtabmap_odom::RGBDOdometry',
+                name='rgbd_odometry',
+                parameters=[rtabmap_odom_config],
+                remappings=[
+                    ('rgb/image',       '/camera/color/image_raw'),
+                    ('depth/image',     '/camera/depth_to_color/image_raw'),
+                    ('rgb/camera_info', '/camera/color/camera_info'),
+                    ('imu',             '/camera/imu'),
+                    # [关键简化] 让 odom 直接发布 /registered_scan，省掉 adapter
+                    ('cloud',           '/registered_scan') 
+                ]
+            )
+        ]
+    )
 
     # =================================================================================
-    # == 3. 核心：传感器与SLAM层 (适配配准后的深度图)
+    # == 4. 定义独立运行的节点 (低带宽)
     # =================================================================================
     
-    # ... (静态TF发布者 base_link -> camera_link 和 base_link -> vehicle 保持不变) ...
-
-    rtabmap_odometry_node = Node(
-        package='rtabmap_odom',
-        executable='rgbd_odometry',
-        name='rgbd_odometry',
-        output='screen',
-        parameters=[{
-            'frame_id': 'base_link',
-            'odom_frame_id': 'odom',
-            'use_sim_time': LaunchConfiguration('use_sim_time'),
-            'approx_sync': True,
-            'approx_sync_max_interval': 0.05,
-            # 由于输入已经是配准好的，这里就不再需要RTAB-Map内部复杂的TF查找了
-        }],
-        remappings=[
-            # [最终修正] 订阅原始彩色图和“配准后”的深度图
-            ('rgb/image',       '/camera/color/image_raw'),
-            ('depth/image',     '/camera/depth_aligned_to_color/image_raw'), # <--- 关键修改！
-            ('rgb/camera_info', '/camera/color/camera_info'),
-            ('imu',             '/camera/imu') # <--- 使用标准的IMU话题 (需要确认)
-        ]
+    static_tf_base_to_camera = Node(
+        package='tf2_ros', executable='static_transform_publisher', name='static_tf_base_to_camera',
+        arguments=['0.157', '-0.262', '0.63', '0.0', '0.0', '0.0', 'base_link', 'camera_link']
+    )
+    
+    static_tf_base_to_vehicle = Node(
+        package='tf2_ros', executable='static_transform_publisher', name='static_tf_base_to_vehicle',
+        arguments=['0', '0', '0', '0', '0', '0', 'base_link', 'vehicle']
     )
 
     rtabmap_slam_node = Node(
-        package='rtabmap_slam',
-        executable='rtabmap',
-        name='rtabmap',
-        output='screen',
-        parameters=[{
-            'subscribe_odom_info': True, 
-            'frame_id': 'base_link', 
-            'map_frame_id': 'map', 
-            'use_sim_time': LaunchConfiguration('use_sim_time'), 
-            'approx_sync': False,
-            # 明确告诉它不要订阅图像
-            'subscribe_depth': False,
-            'subscribe_rgb': False,
-        }],
+        package='rtabmap_slam', executable='rtabmap', name='rtabmap', output='screen',
+        parameters=[rtabmap_slam_config],
         remappings=[('odom', '/odom')]
     )
-
-    sensor_scan_node = Node(
-        package='sensor_scan_generation',
-        executable='sensorScanGeneration',
-        name='sensorScanGeneration',
-        remappings=[
-            ('/state_estimation', '/odom'),
-            ('/registered_scan', '/registered_scan_raw') # <--- 关键修改！订阅来自rtabmap_odom的点云
-        ]
-        # 输出: /sensor_scan (点云在 sensor_at_scan 系) 和 /state_estimation_at_scan
-    )
     
-    # --- pointcloud_adapter_node 已被移除 ---
+    # --- sensor_scan_node 和 pointcloud_adapter_node 已被移除 ---
 
-    # =================================================================================
-    # == 3. 感知层 (现在输入来自 sensor_scan_node)
-    # =================================================================================
     terrain_analysis_node = Node(
-        package='terrain_analysis',
-        executable='terrainAnalysis',
-        name='terrainAnalysis',
+        package='terrain_analysis', executable='terrainAnalysis', name='terrainAnalysis',
         parameters=[terrain_analysis_config],
         remappings=[
-            ('/state_estimation', '/state_estimation_at_scan'),
-            ('/registered_scan', '/sensor_scan') # <--- 关键修改！订阅同步后的、位于机器人坐标系的点云
+            ('/state_estimation', '/odom'), # <--- 简化！直接使用 odom
+            ('/registered_scan', '/registered_scan') # <--- 简化！直接使用 odom 发布的点云
         ]
     )
     
     terrain_analysis_ext_node = Node(
-        package='terrain_analysis_ext',
-        executable='terrainAnalysisExt',
-        name='terrainAnalysisExt',
-        output='screen',
-        parameters=[
-            terrain_analysis_ext_config,
-            {'checkTerrainConn': LaunchConfiguration('checkTerrainConn')}
-        ],
+        package='terrain_analysis_ext', executable='terrainAnalysisExt', name='terrainAnalysisExt', output='screen',
+        parameters=[terrain_analysis_ext_config, {'checkTerrainConn': LaunchConfiguration('checkTerrainConn')}],
         remappings=[
-            ('/state_estimation', '/state_estimation_at_scan'),
-            ('/registered_scan', '/sensor_scan') # <--- 关键修改！
+            ('/state_estimation', '/odom'), # <--- 简化！
+            ('/registered_scan', '/registered_scan') # <--- 简化！
         ]
     )
 
-    # =================================================================================
-    # == 4. 全局规划层 (Route Planner)
-    # =================================================================================
     boundary_handler_node = Node(
-        package='boundary_handler',
-        executable='boundary_handler',
-        name='boundary_handler',
+        package='boundary_handler', executable='boundary_handler', name='boundary_handler',
         parameters=[boundary_handler_config, {'folder_path': os.path.join(far_planner_dir, 'data', '')}]
     )
 
     far_planner_node = Node(
-        package='far_planner',
-        executable='far_planner',
-        name='far_planner',
+        package='far_planner', executable='far_planner', name='far_planner',
         parameters=[far_planner_config],
         remappings=[
-            ('/odom_world', '/state_estimation_at_scan'),
-            # '/terrain_cloud' 在旧系统中被重映射到了 '/terrain_map_ext'
-            # 我们推断 terrain_analysis_ext 会发布这个话题
+            ('/odom_world', '/odom'), # <--- 简化！
             ('/terrain_cloud', '/terrain_map_ext'), 
             ('/scan_cloud', '/terrain_map'),
             ('/terrain_local_cloud', '/registered_scan')
@@ -183,51 +139,24 @@ def generate_launch_description():
     )
 
     graph_decoder_node = Node(
-        package='graph_decoder',
-        executable='graph_decoder',
-        name='graph_decoder',
+        package='graph_decoder', executable='graph_decoder', name='graph_decoder',
         parameters=[graph_decoder_config]
     )
 
-    # =================================================================================
-    # == 5. 局部规划与控制层
-    # =================================================================================
     local_planner_node = Node(
-        package='local_planner',
-        executable='localPlanner',
-        name='local_planner',
-        parameters=[
-            local_planner_config,
-            {
-                'pathFolder': os.path.join(local_planner_dir, 'paths'),
-                'autonomyMode': True # 在全局规划时，局部规划器应处于自主模式
-            }
-        ],
-        remappings=[
-            ('/state_estimation', '/state_estimation_at_scan')
-        ]
+        package='local_planner', executable='localPlanner', name='local_planner',
+        parameters=[local_planner_config, {'pathFolder': os.path.join(local_planner_dir, 'paths'), 'autonomyMode': True}],
+        remappings=[('/state_estimation', '/odom')] # <--- 简化！
     )
 
     path_follower_node = Node(
-        package='local_planner',
-        executable='pathFollower',
-        name='path_follower',
-        parameters=[
-            path_follower_config,
-            {'operating_mode': 'autonomous'} # 控制器也应处于自主模式
-        ],
-        remappings=[
-            ('/state_estimation', '/state_estimation_at_scan')
-        ]
+        package='local_planner', executable='pathFollower', name='path_follower',
+        parameters=[path_follower_config, {'operating_mode': 'autonomous'}],
+        remappings=[('/state_estimation', '/odom')] # <--- 简化！
     )
-    # ######################################################################
-    # ## 7. 实验评估与可视化工具
-    # ######################################################################
+    
     visualization_tools_node = Node(
-        package='visualization_tools',
-        executable='visualizationTools',
-        name='visualizationTools',
-        output='screen',
+        package='visualization_tools', executable='visualizationTools', name='visualizationTools', output='screen',
         parameters=[
             visualization_tools_config,
             {
@@ -237,27 +166,26 @@ def generate_launch_description():
                 'mapFile': PathJoinSubstitution([vehicle_simulator_dir, 'mesh', LaunchConfiguration('world_name'), 'map.ply']),
             }
         ],
-        remappings=[
-             # 这里的位姿来源已是正确的
-            ('/state_estimation', '/state_estimation_at_scan'),
-        ]
+        remappings=[('/state_estimation', '/odom')] # <--- 简化！
     )
 
     rviz_node = Node(
-        package='rviz2',
-        executable='rviz2',
-        name='rviz2',
+        package='rviz2', executable='rviz2', name='rviz2',
         arguments=['-d', rviz_config_file],
     )
 
+    # =================================================================================
+    # == 5. 最终的启动描述
+    # =================================================================================
     return LaunchDescription([
-        orbbec_camera_launch,
         use_sim_time_arg,
         world_name_arg,
         check_terrain_conn_arg,
-        rtabmap_odometry_node,
+        shared_container,
+        load_composable_nodes,
+        static_tf_base_to_camera,
+        static_tf_base_to_vehicle,
         rtabmap_slam_node,
-        sensor_scan_node,
         terrain_analysis_node,
         terrain_analysis_ext_node,
         boundary_handler_node,

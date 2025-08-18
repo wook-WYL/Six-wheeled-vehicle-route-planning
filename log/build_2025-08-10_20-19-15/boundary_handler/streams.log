@@ -1,0 +1,58 @@
+[0.155s] Invoking command in '/home/wook/ros2/ros2_ws/build/boundary_handler': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/boundary_handler -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/boundary_handler
+[1.156s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.156s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.156s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.156s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.156s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.156s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.156s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.156s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.157s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.157s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.157s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.157s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[1.157s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.157s] -- Found visibility_graph_msg: 0.0.1 (/home/wook/ros2/ros2_ws/install/visibility_graph_msg/share/visibility_graph_msg/cmake)
+[1.157s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.157s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.447s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.463s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.463s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[1.647s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.659s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.670s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.892s] -- Found Qhull version 8.0.2
+[2.143s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.473s] -- looking for PCL_COMMON
+[2.473s] -- looking for PCL_KDTREE
+[2.473s] -- looking for PCL_OCTREE
+[2.473s] -- looking for PCL_SEARCH
+[2.474s] -- looking for PCL_SAMPLE_CONSENSUS
+[2.474s] -- looking for PCL_FILTERS
+[2.475s] -- looking for PCL_2D
+[2.476s] -- looking for PCL_GEOMETRY
+[2.476s] -- looking for PCL_IO
+[2.476s] -- looking for PCL_FEATURES
+[2.476s] -- looking for PCL_ML
+[2.477s] -- looking for PCL_SEGMENTATION
+[2.477s] -- looking for PCL_VISUALIZATION
+[2.478s] -- looking for PCL_SURFACE
+[2.481s] -- looking for PCL_REGISTRATION
+[2.481s] -- looking for PCL_KEYPOINTS
+[2.481s] -- looking for PCL_TRACKING
+[2.481s] -- looking for PCL_RECOGNITION
+[2.481s] -- looking for PCL_STEREO
+[2.481s] -- looking for PCL_APPS
+[2.482s] -- looking for PCL_IN_HAND_SCANNER
+[2.482s] -- looking for PCL_MODELER
+[2.482s] -- looking for PCL_POINT_CLOUD_EDITOR
+[2.483s] -- looking for PCL_OUTOFCORE
+[2.483s] -- looking for PCL_PEOPLE
+[2.496s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[2.688s] -- Configuring done
+[2.794s] -- Generating done
+[2.828s] -- Build files have been written to: /home/wook/ros2/ros2_ws/build/boundary_handler
+[2.878s] Invoked command in '/home/wook/ros2/ros2_ws/build/boundary_handler' returned '0': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/boundary_handler -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/boundary_handler
+[2.883s] Invoking command in '/home/wook/ros2/ros2_ws/build/boundary_handler': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/boundary_handler -- -j32 -l32
+[2.964s] [35m[1mConsolidate compiler generated dependencies of target boundary_handler[0m
+[3.028s] [ 50%] [32mBuilding CXX object CMakeFiles/boundary_handler.dir/src/graph_extractor.cpp.o[0m

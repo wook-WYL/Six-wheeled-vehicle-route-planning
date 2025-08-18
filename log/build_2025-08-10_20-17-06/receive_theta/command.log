@@ -1,0 +1,3 @@
+Invoking command in '/home/wook/ros2/ros2_ws/build/receive_theta': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/receive_theta -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/receive_theta
+Invoked command in '/home/wook/ros2/ros2_ws/build/receive_theta' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/receive_theta -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/receive_theta
+Invoking command in '/home/wook/ros2/ros2_ws/build/receive_theta': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/receive_theta -- -j32 -l32

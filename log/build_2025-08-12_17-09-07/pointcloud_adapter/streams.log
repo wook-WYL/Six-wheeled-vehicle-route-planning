@@ -1,0 +1,25 @@
+[0.011s] Invoking command in '/home/wook/ros2/ros2_ws/build/pointcloud_adapter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/osr_control:/home/wook/ros2/ros2_ws/install/diablo_teleop:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/pointcloud_adapter -- -j32 -l32
+[0.142s] [ 50%] [32mBuilding CXX object CMakeFiles/adapter_node.dir/src/pointcloud_adapter.cpp.o[0m
+[7.899s] [100%] [32m[1mLinking CXX executable adapter_node[0m
+[8.144s] [100%] Built target adapter_node
+[8.152s] Invoked command in '/home/wook/ros2/ros2_ws/build/pointcloud_adapter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/osr_control:/home/wook/ros2/ros2_ws/install/diablo_teleop:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/pointcloud_adapter -- -j32 -l32
+[8.159s] Invoking command in '/home/wook/ros2/ros2_ws/build/pointcloud_adapter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/osr_control:/home/wook/ros2/ros2_ws/install/diablo_teleop:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/pointcloud_adapter
+[8.164s] -- Install configuration: "Release"
+[8.164s] -- Execute custom install script
+[8.165s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/lib/pointcloud_adapter/adapter_node
+[8.165s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/ament_index/resource_index/package_run_dependencies/pointcloud_adapter
+[8.165s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/ament_index/resource_index/parent_prefix_path/pointcloud_adapter
+[8.165s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/environment/ament_prefix_path.sh
+[8.166s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/environment/ament_prefix_path.dsv
+[8.166s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/environment/path.sh
+[8.166s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/environment/path.dsv
+[8.166s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/local_setup.bash
+[8.166s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/local_setup.sh
+[8.166s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/local_setup.zsh
+[8.166s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/local_setup.dsv
+[8.166s] -- Symlinking: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/package.dsv
+[8.174s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/ament_index/resource_index/packages/pointcloud_adapter
+[8.174s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/cmake/pointcloud_adapterConfig.cmake
+[8.174s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/cmake/pointcloud_adapterConfig-version.cmake
+[8.174s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/pointcloud_adapter/share/pointcloud_adapter/package.xml
+[8.176s] Invoked command in '/home/wook/ros2/ros2_ws/build/pointcloud_adapter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/osr_control:/home/wook/ros2/ros2_ws/install/diablo_teleop:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/pointcloud_adapter

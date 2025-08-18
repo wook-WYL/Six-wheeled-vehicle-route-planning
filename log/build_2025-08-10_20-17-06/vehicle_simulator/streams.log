@@ -1,0 +1,9 @@
+[0.011s] Invoking command in '/home/wook/ros2/ros2_ws/build/vehicle_simulator': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/vehicle_simulator -- -j32 -l32
+[0.601s] [ 25%] [32mBuilding CXX object CMakeFiles/sim_image_repub.dir/src/sim_image_repub.cpp.o[0m
+[0.601s] [ 50%] [32mBuilding CXX object CMakeFiles/vehicleSimulator.dir/src/vehicleSimulator.cpp.o[0m
+[10.646s] [ 75%] [32m[1mLinking CXX executable sim_image_repub[0m
+[10.710s] /usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.3.4
+[10.711s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.3.4
+[10.887s] [ 75%] Built target sim_image_repub
+[15.785s] [100%] [32m[1mLinking CXX executable vehicleSimulator[0m
+[16.267s] [100%] Built target vehicleSimulator

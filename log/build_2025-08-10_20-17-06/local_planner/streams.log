@@ -1,0 +1,6 @@
+[0.092s] Invoking command in '/home/wook/ros2/ros2_ws/build/local_planner': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/ception_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs/lib:/home/wook/ros2/ros2_ws/install/ception_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/ception_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/local_planner -- -j32 -l32
+[0.675s] [ 25%] [32m[1mLinking CXX executable pathFollower[0m
+[0.675s] [ 50%] [32mBuilding CXX object CMakeFiles/localPlanner.dir/src/localPlanner.cpp.o[0m
+[1.704s] [ 75%] Built target pathFollower
+[24.633s] [100%] [32m[1mLinking CXX executable localPlanner[0m
+[25.058s] [100%] Built target localPlanner

@@ -1,0 +1,8 @@
+[0.395s] Invoking command in '/home/wook/ros2/ros2_ws/build/terrain_analysis': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/terrain_analysis -- -j32 -l32
+[0.717s] [ 50%] [32mBuilding CXX object CMakeFiles/terrainAnalysis.dir/src/terrainAnalysis.cpp.o[0m
+[7.850s] [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis/src/terrainAnalysis.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[7.850s] [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis/src/terrainAnalysis.cpp:485:43:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K&&[m[K’ within ‘[01m[K||[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[7.850s]   485 |                 if ([01;35m[Kangle4 > minDyObsVFOV && angle4 < maxDyObsVFOV[m[K || fabs(pointZ4) < absDyObsRelZThre) {
+[7.850s]       |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[20.441s] [100%] [32m[1mLinking CXX executable terrainAnalysis[0m
+[20.922s] [100%] Built target terrainAnalysis

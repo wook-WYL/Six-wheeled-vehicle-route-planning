@@ -1,0 +1,68 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from arise_slam_mid360_msgs/msg/OptimizationStats.msg
+// generated code does not contain a copyright notice
+
+#include "arise_slam_mid360_msgs/msg/IterationStats.idl"
+#include "std_msgs/msg/Header.idl"
+
+module arise_slam_mid360_msgs {
+  module msg {
+    struct OptimizationStats {
+      std_msgs::msg::Header header;
+
+      int32 laser_cloud_surf_from_map_num;
+
+      int32 laser_cloud_corner_from_map_num;
+
+      int32 laser_cloud_surf_stack_num;
+
+      int32 laser_cloud_corner_stack_num;
+
+      double total_translation;
+
+      double total_rotation;
+
+      double translation_from_last;
+
+      double rotation_from_last;
+
+      double time_elapsed;
+
+      double latency;
+
+      int32 n_iterations;
+
+      double average_distance;
+
+      double uncertainty_x;
+
+      double uncertainty_y;
+
+      double uncertainty_z;
+
+      double uncertainty_roll;
+
+      double uncertainty_pitch;
+
+      double uncertainty_yaw;
+
+      int32 plane_match_success;
+
+      int32 plane_no_enough_neighbor;
+
+      int32 plane_neighbor_too_far;
+
+      int32 plane_badpca_structure;
+
+      int32 plane_invalid_numerical;
+
+      int32 plane_mse_too_large;
+
+      int32 plane_unknown;
+
+      int32 prediction_source;
+
+      sequence<arise_slam_mid360_msgs::msg::IterationStats> iterations;
+    };
+  };
+};

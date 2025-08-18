@@ -1,0 +1,974 @@
+[0.051s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'osr-rover-code']
+[0.051s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['osr-rover-code'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7b063802b760>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b06381d9060>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b06381d9060>>)
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.135s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/wook/ros2/ros2_ws'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(Log) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(Log) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(Log) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(Log) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(Log) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(Log) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(Log) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(Log) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(Log) by extension 'ros'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(Log) by extensions ['cmake', 'python']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(Log) by extension 'cmake'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(Log) by extension 'python'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(Log) by extensions ['python_setup_py']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(Log) by extension 'python_setup_py'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2) by extension 'ignore_ament_install'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2) by extensions ['colcon_pkg']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2) by extension 'colcon_pkg'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2) by extensions ['colcon_meta']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2) by extension 'ros'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2) by extensions ['cmake', 'python']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2) by extension 'cmake'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2) by extension 'python'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2) by extensions ['python_setup_py']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2) by extension 'python_setup_py'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs) by extension 'ignore_ament_install'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs) by extensions ['colcon_pkg']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs) by extension 'colcon_pkg'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs) by extensions ['colcon_meta']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs) by extension 'ros'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs) by extensions ['cmake', 'python']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs) by extension 'cmake'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs) by extension 'python'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs) by extensions ['python_setup_py']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs) by extension 'python_setup_py'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs/images) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs/images) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs/images) by extension 'ignore_ament_install'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs/images) by extensions ['colcon_pkg']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs/images) by extension 'colcon_pkg'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs/images) by extensions ['colcon_meta']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs/images) by extension 'colcon_meta'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs/images) by extensions ['ros']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs/images) by extension 'ros'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs/images) by extensions ['cmake', 'python']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs/images) by extension 'cmake'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs/images) by extension 'python'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs/images) by extensions ['python_setup_py']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/docs/images) by extension 'python_setup_py'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera) by extension 'ignore_ament_install'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera) by extensions ['colcon_pkg']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera) by extension 'colcon_pkg'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera) by extensions ['colcon_meta']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera) by extension 'colcon_meta'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera) by extensions ['ros']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera) by extension 'ros'
+[0.145s] DEBUG:colcon.colcon_core.package_identification:Package 'src/OrbbecSDK_ROS2/orbbec_camera' with type 'ros.ament_cmake' and name 'orbbec_camera'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera_msgs) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera_msgs) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera_msgs) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera_msgs) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera_msgs) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera_msgs) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera_msgs) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_camera_msgs) by extension 'ros'
+[0.146s] DEBUG:colcon.colcon_core.package_identification:Package 'src/OrbbecSDK_ROS2/orbbec_camera_msgs' with type 'ros.ament_cmake' and name 'orbbec_camera_msgs'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_description) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_description) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_description) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_description) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_description) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_description) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_description) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_description) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/OrbbecSDK_ROS2/orbbec_description) by extension 'ros'
+[0.146s] DEBUG:colcon.colcon_core.package_identification:Package 'src/OrbbecSDK_ROS2/orbbec_description' with type 'ros.ament_cmake' and name 'orbbec_description'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup) by extension 'ros'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup) by extensions ['cmake', 'python']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup) by extension 'cmake'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup) by extension 'python'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup) by extensions ['python_setup_py']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup) by extension 'python_setup_py'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/Log) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/Log) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/Log) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/Log) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/Log) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/Log) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/Log) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/Log) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/Log) by extension 'ros'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/Log) by extensions ['cmake', 'python']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/Log) by extension 'cmake'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/Log) by extension 'python'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/Log) by extensions ['python_setup_py']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/Log) by extension 'python_setup_py'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/base_station) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/base_station) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/base_station) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/base_station) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/base_station) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/base_station) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/base_station) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/base_station) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/base_station) by extension 'ros'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/base_station) by extensions ['cmake', 'python']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/base_station) by extension 'cmake'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/base_station) by extension 'python'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/base_station) by extensions ['python_setup_py']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/base_station) by extension 'python_setup_py'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/img) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/img) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/img) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/img) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/img) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/img) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/img) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/img) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/img) by extension 'ros'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/img) by extensions ['cmake', 'python']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/img) by extension 'cmake'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/img) by extension 'python'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/img) by extensions ['python_setup_py']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/img) by extension 'python_setup_py'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/launch) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/launch) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/launch) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/launch) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/launch) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/launch) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/launch) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/launch) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/launch) by extension 'ros'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/launch) by extensions ['cmake', 'python']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/launch) by extension 'cmake'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/launch) by extension 'python'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/launch) by extensions ['python_setup_py']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/launch) by extension 'python_setup_py'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/sensor_brackets) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/sensor_brackets) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/sensor_brackets) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/sensor_brackets) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/sensor_brackets) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/sensor_brackets) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/sensor_brackets) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/sensor_brackets) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/sensor_brackets) by extension 'ros'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/sensor_brackets) by extensions ['cmake', 'python']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/sensor_brackets) by extension 'cmake'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/sensor_brackets) by extension 'python'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/sensor_brackets) by extensions ['python_setup_py']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/sensor_brackets) by extension 'python_setup_py'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src) by extension 'ros'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src) by extensions ['cmake', 'python']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src) by extension 'cmake'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src) by extension 'python'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src) by extensions ['python_setup_py']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src) by extension 'python_setup_py'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy) by extension 'ros'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy) by extensions ['cmake', 'python']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy) by extension 'cmake'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy) by extension 'python'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy) by extensions ['python_setup_py']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy) by extension 'python_setup_py'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner) by extension 'ros'
+[0.150s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner' with type 'ros.ament_cmake' and name 'local_planner'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/sensor_scan_generation) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/sensor_scan_generation) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/sensor_scan_generation) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/sensor_scan_generation) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/sensor_scan_generation) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/sensor_scan_generation) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/sensor_scan_generation) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/sensor_scan_generation) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/sensor_scan_generation) by extension 'ros'
+[0.150s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/base_autonomy/sensor_scan_generation' with type 'ros.ament_cmake' and name 'sensor_scan_generation'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis) by extension 'ros'
+[0.151s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis' with type 'ros.ament_cmake' and name 'terrain_analysis'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis_ext) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis_ext) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis_ext) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis_ext) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis_ext) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis_ext) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis_ext) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis_ext) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis_ext) by extension 'ros'
+[0.152s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis_ext' with type 'ros.ament_cmake' and name 'terrain_analysis_ext'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/vehicle_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/vehicle_simulator) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/vehicle_simulator) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/vehicle_simulator) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/vehicle_simulator) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/vehicle_simulator) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/vehicle_simulator) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/vehicle_simulator) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/vehicle_simulator) by extension 'ros'
+[0.153s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/base_autonomy/vehicle_simulator' with type 'ros.ament_cmake' and name 'vehicle_simulator'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/visualization_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/visualization_tools) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/visualization_tools) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/visualization_tools) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/visualization_tools) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/visualization_tools) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/visualization_tools) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/visualization_tools) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/visualization_tools) by extension 'ros'
+[0.154s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/base_autonomy/visualization_tools' with type 'ros.ament_cmake' and name 'visualization_tools'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/waypoint_example) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/waypoint_example) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/waypoint_example) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/waypoint_example) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/waypoint_example) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/waypoint_example) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/waypoint_example) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/waypoint_example) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/base_autonomy/waypoint_example) by extension 'ros'
+[0.154s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/base_autonomy/waypoint_example' with type 'ros.ament_cmake' and name 'waypoint_example'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner) by extension 'ros'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner) by extensions ['cmake', 'python']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner) by extension 'cmake'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner) by extension 'python'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner) by extensions ['python_setup_py']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner) by extension 'python_setup_py'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner/tare_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner/tare_planner) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner/tare_planner) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner/tare_planner) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner/tare_planner) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner/tare_planner) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner/tare_planner) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner/tare_planner) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/exploration_planner/tare_planner) by extension 'ros'
+[0.156s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/exploration_planner/tare_planner' with type 'ros.ament_cmake' and name 'tare_planner'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner) by extension 'ros'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner) by extensions ['cmake', 'python']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner) by extension 'cmake'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner) by extension 'python'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner) by extensions ['python_setup_py']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner) by extension 'python_setup_py'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/boundary_handler) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/boundary_handler) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/boundary_handler) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/boundary_handler) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/boundary_handler) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/boundary_handler) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/boundary_handler) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/boundary_handler) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/boundary_handler) by extension 'ros'
+[0.157s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/route_planner/boundary_handler' with type 'ros.ament_cmake' and name 'boundary_handler'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/far_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/far_planner) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/far_planner) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/far_planner) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/far_planner) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/far_planner) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/far_planner) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/far_planner) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/far_planner) by extension 'ros'
+[0.158s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/route_planner/far_planner' with type 'ros.ament_cmake' and name 'far_planner'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/graph_decoder) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/graph_decoder) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/graph_decoder) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/graph_decoder) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/graph_decoder) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/graph_decoder) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/graph_decoder) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/graph_decoder) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/graph_decoder) by extension 'ros'
+[0.158s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/route_planner/graph_decoder' with type 'ros.ament_cmake' and name 'graph_decoder'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/visibility_graph_msg) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/visibility_graph_msg) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/visibility_graph_msg) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/visibility_graph_msg) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/visibility_graph_msg) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/visibility_graph_msg) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/visibility_graph_msg) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/visibility_graph_msg) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/route_planner/visibility_graph_msg) by extension 'ros'
+[0.159s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/route_planner/visibility_graph_msg' with type 'ros.ament_cmake' and name 'visibility_graph_msg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam) by extension 'ros'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam) by extensions ['cmake', 'python']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam) by extension 'cmake'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam) by extension 'python'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam) by extensions ['python_setup_py']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam) by extension 'python_setup_py'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360) by extension 'ros'
+[0.160s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360' with type 'ros.ament_cmake' and name 'arise_slam_mid360'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360_msgs) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360_msgs) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360_msgs) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360_msgs) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360_msgs) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360_msgs) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360_msgs) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360_msgs) by extension 'ros'
+[0.161s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360_msgs' with type 'ros.ament_cmake' and name 'arise_slam_mid360_msgs'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/Sophus) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/Sophus) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/Sophus) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/Sophus) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/Sophus) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/Sophus) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/Sophus) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/Sophus) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/Sophus) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/Sophus) ignored
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/gtsam) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/gtsam) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/gtsam) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/gtsam) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/gtsam) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/gtsam) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/gtsam) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/gtsam) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/gtsam) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/dependency/gtsam) ignored
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/orbbec_rgb_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/orbbec_rgb_publisher) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/orbbec_rgb_publisher) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/orbbec_rgb_publisher) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/orbbec_rgb_publisher) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/orbbec_rgb_publisher) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/orbbec_rgb_publisher) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/orbbec_rgb_publisher) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/orbbec_rgb_publisher) by extension 'ros'
+[0.162s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/slam/orbbec_rgb_publisher' with type 'ros.ament_cmake' and name 'orbbec_rgb_publisher'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter) by extension 'ros'
+[0.163s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter' with type 'ros.ament_cmake' and name 'pointcloud_adapter'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities) by extension 'ros'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities) by extensions ['cmake', 'python']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities) by extension 'cmake'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities) by extension 'python'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities) by extensions ['python_setup_py']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities) by extension 'python_setup_py'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/ROS-TCP-Endpoint) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/ROS-TCP-Endpoint) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/ROS-TCP-Endpoint) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/ROS-TCP-Endpoint) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/ROS-TCP-Endpoint) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/ROS-TCP-Endpoint) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/ROS-TCP-Endpoint) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/ROS-TCP-Endpoint) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/ROS-TCP-Endpoint) by extension 'ros'
+[0.163s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/utilities/ROS-TCP-Endpoint' with type 'ros.ament_python' and name 'ros_tcp_endpoint'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception/diablo_body) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception/diablo_body) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception/diablo_body) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception/diablo_body) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception/diablo_body) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception/diablo_body) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception/diablo_body) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception/diablo_body) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception/diablo_body) by extension 'ros'
+[0.165s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception/diablo_body' with type 'ros.ament_cmake' and name 'diablo_body'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common/diablo_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common/diablo_utils) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common/diablo_utils) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common/diablo_utils) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common/diablo_utils) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common/diablo_utils) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common/diablo_utils) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common/diablo_utils) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common/diablo_utils) by extension 'ros'
+[0.165s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common/diablo_utils' with type 'ros.ament_cmake' and name 'diablo_utils'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_ctrl) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_ctrl) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_ctrl) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_ctrl) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_ctrl) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_ctrl) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_ctrl) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_ctrl) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_ctrl) by extension 'ros'
+[0.167s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_ctrl' with type 'ros.ament_cmake' and name 'diablo_ctrl'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop) by extension 'ros'
+[0.167s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop' with type 'ros.ament_python' and name 'diablo_teleop'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop_joy) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop_joy) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop_joy) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop_joy) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop_joy) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop_joy) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop_joy) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop_joy) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop_joy) by extension 'ros'
+[0.168s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop_joy' with type 'ros.ament_cmake' and name 'diablo_teleop_joy'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/ception_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/ception_msgs) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/ception_msgs) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/ception_msgs) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/ception_msgs) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/ception_msgs) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/ception_msgs) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/ception_msgs) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/ception_msgs) by extension 'ros'
+[0.169s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/ception_msgs' with type 'ros.ament_cmake' and name 'ception_msgs'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/motion_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/motion_msgs) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/motion_msgs) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/motion_msgs) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/motion_msgs) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/motion_msgs) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/motion_msgs) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/motion_msgs) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/motion_msgs) by extension 'ros'
+[0.169s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/motion_msgs' with type 'ros.ament_cmake' and name 'motion_msgs'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/docs_en) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/docs_en) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/docs_en) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/docs_en) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/docs_en) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/docs_en) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/docs_en) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/docs_en) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/docs_en) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/docs_en) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/docs_en) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/docs_en) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/docs_en) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/docs_en) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/img) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/img) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/img) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/img) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/img) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/img) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/img) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/img) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/img) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/img) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/img) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/img) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/img) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/docs/img) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/domain_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/domain_bridge) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/domain_bridge) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/domain_bridge) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/domain_bridge) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/domain_bridge) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/domain_bridge) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/domain_bridge) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/domain_bridge) by extension 'ros'
+[0.177s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/utilities/domain_bridge' with type 'ros.ament_cmake' and name 'domain_bridge'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/goalpoint_rviz_plugin) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/goalpoint_rviz_plugin) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/goalpoint_rviz_plugin) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/goalpoint_rviz_plugin) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/goalpoint_rviz_plugin) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/goalpoint_rviz_plugin) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/goalpoint_rviz_plugin) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/goalpoint_rviz_plugin) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/goalpoint_rviz_plugin) by extension 'ros'
+[0.178s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/utilities/goalpoint_rviz_plugin' with type 'ros.ament_cmake' and name 'goalpoint_rviz_plugin'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/livox_ros_driver2) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/livox_ros_driver2) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/livox_ros_driver2) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/livox_ros_driver2) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/livox_ros_driver2) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/livox_ros_driver2) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/livox_ros_driver2) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/livox_ros_driver2) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/livox_ros_driver2) by extension 'ros'
+[0.179s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/utilities/livox_ros_driver2' with type 'ros.ament_cmake' and name 'livox_ros_driver2'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/receive_theta) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/receive_theta) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/receive_theta) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/receive_theta) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/receive_theta) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/receive_theta) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/receive_theta) by extension 'colcon_meta'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/receive_theta) by extensions ['ros']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/receive_theta) by extension 'ros'
+[0.180s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/utilities/receive_theta' with type 'ros.ament_cmake' and name 'receive_theta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin) by extension 'ros'
+[0.180s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin' with type 'ros.ament_cmake' and name 'teleop_rviz_plugin'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin_plus) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin_plus) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin_plus) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin_plus) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin_plus) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin_plus) by extensions ['colcon_meta']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin_plus) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin_plus) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin_plus) by extension 'ros'
+[0.181s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin_plus' with type 'ros.ament_cmake' and name 'teleop_rviz_plugin_plus'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/waypoint_rviz_plugin) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/waypoint_rviz_plugin) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/waypoint_rviz_plugin) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/waypoint_rviz_plugin) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/waypoint_rviz_plugin) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/waypoint_rviz_plugin) by extensions ['colcon_meta']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/waypoint_rviz_plugin) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/waypoint_rviz_plugin) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomy_stack_diablo_setup/src/utilities/waypoint_rviz_plugin) by extension 'ros'
+[0.182s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomy_stack_diablo_setup/src/utilities/waypoint_rviz_plugin' with type 'ros.ament_cmake' and name 'waypoint_rviz_plugin'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code) by extension 'ros'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code) by extensions ['cmake', 'python']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code) by extension 'cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code) by extension 'python'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code) by extensions ['python_setup_py']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code) by extension 'python_setup_py'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS) by extension 'ros'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS) by extensions ['cmake', 'python']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS) by extension 'cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS) by extension 'python'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS) by extensions ['python_setup_py']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS) by extension 'python_setup_py'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_bringup) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_bringup) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_bringup) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_bringup) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_bringup) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_bringup) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_bringup) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_bringup) by extension 'ros'
+[0.183s] DEBUG:colcon.colcon_core.package_identification:Package 'src/osr-rover-code/ROS/osr_bringup' with type 'ros.ament_cmake' and name 'osr_bringup'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_control) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_control) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_control) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_control) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_control) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_control) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_control) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_control) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_control) by extension 'ros'
+[0.184s] DEBUG:colcon.colcon_core.package_identification:Package 'src/osr-rover-code/ROS/osr_control' with type 'ros.ament_python' and name 'osr_control'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_gazebo) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_gazebo) by extension 'ignore_ament_install'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_gazebo) by extensions ['colcon_pkg']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_gazebo) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_gazebo) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_gazebo) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_gazebo) by extensions ['ros']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_gazebo) by extension 'ros'
+[0.184s] DEBUG:colcon.colcon_core.package_identification:Package 'src/osr-rover-code/ROS/osr_gazebo' with type 'ros.ament_cmake' and name 'osr_gazebo'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_interfaces) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_interfaces) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_interfaces) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_interfaces) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_interfaces) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_interfaces) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_interfaces) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/ROS/osr_interfaces) by extension 'ros'
+[0.185s] DEBUG:colcon.colcon_core.package_identification:Package 'src/osr-rover-code/ROS/osr_interfaces' with type 'ros.ament_cmake' and name 'osr_interfaces'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/config) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/config) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/config) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/config) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/config) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/config) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/config) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/config) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/config) by extension 'ros'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/config) by extensions ['cmake', 'python']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/config) by extension 'cmake'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/config) by extension 'python'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/config) by extensions ['python_setup_py']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/config) by extension 'python_setup_py'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/init_scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/init_scripts) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/init_scripts) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/init_scripts) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/init_scripts) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/init_scripts) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/init_scripts) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/init_scripts) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/init_scripts) by extension 'ros'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/init_scripts) by extensions ['cmake', 'python']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/init_scripts) by extension 'cmake'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/init_scripts) by extension 'python'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/init_scripts) by extensions ['python_setup_py']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/init_scripts) by extension 'python_setup_py'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/scripts) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/scripts) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/scripts) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/scripts) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/scripts) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/scripts) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/scripts) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/scripts) by extension 'ros'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/scripts) by extensions ['cmake', 'python']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/scripts) by extension 'cmake'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/scripts) by extension 'python'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/scripts) by extensions ['python_setup_py']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/scripts) by extension 'python_setup_py'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup) by extension 'ros'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup) by extensions ['cmake', 'python']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup) by extension 'cmake'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup) by extension 'python'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup) by extensions ['python_setup_py']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup) by extension 'python_setup_py'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup/images) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup/images) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup/images) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup/images) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup/images) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup/images) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup/images) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup/images) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup/images) by extension 'ros'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup/images) by extensions ['cmake', 'python']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup/images) by extension 'cmake'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup/images) by extension 'python'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup/images) by extensions ['python_setup_py']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/osr-rover-code/setup/images) by extension 'python_setup_py'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ros'
+[0.187s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_bringup' with type 'ros.ament_cmake' and name 'robot_bringup'
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.187s] WARNING:colcon.colcon_core.package_selection:ignoring unknown package 'osr-rover-code' in --packages-select
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'arise_slam_mid360_msgs' in 'src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360_msgs'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ception_msgs' in 'src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/ception_msgs'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'domain_bridge' in 'src/autonomy_stack_diablo_setup/src/utilities/domain_bridge'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'goalpoint_rviz_plugin' in 'src/autonomy_stack_diablo_setup/src/utilities/goalpoint_rviz_plugin'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'livox_ros_driver2' in 'src/autonomy_stack_diablo_setup/src/utilities/livox_ros_driver2'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'motion_msgs' in 'src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interfaces/motion_msgs'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'orbbec_camera_msgs' in 'src/OrbbecSDK_ROS2/orbbec_camera_msgs'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'orbbec_description' in 'src/OrbbecSDK_ROS2/orbbec_description'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'orbbec_rgb_publisher' in 'src/autonomy_stack_diablo_setup/src/slam/orbbec_rgb_publisher'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'osr_bringup' in 'src/osr-rover-code/ROS/osr_bringup'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'osr_gazebo' in 'src/osr-rover-code/ROS/osr_gazebo'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'osr_interfaces' in 'src/osr-rover-code/ROS/osr_interfaces'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'pointcloud_adapter' in 'src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'receive_theta' in 'src/autonomy_stack_diablo_setup/src/utilities/receive_theta'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ros_tcp_endpoint' in 'src/autonomy_stack_diablo_setup/src/utilities/ROS-TCP-Endpoint'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'sensor_scan_generation' in 'src/autonomy_stack_diablo_setup/src/base_autonomy/sensor_scan_generation'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tare_planner' in 'src/autonomy_stack_diablo_setup/src/exploration_planner/tare_planner'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'teleop_rviz_plugin' in 'src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'teleop_rviz_plugin_plus' in 'src/autonomy_stack_diablo_setup/src/utilities/teleop_rviz_plugin_plus'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'terrain_analysis' in 'src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'terrain_analysis_ext' in 'src/autonomy_stack_diablo_setup/src/base_autonomy/terrain_analysis_ext'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'visibility_graph_msg' in 'src/autonomy_stack_diablo_setup/src/route_planner/visibility_graph_msg'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'visualization_tools' in 'src/autonomy_stack_diablo_setup/src/base_autonomy/visualization_tools'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'waypoint_example' in 'src/autonomy_stack_diablo_setup/src/base_autonomy/waypoint_example'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'waypoint_rviz_plugin' in 'src/autonomy_stack_diablo_setup/src/utilities/waypoint_rviz_plugin'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'arise_slam_mid360' in 'src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'boundary_handler' in 'src/autonomy_stack_diablo_setup/src/route_planner/boundary_handler'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'diablo_teleop' in 'src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'diablo_teleop_joy' in 'src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop_joy'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'diablo_utils' in 'src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_common/diablo_utils'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'far_planner' in 'src/autonomy_stack_diablo_setup/src/route_planner/far_planner'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'graph_decoder' in 'src/autonomy_stack_diablo_setup/src/route_planner/graph_decoder'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'local_planner' in 'src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'orbbec_camera' in 'src/OrbbecSDK_ROS2/orbbec_camera'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'osr_control' in 'src/osr-rover-code/ROS/osr_control'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vehicle_simulator' in 'src/autonomy_stack_diablo_setup/src/base_autonomy/vehicle_simulator'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'diablo_body' in 'src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_ception/diablo_body'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'robot_bringup' in 'src/robot_bringup'
+[0.202s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'diablo_ctrl' in 'src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_ctrl'
+[0.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.204s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 391 installed packages in /opt/ros/humble
+[0.205s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.228s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.229s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.229s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.229s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.229s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.229s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.232s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.232s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.232s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.245s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.246s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.247s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wook/ros2/ros2_ws/install/local_setup.ps1'
+[0.248s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/wook/ros2/ros2_ws/install/_local_setup_util_ps1.py'
+[0.248s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wook/ros2/ros2_ws/install/setup.ps1'
+[0.249s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wook/ros2/ros2_ws/install/local_setup.sh'
+[0.249s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/wook/ros2/ros2_ws/install/_local_setup_util_sh.py'
+[0.249s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wook/ros2/ros2_ws/install/setup.sh'
+[0.250s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wook/ros2/ros2_ws/install/local_setup.bash'
+[0.250s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wook/ros2/ros2_ws/install/setup.bash'
+[0.250s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wook/ros2/ros2_ws/install/local_setup.zsh'
+[0.251s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wook/ros2/ros2_ws/install/setup.zsh'

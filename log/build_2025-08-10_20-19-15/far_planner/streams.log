@@ -1,0 +1,48 @@
+[0.688s] Invoking command in '/home/wook/ros2/ros2_ws/build/far_planner': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/far_planner -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/far_planner
+[1.146s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.146s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.146s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.146s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.146s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.146s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.147s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.147s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.147s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.147s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.251s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.305s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[1.316s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.370s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.412s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.479s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.554s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.058s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.065s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.302s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.311s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.319s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.572s] -- Found Qhull version 8.0.2
+[2.806s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.059s] [33mCMake Warning (dev) at CMakeLists.txt:24 (find_package):
+[3.059s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[3.059s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[3.059s]   command to set the policy and suppress this warning.
+[3.059s] 
+[3.059s]   CMake variable PCL_ROOT is set to:
+[3.059s] 
+[3.059s]     /usr
+[3.059s] 
+[3.059s]   For compatibility, CMake is ignoring the variable.
+[3.059s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.060s] [0m
+[3.082s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[3.126s] -- Found tf2: 0.25.13 (/opt/ros/humble/share/tf2/cmake)
+[3.134s] -- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)
+[3.287s] -- Found tf2_geometry_msgs: 0.25.13 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[3.299s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.300s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.306s] -- Found tf2_sensor_msgs: 0.25.13 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)
+[3.315s] -- Found visibility_graph_msg: 0.0.1 (/home/wook/ros2/ros2_ws/install/visibility_graph_msg/share/visibility_graph_msg/cmake)
+[3.490s] -- Configuring done
+[3.622s] -- Generating done
+[3.659s] -- Build files have been written to: /home/wook/ros2/ros2_ws/build/far_planner

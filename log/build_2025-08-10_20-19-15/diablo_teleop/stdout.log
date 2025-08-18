@@ -1,0 +1,32 @@
+running develop
+Removing /home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages/diablo-teleop.egg-link (link to .)
+running egg_info
+writing ../../../../../../../build/diablo_teleop/diablo_teleop.egg-info/PKG-INFO
+writing dependency_links to ../../../../../../../build/diablo_teleop/diablo_teleop.egg-info/dependency_links.txt
+writing entry points to ../../../../../../../build/diablo_teleop/diablo_teleop.egg-info/entry_points.txt
+writing requirements to ../../../../../../../build/diablo_teleop/diablo_teleop.egg-info/requires.txt
+writing top-level names to ../../../../../../../build/diablo_teleop/diablo_teleop.egg-info/top_level.txt
+reading manifest file '../../../../../../../build/diablo_teleop/diablo_teleop.egg-info/SOURCES.txt'
+writing manifest file '../../../../../../../build/diablo_teleop/diablo_teleop.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/wook/ros2/ros2_ws/build/diablo_teleop/build
+creating /home/wook/ros2/ros2_ws/build/diablo_teleop/build/lib
+creating /home/wook/ros2/ros2_ws/build/diablo_teleop/build/lib/diablo_teleop
+copying diablo_teleop/__init__.py -> /home/wook/ros2/ros2_ws/build/diablo_teleop/build/lib/diablo_teleop
+copying diablo_teleop/teleop.py -> /home/wook/ros2/ros2_ws/build/diablo_teleop/build/lib/diablo_teleop
+running install
+running install_lib
+creating /home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages/diablo_teleop
+copying /home/wook/ros2/ros2_ws/build/diablo_teleop/build/lib/diablo_teleop/__init__.py -> /home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages/diablo_teleop
+copying /home/wook/ros2/ros2_ws/build/diablo_teleop/build/lib/diablo_teleop/teleop.py -> /home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages/diablo_teleop
+byte-compiling /home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages/diablo_teleop/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages/diablo_teleop/teleop.py to teleop.cpython-310.pyc
+running install_data
+copying resource/diablo_teleop -> /home/wook/ros2/ros2_ws/install/diablo_teleop/share/ament_index/resource_index/packages
+copying package.xml -> /home/wook/ros2/ros2_ws/install/diablo_teleop/share/diablo_teleop
+running install_egg_info
+Copying ../../../../../../../build/diablo_teleop/diablo_teleop.egg-info to /home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages/diablo_teleop-1.0.0-py3.10.egg-info
+running install_scripts
+Installing teleop_node script to /home/wook/ros2/ros2_ws/install/diablo_teleop/lib/diablo_teleop
+writing list of installed files to '/home/wook/ros2/ros2_ws/build/diablo_teleop/install.log'

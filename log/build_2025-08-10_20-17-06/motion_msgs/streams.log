@@ -1,0 +1,251 @@
+[0.056s] Invoking command in '/home/wook/ros2/ros2_ws/build/motion_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/motion_msgs -- -j32 -l32
+[0.675s] [  1%] Built target motion_msgs__cpp
+[0.675s] [ 12%] Built target motion_msgs__rosidl_generator_c
+[0.675s] [ 12%] Built target ament_cmake_python_symlink_motion_msgs
+[0.676s] [ 23%] Built target motion_msgs__rosidl_typesupport_c
+[0.676s] [ 36%] Built target motion_msgs__rosidl_typesupport_introspection_c
+[0.676s] [ 38%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motion_msgs/msg/detail/ctrl_plot__type_support.cpp.o[0m
+[0.676s] [ 40%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motion_msgs/msg/leg_motors__type_support.cpp.o[0m
+[0.676s] [ 39%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motion_msgs/msg/detail/ctrl_plot__type_support_c.cpp.o[0m
+[0.676s] [ 42%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motion_msgs/msg/detail/dds_fastrtps/leg_motors__type_support.cpp.o[0m
+[0.676s] [ 45%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motion_msgs/msg/detail/leg_motors__type_support.cpp.o[0m
+[0.676s] [ 46%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motion_msgs/msg/ctrl_plot__type_support.cpp.o[0m
+[0.676s] [ 49%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motion_msgs/msg/detail/motion_ctrl__type_support.cpp.o[0m
+[0.676s] [ 50%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motion_msgs/msg/detail/dds_fastrtps/robot_status__type_support.cpp.o[0m
+[0.676s] [ 52%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motion_msgs/msg/detail/robot_status__type_support.cpp.o[0m
+[0.676s] [ 53%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motion_msgs/msg/detail/robot_status__type_support_c.cpp.o[0m
+[0.676s] [ 54%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motion_msgs/msg/detail/dds_fastrtps/movement_ctrl_data__type_support.cpp.o[0m
+[0.676s] [ 56%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motion_msgs/msg/detail/movement_ctrl_mode__type_support.cpp.o[0m
+[0.677s] [ 57%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motion_msgs/msg/motion_ctrl__type_support.cpp.o[0m
+[0.677s] [ 57%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motion_msgs/msg/detail/dds_fastrtps/ctrl_plot__type_support.cpp.o[0m
+[0.677s] [ 57%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motion_msgs/msg/detail/leg_motors__type_support_c.cpp.o[0m
+[0.677s] [ 57%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motion_msgs/msg/robot_status__type_support.cpp.o[0m
+[0.677s] [ 59%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motion_msgs/msg/detail/motion_ctrl__type_support_c.cpp.o[0m
+[0.677s] [ 60%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motion_msgs/msg/detail/movement_ctrl_data__type_support_c.cpp.o[0m
+[0.677s] [ 61%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/motion_msgs/msg/detail/movement_ctrl_mode__type_support_c.cpp.o[0m
+[0.677s] [ 63%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/motion_msgs/msg/detail/movement_ctrl_data__type_support.cpp.o[0m
+[0.677s] [ 64%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motion_msgs/msg/movement_ctrl_data__type_support.cpp.o[0m
+[0.677s] [ 66%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motion_msgs/msg/detail/dds_fastrtps/motion_ctrl__type_support.cpp.o[0m
+[0.677s] [ 69%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/motion_msgs/msg/movement_ctrl_mode__type_support.cpp.o[0m
+[0.678s] [ 69%] [32mBuilding CXX object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/motion_msgs/msg/detail/dds_fastrtps/movement_ctrl_mode__type_support.cpp.o[0m
+[0.678s] running egg_info
+[0.678s] writing motion_msgs.egg-info/PKG-INFO
+[0.678s] writing dependency_links to motion_msgs.egg-info/dependency_links.txt
+[0.678s] writing top-level names to motion_msgs.egg-info/top_level.txt
+[0.678s] reading manifest file 'motion_msgs.egg-info/SOURCES.txt'
+[0.678s] writing manifest file 'motion_msgs.egg-info/SOURCES.txt'
+[0.678s] [ 69%] Built target ament_cmake_python_build_motion_msgs_egg
+[1.215s] [ 70%] [32m[1mLinking CXX shared library libmotion_msgs__rosidl_typesupport_cpp.so[0m
+[1.325s] [ 71%] Built target motion_msgs__rosidl_typesupport_cpp
+[1.436s] [ 73%] [32m[1mLinking CXX shared library libmotion_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[1.537s] [ 74%] [32m[1mLinking CXX shared library libmotion_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[1.583s] [ 76%] [32m[1mLinking CXX shared library libmotion_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.622s] [ 77%] Built target motion_msgs__rosidl_typesupport_fastrtps_c
+[1.644s] [ 78%] Built target motion_msgs__rosidl_typesupport_introspection_cpp
+[1.682s] [ 80%] Built target motion_msgs__rosidl_typesupport_fastrtps_cpp
+[1.707s] [ 80%] Built target motion_msgs
+[1.729s] [ 81%] Built target motion_msgs__py
+[1.756s] [ 83%] [32mBuilding C object CMakeFiles/motion_msgs__rosidl_generator_py.dir/rosidl_generator_py/motion_msgs/msg/_leg_motors_s.c.o[0m
+[1.758s] [ 87%] [32mBuilding C object CMakeFiles/motion_msgs__rosidl_generator_py.dir/rosidl_generator_py/motion_msgs/msg/_robot_status_s.c.o[0m
+[1.758s] [ 87%] [32mBuilding C object CMakeFiles/motion_msgs__rosidl_generator_py.dir/rosidl_generator_py/motion_msgs/msg/_ctrl_plot_s.c.o[0m
+[1.758s] [ 87%] [32mBuilding C object CMakeFiles/motion_msgs__rosidl_generator_py.dir/rosidl_generator_py/motion_msgs/msg/_movement_ctrl_data_s.c.o[0m
+[1.758s] [ 88%] [32mBuilding C object CMakeFiles/motion_msgs__rosidl_generator_py.dir/rosidl_generator_py/motion_msgs/msg/_motion_ctrl_s.c.o[0m
+[1.759s] [ 90%] [32mBuilding C object CMakeFiles/motion_msgs__rosidl_generator_py.dir/rosidl_generator_py/motion_msgs/msg/_movement_ctrl_mode_s.c.o[0m
+[1.918s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/motion_msgs/libmotion_msgs__rosidl_generator_py.so[0m
+[1.970s] [ 91%] Built target motion_msgs__rosidl_generator_py
+[2.016s] [ 92%] [32mBuilding C object CMakeFiles/motion_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/motion_msgs/_motion_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.025s] [ 94%] [32mBuilding C object CMakeFiles/motion_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/motion_msgs/_motion_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[2.026s] [ 95%] [32mBuilding C object CMakeFiles/motion_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/motion_msgs/_motion_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.187s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/motion_msgs/motion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.193s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/motion_msgs/motion_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.198s] [100%] [32m[1mLinking C shared library rosidl_generator_py/motion_msgs/motion_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.230s] [100%] Built target motion_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.239s] [100%] Built target motion_msgs__rosidl_typesupport_introspection_c__pyext
+[2.242s] [100%] Built target motion_msgs__rosidl_typesupport_c__pyext
+[2.258s] Invoked command in '/home/wook/ros2/ros2_ws/build/motion_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/motion_msgs -- -j32 -l32
+[2.260s] Invoking command in '/home/wook/ros2/ros2_ws/build/motion_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/motion_msgs
+[2.842s] -- Install configuration: "Release"
+[2.842s] -- Execute custom install script
+[2.842s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/ament_index/resource_index/rosidl_interfaces/motion_msgs
+[2.842s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/ctrl_plot.h
+[2.842s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/ctrl_plot__functions.h
+[2.842s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/ctrl_plot__struct.h
+[2.842s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/ctrl_plot__type_support.h
+[2.842s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/leg_motors__functions.h
+[2.842s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/leg_motors__struct.h
+[2.842s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/leg_motors__type_support.h
+[2.842s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/motion_ctrl__functions.h
+[2.842s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/motion_ctrl__struct.h
+[2.842s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/motion_ctrl__type_support.h
+[2.842s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_data__functions.h
+[2.842s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_data__struct.h
+[2.842s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_data__type_support.h
+[2.842s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_mode__functions.h
+[2.843s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_mode__struct.h
+[2.843s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_mode__type_support.h
+[2.843s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/robot_status__functions.h
+[2.843s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/robot_status__struct.h
+[2.843s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/robot_status__type_support.h
+[2.843s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/leg_motors.h
+[2.843s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/motion_ctrl.h
+[2.843s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/movement_ctrl_data.h
+[2.843s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/movement_ctrl_mode.h
+[2.843s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/robot_status.h
+[2.844s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.844s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/environment/library_path.sh
+[2.844s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/environment/library_path.dsv
+[2.844s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/ctrl_plot__rosidl_typesupport_fastrtps_c.h
+[2.844s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/leg_motors__rosidl_typesupport_fastrtps_c.h
+[2.845s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/motion_ctrl__rosidl_typesupport_fastrtps_c.h
+[2.845s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_data__rosidl_typesupport_fastrtps_c.h
+[2.845s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_mode__rosidl_typesupport_fastrtps_c.h
+[2.845s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_c.h
+[2.845s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.845s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/ctrl_plot__rosidl_typesupport_introspection_c.h
+[2.845s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/leg_motors__rosidl_typesupport_introspection_c.h
+[2.848s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/motion_ctrl__rosidl_typesupport_introspection_c.h
+[2.848s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_data__rosidl_typesupport_introspection_c.h
+[2.848s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_mode__rosidl_typesupport_introspection_c.h
+[2.848s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/robot_status__rosidl_typesupport_introspection_c.h
+[2.848s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.848s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/ctrl_plot.hpp
+[2.848s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/ctrl_plot__builder.hpp
+[2.848s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/ctrl_plot__struct.hpp
+[2.848s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/ctrl_plot__traits.hpp
+[2.848s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/ctrl_plot__type_support.hpp
+[2.848s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/leg_motors__builder.hpp
+[2.848s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/leg_motors__struct.hpp
+[2.848s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/leg_motors__traits.hpp
+[2.848s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/leg_motors__type_support.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/motion_ctrl__builder.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/motion_ctrl__struct.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/motion_ctrl__traits.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/motion_ctrl__type_support.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_data__builder.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_data__struct.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_data__traits.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_data__type_support.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_mode__builder.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_mode__struct.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_mode__traits.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_mode__type_support.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/robot_status__builder.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/robot_status__struct.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/robot_status__traits.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/robot_status__type_support.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/leg_motors.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/motion_ctrl.hpp
+[2.849s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/movement_ctrl_data.hpp
+[2.851s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/movement_ctrl_mode.hpp
+[2.851s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/robot_status.hpp
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/ctrl_plot__rosidl_typesupport_fastrtps_cpp.hpp
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/leg_motors__rosidl_typesupport_fastrtps_cpp.hpp
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/motion_ctrl__rosidl_typesupport_fastrtps_cpp.hpp
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_data__rosidl_typesupport_fastrtps_cpp.hpp
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_cpp.hpp
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/ctrl_plot__rosidl_typesupport_introspection_cpp.hpp
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/leg_motors__rosidl_typesupport_introspection_cpp.hpp
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/motion_ctrl__rosidl_typesupport_introspection_cpp.hpp
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_data__rosidl_typesupport_introspection_cpp.hpp
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/movement_ctrl_mode__rosidl_typesupport_introspection_cpp.hpp
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/include/motion_msgs/motion_msgs/msg/detail/robot_status__rosidl_typesupport_introspection_cpp.hpp
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/environment/pythonpath.sh
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/environment/pythonpath.dsv
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs-1.0.0-py3.10.egg-info/PKG-INFO
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs-1.0.0-py3.10.egg-info/SOURCES.txt
+[2.852s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs-1.0.0-py3.10.egg-info/dependency_links.txt
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs-1.0.0-py3.10.egg-info/top_level.txt
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/__init__.py
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/_motion_msgs_s.ep.rosidl_typesupport_c.c
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/_motion_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/_motion_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/libmotion_msgs__rosidl_generator_py.so
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/motion_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/motion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/motion_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/msg/__init__.py
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/msg/_ctrl_plot.py
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/msg/_ctrl_plot_s.c
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/msg/_leg_motors.py
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/msg/_leg_motors_s.c
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/msg/_motion_ctrl.py
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/msg/_motion_ctrl_s.c
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/msg/_movement_ctrl_data.py
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/msg/_movement_ctrl_data_s.c
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/msg/_movement_ctrl_mode.py
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/msg/_movement_ctrl_mode_s.c
+[2.853s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/msg/_robot_status.py
+[2.854s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/msg/_robot_status_s.c
+[2.854s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/motion_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.854s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/motion_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.854s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/motion_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.854s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/msg/CtrlPlot.idl
+[2.854s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/msg/LegMotors.idl
+[2.854s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/msg/MotionCtrl.idl
+[2.854s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/msg/RobotStatus.idl
+[2.854s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/msg/MovementCtrlData.idl
+[2.854s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/msg/MovementCtrlMode.idl
+[2.854s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/msg/CtrlPlot.msg
+[2.855s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/msg/LegMotors.msg
+[2.855s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/msg/MotionCtrl.msg
+[2.855s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/msg/RobotStatus.msg
+[2.855s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/msg/MovementCtrlData.msg
+[2.855s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/msg/MovementCtrlMode.msg
+[2.855s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/ament_index/resource_index/package_run_dependencies/motion_msgs
+[2.855s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/ament_index/resource_index/parent_prefix_path/motion_msgs
+[2.855s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/environment/ament_prefix_path.sh
+[2.856s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/environment/ament_prefix_path.dsv
+[2.856s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/environment/path.sh
+[2.856s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/environment/path.dsv
+[2.856s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/local_setup.bash
+[2.856s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/local_setup.sh
+[2.856s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/local_setup.zsh
+[2.856s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/local_setup.dsv
+[2.856s] -- Symlinking: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/package.dsv
+[2.862s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/ament_index/resource_index/packages/motion_msgs
+[2.862s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/rosidl_cmake-extras.cmake
+[2.863s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.863s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.863s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[2.864s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[2.864s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.869s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.869s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgsConfig.cmake
+[2.869s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgsConfig-version.cmake
+[2.869s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/package.xml
+[2.870s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_generator_c.so
+[2.870s] -- Installing: /home/wook/ros2/ros2_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_fastrtps_c.so
+[2.872s] -- Set runtime path of "/home/wook/ros2/ros2_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[2.873s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_introspection_c.so
+[2.877s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_c.so
+[2.877s] -- Installing: /home/wook/ros2/ros2_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.878s] -- Set runtime path of "/home/wook/ros2/ros2_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.880s] -- Installing: /home/wook/ros2/ros2_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_introspection_cpp.so
+[2.880s] -- Set runtime path of "/home/wook/ros2/ros2_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[2.882s] -- Installing: /home/wook/ros2/ros2_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_cpp.so
+[2.884s] -- Set runtime path of "/home/wook/ros2/ros2_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_typesupport_cpp.so" to ""
+[2.945s] Listing '/home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs'...
+[2.946s] Listing '/home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages/motion_msgs/msg'...
+[2.960s] -- Installing: /home/wook/ros2/ros2_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_generator_py.so
+[2.960s] -- Set runtime path of "/home/wook/ros2/ros2_ws/install/motion_msgs/lib/libmotion_msgs__rosidl_generator_py.so" to ""
+[2.960s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/export_motion_msgs__rosidl_generator_cExport.cmake
+[2.960s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/export_motion_msgs__rosidl_generator_cExport-release.cmake
+[2.961s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/export_motion_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[2.961s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/export_motion_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[2.962s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_typesupport_introspection_cExport.cmake
+[2.962s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[2.962s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_typesupport_cExport.cmake
+[2.962s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_typesupport_cExport-release.cmake
+[2.962s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/export_motion_msgs__rosidl_generator_cppExport.cmake
+[2.963s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/export_motion_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.963s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/export_motion_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[2.963s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[2.963s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[2.963s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_typesupport_cppExport.cmake
+[2.964s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/motion_msgs__rosidl_typesupport_cppExport-release.cmake
+[2.964s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/export_motion_msgs__rosidl_generator_pyExport.cmake
+[2.964s] -- Up-to-date: /home/wook/ros2/ros2_ws/install/motion_msgs/share/motion_msgs/cmake/export_motion_msgs__rosidl_generator_pyExport-release.cmake
+[2.984s] Invoked command in '/home/wook/ros2/ros2_ws/build/motion_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/motion_msgs

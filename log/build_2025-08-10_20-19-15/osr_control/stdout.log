@@ -1,0 +1,57 @@
+running egg_info
+creating ../../../../build/osr_control/osr_control.egg-info
+writing ../../../../build/osr_control/osr_control.egg-info/PKG-INFO
+writing dependency_links to ../../../../build/osr_control/osr_control.egg-info/dependency_links.txt
+writing entry points to ../../../../build/osr_control/osr_control.egg-info/entry_points.txt
+writing requirements to ../../../../build/osr_control/osr_control.egg-info/requires.txt
+writing top-level names to ../../../../build/osr_control/osr_control.egg-info/top_level.txt
+writing manifest file '../../../../build/osr_control/osr_control.egg-info/SOURCES.txt'
+reading manifest file '../../../../build/osr_control/osr_control.egg-info/SOURCES.txt'
+writing manifest file '../../../../build/osr_control/osr_control.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/wook/ros2/ros2_ws/build/osr_control/build
+creating /home/wook/ros2/ros2_ws/build/osr_control/build/lib
+creating /home/wook/ros2/ros2_ws/build/osr_control/build/lib/osr_control
+copying osr_control/servo_control.py -> /home/wook/ros2/ros2_ws/build/osr_control/build/lib/osr_control
+copying osr_control/joy_extras.py -> /home/wook/ros2/ros2_ws/build/osr_control/build/lib/osr_control
+copying osr_control/__init__.py -> /home/wook/ros2/ros2_ws/build/osr_control/build/lib/osr_control
+copying osr_control/roboclaw.py -> /home/wook/ros2/ros2_ws/build/osr_control/build/lib/osr_control
+copying osr_control/roboclaw_wrapper.py -> /home/wook/ros2/ros2_ws/build/osr_control/build/lib/osr_control
+copying osr_control/ina_260_pub.py -> /home/wook/ros2/ros2_ws/build/osr_control/build/lib/osr_control
+copying osr_control/rover.py -> /home/wook/ros2/ros2_ws/build/osr_control/build/lib/osr_control
+running install
+running install_lib
+creating /home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages/osr_control
+copying /home/wook/ros2/ros2_ws/build/osr_control/build/lib/osr_control/servo_control.py -> /home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages/osr_control
+copying /home/wook/ros2/ros2_ws/build/osr_control/build/lib/osr_control/joy_extras.py -> /home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages/osr_control
+copying /home/wook/ros2/ros2_ws/build/osr_control/build/lib/osr_control/__init__.py -> /home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages/osr_control
+copying /home/wook/ros2/ros2_ws/build/osr_control/build/lib/osr_control/roboclaw.py -> /home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages/osr_control
+copying /home/wook/ros2/ros2_ws/build/osr_control/build/lib/osr_control/roboclaw_wrapper.py -> /home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages/osr_control
+copying /home/wook/ros2/ros2_ws/build/osr_control/build/lib/osr_control/ina_260_pub.py -> /home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages/osr_control
+copying /home/wook/ros2/ros2_ws/build/osr_control/build/lib/osr_control/rover.py -> /home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages/osr_control
+byte-compiling /home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages/osr_control/servo_control.py to servo_control.cpython-310.pyc
+byte-compiling /home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages/osr_control/joy_extras.py to joy_extras.cpython-310.pyc
+byte-compiling /home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages/osr_control/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages/osr_control/roboclaw.py to roboclaw.cpython-310.pyc
+byte-compiling /home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages/osr_control/roboclaw_wrapper.py to roboclaw_wrapper.cpython-310.pyc
+byte-compiling /home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages/osr_control/ina_260_pub.py to ina_260_pub.cpython-310.pyc
+byte-compiling /home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages/osr_control/rover.py to rover.cpython-310.pyc
+running install_data
+creating /home/wook/ros2/ros2_ws/install/osr_control/share/ament_index
+creating /home/wook/ros2/ros2_ws/install/osr_control/share/ament_index/resource_index
+creating /home/wook/ros2/ros2_ws/install/osr_control/share/ament_index/resource_index/packages
+copying resource/osr_control -> /home/wook/ros2/ros2_ws/install/osr_control/share/ament_index/resource_index/packages
+copying package.xml -> /home/wook/ros2/ros2_ws/install/osr_control/share/osr_control
+creating /home/wook/ros2/ros2_ws/install/osr_control/share/osr_control/launch
+creating /home/wook/ros2/ros2_ws/install/osr_control/share/osr_control/config
+copying launch/test_rover_launch.py -> /home/wook/ros2/ros2_ws/install/osr_control/share/osr_control/launch
+running install_egg_info
+Copying ../../../../build/osr_control/osr_control.egg-info to /home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages/osr_control-0.0.0-py3.10.egg-info
+running install_scripts
+Installing ina260 script to /home/wook/ros2/ros2_ws/install/osr_control/lib/osr_control
+Installing joy_extras script to /home/wook/ros2/ros2_ws/install/osr_control/lib/osr_control
+Installing roboclaw_wrapper script to /home/wook/ros2/ros2_ws/install/osr_control/lib/osr_control
+Installing rover script to /home/wook/ros2/ros2_ws/install/osr_control/lib/osr_control
+Installing servo_control script to /home/wook/ros2/ros2_ws/install/osr_control/lib/osr_control
+writing list of installed files to '/home/wook/ros2/ros2_ws/build/osr_control/install.log'

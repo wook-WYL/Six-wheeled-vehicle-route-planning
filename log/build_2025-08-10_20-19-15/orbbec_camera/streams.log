@@ -1,0 +1,18 @@
+[1.043s] Invoking command in '/home/wook/ros2/ros2_ws/build/orbbec_camera': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/orbbec_camera -- -j32 -l32
+[1.134s] [  4%] [32mBuilding CXX object CMakeFiles/frame_latency_node.dir/rclcpp_components/node_main_frame_latency_node.cpp.o[0m
+[1.137s] [  8%] [32mBuilding CXX object CMakeFiles/orbbec_camera_node.dir/rclcpp_components/node_main_orbbec_camera_node.cpp.o[0m
+[1.144s] [ 12%] [32mBuilding CXX object CMakeFiles/frame_latency.dir/tools/frame_latency.cpp.o[0m
+[1.162s] [ 16%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/dynamic_params.cpp.o[0m
+[1.163s] [ 20%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/d2c_viewer.cpp.o[0m
+[1.174s] [ 24%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/image_publisher.cpp.o[0m
+[1.191s] [ 28%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/ob_camera_node_driver.cpp.o[0m
+[1.205s] [ 32%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/ob_camera_node.cpp.o[0m
+[1.206s] [ 36%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/ros_param_backend.cpp.o[0m
+[1.208s] [ 44%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/synced_imu_publisher.cpp.o[0m
+[1.209s] [ 44%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/ros_service.cpp.o[0m
+[1.218s] [ 48%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/utils.cpp.o[0m
+[1.228s] [ 52%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/jpeg_decoder.cpp.o[0m
+[5.975s] [ 60%] [32m[1mLinking CXX executable orbbec_camera_node[0m
+[5.978s] [ 60%] [32m[1mLinking CXX executable frame_latency_node[0m
+[6.125s] [ 60%] Built target frame_latency_node
+[6.149s] [ 60%] Built target orbbec_camera_node

@@ -1,0 +1,8 @@
+{
+  "package_name": "arise_slam_mid360_msgs",
+  "non_idl_tuples": [
+    "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360_msgs:msg/IterationStats.msg",
+    "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360_msgs:msg/OptimizationStats.msg",
+    "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/arise_slam_mid360_msgs:msg/LaserFeature.msg"
+  ]
+}

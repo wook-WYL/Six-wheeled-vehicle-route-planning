@@ -1,0 +1,1 @@
+Invoking command in '/home/wook/ros2/ros2_ws/build/tare_planner': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/exploration_planner/tare_planner -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/tare_planner

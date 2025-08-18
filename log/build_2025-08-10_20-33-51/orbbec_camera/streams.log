@@ -1,0 +1,20 @@
+[0.203s] Invoking command in '/home/wook/ros2/ros2_ws/build/orbbec_camera': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/orbbec_camera -- -j32 -l32
+[0.244s] [35m[1mConsolidate compiler generated dependencies of target orbbec_camera_node[0m
+[0.246s] [35m[1mConsolidate compiler generated dependencies of target frame_latency_node[0m
+[0.253s] [35m[1mConsolidate compiler generated dependencies of target orbbec_camera[0m
+[0.259s] [  8%] Built target orbbec_camera_node
+[0.259s] [ 12%] [32mBuilding CXX object CMakeFiles/frame_latency.dir/tools/frame_latency.cpp.o[0m
+[0.262s] [ 20%] Built target frame_latency_node
+[0.297s] [ 24%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/image_publisher.cpp.o[0m
+[0.297s] [ 28%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/d2c_viewer.cpp.o[0m
+[0.300s] [ 32%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/ob_camera_node_driver.cpp.o[0m
+[0.302s] [ 36%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/synced_imu_publisher.cpp.o[0m
+[0.303s] [ 44%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/ob_camera_node.cpp.o[0m
+[0.303s] [ 44%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/ros_service.cpp.o[0m
+[0.303s] [ 48%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/utils.cpp.o[0m
+[0.305s] [ 52%] [32mBuilding CXX object CMakeFiles/orbbec_camera.dir/src/jpeg_decoder.cpp.o[0m
+[15.941s] gmake[2]: *** [CMakeFiles/orbbec_camera.dir/build.make:132: CMakeFiles/orbbec_camera.dir/src/ob_camera_node.cpp.o] Interrupt
+[15.941s] gmake[2]: *** [CMakeFiles/frame_latency.dir/build.make:76: CMakeFiles/frame_latency.dir/tools/frame_latency.cpp.o] Interrupt
+[15.941s] gmake[1]: *** [CMakeFiles/Makefile2:307: CMakeFiles/frame_latency.dir/all] Interrupt
+[15.941s] gmake[1]: *** [CMakeFiles/Makefile2:151: CMakeFiles/orbbec_camera.dir/all] Interrupt
+[15.941s] gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,69 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from arise_slam_mid360_msgs/msg/LaserFeature.msg
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/PointCloud2.idl"
+#include "std_msgs/msg/Header.idl"
+
+module arise_slam_mid360_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "feature Info")
+    struct LaserFeature {
+      std_msgs::msg::Header header;
+
+      int64 sensor;
+
+      int64 imu_available;
+
+      int64 odom_available;
+
+      @verbatim (language="comment", text=
+        "IMU initial guess for laser mapping")
+      double imu_quaternion_x;
+
+      double imu_quaternion_y;
+
+      double imu_quaternion_z;
+
+      double imu_quaternion_w;
+
+      @verbatim (language="comment", text=
+        "Odometry initial guess for laser mapping")
+      double initial_pose_x;
+
+      double initial_pose_y;
+
+      double initial_pose_z;
+
+      double initial_quaternion_x;
+
+      double initial_quaternion_y;
+
+      double initial_quaternion_z;
+
+      double initial_quaternion_w;
+
+      @verbatim (language="comment", text=
+        "Preintegration reset ID")
+      int64 imu_preintegration_reset_id;
+
+      @verbatim (language="comment", text=
+        "Point cloud messages" "\n"
+        "original cloud remove distortion")
+      sensor_msgs::msg::PointCloud2 cloud_nodistortion;
+
+      @verbatim (language="comment", text=
+        "extracted corner feature")
+      sensor_msgs::msg::PointCloud2 cloud_corner;
+
+      @verbatim (language="comment", text=
+        "extracted surface feature")
+      sensor_msgs::msg::PointCloud2 cloud_surface;
+
+      @verbatim (language="comment", text=
+        "extracted surface feature from realsense")
+      sensor_msgs::msg::PointCloud2 cloud_realsense;
+    };
+  };
+};

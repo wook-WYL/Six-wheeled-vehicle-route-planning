@@ -310,17 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "launch" "DESTINATION" "share/robot_bringup")
-ament_cmake_symlink_install_directory("/home/wook/ros2/ros2_ws/src/robot_bringup" DIRECTORY "launch" "DESTINATION" "share/robot_bringup")
-
-# install(DIRECTORY "rviz" "DESTINATION" "share/robot_bringup")
-ament_cmake_symlink_install_directory("/home/wook/ros2/ros2_ws/src/robot_bringup" DIRECTORY "rviz" "DESTINATION" "share/robot_bringup")
-
-# install(DIRECTORY "scripts" "DESTINATION" "lib/robot_bringup")
-ament_cmake_symlink_install_directory("/home/wook/ros2/ros2_ws/src/robot_bringup" DIRECTORY "scripts" "DESTINATION" "lib/robot_bringup")
-
-# install(DIRECTORY "maps" "DESTINATION" "share/robot_bringup")
-ament_cmake_symlink_install_directory("/home/wook/ros2/ros2_ws/src/robot_bringup" DIRECTORY "maps" "DESTINATION" "share/robot_bringup")
+# install(DIRECTORY "launch" "rviz" "scripts" "maps" "config" "data" "DESTINATION" "share/robot_bringup")
+ament_cmake_symlink_install_directory("/home/wook/ros2/ros2_ws/src/robot_bringup" DIRECTORY "launch" "rviz" "scripts" "maps" "config" "data" "DESTINATION" "share/robot_bringup")
 
 # install(FILES "/home/wook/ros2/ros2_ws/build/robot_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/wook/ros2/ros2_ws/src/robot_bringup" FILES "/home/wook/ros2/ros2_ws/build/robot_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

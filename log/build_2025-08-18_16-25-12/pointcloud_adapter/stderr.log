@@ -1,0 +1,11 @@
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:[m[K In constructor ‘[01m[KPointCloudAdapter::PointCloudAdapter()[m[K’:
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:27:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoxel_filter_[m[K’ was not declared in this scope
+   27 |         [01;31m[Kvoxel_filter_[m[K.setLeafSize(leaf_size, leaf_size, leaf_size);
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:[m[K In member function ‘[01m[Kvoid PointCloudAdapter::cloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:79:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_filtered[m[K’ was not declared in this scope
+   79 |         pcl::copyPointCloud(*[01;31m[Kcloud_filtered[m[K, *cloud_with_intensity);
+      |                              [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/adapter_node.dir/build.make:76: CMakeFiles/adapter_node.dir/src/pointcloud_adapter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/adapter_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

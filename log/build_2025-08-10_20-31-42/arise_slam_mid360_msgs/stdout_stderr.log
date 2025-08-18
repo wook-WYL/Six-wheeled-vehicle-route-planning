@@ -1,0 +1,7 @@
+failed to create symbolic link '/home/wook/ros2/ros2_ws/build/arise_slam_mid360_msgs/ament_cmake_python/arise_slam_mid360_msgs/arise_slam_mid360_msgs' because existing path cannot be removed: Is a directory
+[  2%] Built target arise_slam_mid360_msgs__cpp
+gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_arise_slam_mid360_msgs.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_arise_slam_mid360_msgs] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_arise_slam_mid360_msgs.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 12%] Built target arise_slam_mid360_msgs__rosidl_generator_c
+gmake: *** [Makefile:146: all] Error 2

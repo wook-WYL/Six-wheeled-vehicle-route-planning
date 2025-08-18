@@ -1,0 +1,50 @@
+[35m[1mConsolidate compiler generated dependencies of target osr_controller[0m
+[100%] Built target osr_controller
+-- Install configuration: ""
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//launch
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//launch/empty_world.launch.py
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//launch/rviz.launch.py
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//config
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//config/controller_velocity.yaml
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//urdf
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//urdf/osr.urdf.xacro
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//urdf/gazebo.urdf.xacro
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//urdf/insert_transmission.urdf.xacro
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/box_link.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/wheel.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/rocker_bogie_final.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/rockerbogie_middle_1.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/wheel_link_right_2.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/rockerbogie_front_1.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/body_axis.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/turn_right_test.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/turn_R.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/turn_L.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/rocker_bogie_link_rear.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/body.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/wheel_link_left_2.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/turn_left_test.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/rocker_bogie_link_front.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/rocker_bogie_link_middle.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/arm.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//meshes/wheel_middle_left.stl
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//rviz
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo//rviz/rviz_settings.rviz
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/lib/osr_gazebo/osr_controller
+-- Set runtime path of "/home/wook/ros2/ros2_ws/install/osr_gazebo/lib/osr_gazebo/osr_controller" to ""
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/ament_index/resource_index/package_run_dependencies/osr_gazebo
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/ament_index/resource_index/parent_prefix_path/osr_gazebo
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo/environment/ament_prefix_path.sh
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo/environment/ament_prefix_path.dsv
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo/environment/path.sh
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo/environment/path.dsv
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo/local_setup.bash
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo/local_setup.sh
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo/local_setup.zsh
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo/local_setup.dsv
+-- Up-to-date: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo/package.dsv
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/ament_index/resource_index/packages/osr_gazebo
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo/cmake/osr_gazeboConfig.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo/cmake/osr_gazeboConfig-version.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/osr_gazebo/share/osr_gazebo/package.xml

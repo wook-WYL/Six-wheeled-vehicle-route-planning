@@ -1,0 +1,8 @@
+{
+  "package_name": "osr_interfaces",
+  "non_idl_tuples": [
+    "/home/wook/ros2/ros2_ws/src/osr-rover-code/ROS/osr_interfaces:msg/Status.msg",
+    "/home/wook/ros2/ros2_ws/src/osr-rover-code/ROS/osr_interfaces:msg/CommandDrive.msg",
+    "/home/wook/ros2/ros2_ws/src/osr-rover-code/ROS/osr_interfaces:msg/CommandCorner.msg"
+  ]
+}

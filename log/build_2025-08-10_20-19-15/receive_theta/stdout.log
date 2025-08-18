@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target receiveTheta[0m
+[100%] Built target receiveTheta
+-- Install configuration: ""
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/lib/receive_theta/receiveTheta
+-- Set runtime path of "/home/wook/ros2/ros2_ws/install/receive_theta/lib/receive_theta/receiveTheta" to ""
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/share/receive_theta/launch
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/share/receive_theta/launch/receive_theta.launch
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/share/ament_index/resource_index/package_run_dependencies/receive_theta
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/share/ament_index/resource_index/parent_prefix_path/receive_theta
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/share/receive_theta/environment/ament_prefix_path.sh
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/share/receive_theta/environment/ament_prefix_path.dsv
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/share/receive_theta/environment/path.sh
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/share/receive_theta/environment/path.dsv
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/share/receive_theta/local_setup.bash
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/share/receive_theta/local_setup.sh
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/share/receive_theta/local_setup.zsh
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/share/receive_theta/local_setup.dsv
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/share/receive_theta/package.dsv
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/share/ament_index/resource_index/packages/receive_theta
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/share/receive_theta/cmake/receive_thetaConfig.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/share/receive_theta/cmake/receive_thetaConfig-version.cmake
+-- Installing: /home/wook/ros2/ros2_ws/install/receive_theta/share/receive_theta/package.xml

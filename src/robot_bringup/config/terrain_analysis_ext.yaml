@@ -8,7 +8,7 @@ terrainAnalysisExt: # 节点名，与旧launch文件中的 name='...' 对应
     clearingDis: 30.0
     useSorting: true
     quantileZ: 0.1
-    vehicleHeight: 1.5
+    vehicleHeight: 0.62
     voxelPointUpdateThre: 100
     voxelTimeUpdateThre: 2.0
     lowerBoundZ: -2.5

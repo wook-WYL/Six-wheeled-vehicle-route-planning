@@ -1,0 +1,37 @@
+[35m[1mConsolidate compiler generated dependencies of target adapter_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/adapter_node.dir/src/pointcloud_adapter.cpp.o[0m
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:[m[K In constructor ‘[01m[KPointCloudAdapter::PointCloudAdapter()[m[K’:
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:30:31:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   30 |         subscription_ = this->[01;31m[Kcreate_subscription<sensor_msgs::msg/PointCloud2>[m[K(
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:30:80:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPointCloudAdapter::create_subscription<<expression error> >(const char [32], int, std::_Bind_helper<false, void (PointCloudAdapter::*)(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >), PointCloudAdapter*, const std::_Placeholder<1>&>::type)[m[K’
+   30 | ubscription_ = [01;31m[Kthis->create_subscription<sensor_msgs::msg/PointCloud2>([m[K
+      |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+
+   31 | [01;31m[K   "/camera/depth_registered/points", 10, // <--- 建议订阅这个，它通常是配准好的[m[K
+      |    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+   32 | [01;31m[K   std::bind(&PointCloudAdapter::cloud_callback, this, std::placeholders::_1))[m[K;
+      |    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  219 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:30:80:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   30 | ubscription_ = [01;31m[Kthis->create_subscription<sensor_msgs::msg/PointCloud2>([m[K
+      |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+
+   31 | [01;31m[K   "/camera/depth_registered/points", 10, // <--- 建议订阅这个，它通常是配准好的[m[K
+      |    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+   32 | [01;31m[K   std::bind(&PointCloudAdapter::cloud_callback, this, std::placeholders::_1))[m[K;
+      |    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/adapter_node.dir/build.make:76: CMakeFiles/adapter_node.dir/src/pointcloud_adapter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/adapter_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

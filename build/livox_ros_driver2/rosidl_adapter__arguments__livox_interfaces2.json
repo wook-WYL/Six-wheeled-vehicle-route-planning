@@ -1,0 +1,7 @@
+{
+  "package_name": "livox_ros_driver2",
+  "non_idl_tuples": [
+    "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/livox_ros_driver2:msg/CustomPoint.msg",
+    "/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/livox_ros_driver2:msg/CustomMsg.msg"
+  ]
+}

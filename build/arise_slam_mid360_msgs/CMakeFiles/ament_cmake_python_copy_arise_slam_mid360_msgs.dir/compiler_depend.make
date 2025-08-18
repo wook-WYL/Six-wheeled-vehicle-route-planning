@@ -1,0 +1,2 @@
+# Empty custom commands generated dependencies file for ament_cmake_python_copy_arise_slam_mid360_msgs.
+# This may be replaced when dependencies are built.

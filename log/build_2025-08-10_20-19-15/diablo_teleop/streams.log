@@ -1,0 +1,36 @@
+[1.553s] Invoking command in '/home/wook/ros2/ros2_ws/build/diablo_teleop': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/build/diablo_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages:/home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/wook/ros2/ros2_ws/build/diablo_teleop/build
+[1.843s] running develop
+[2.061s] Removing /home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages/diablo-teleop.egg-link (link to .)
+[2.170s] Invoked command in '/home/wook/ros2/ros2_ws/build/diablo_teleop' returned '0': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/build/diablo_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages:/home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/wook/ros2/ros2_ws/build/diablo_teleop/build
+[2.171s] Invoking command in '/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/build/diablo_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages:/home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../../../build/diablo_teleop build --build-base /home/wook/ros2/ros2_ws/build/diablo_teleop/build install --record /home/wook/ros2/ros2_ws/build/diablo_teleop/install.log --single-version-externally-managed install_data --force
+[2.541s] running egg_info
+[2.542s] writing ../../../../../../../build/diablo_teleop/diablo_teleop.egg-info/PKG-INFO
+[2.543s] writing dependency_links to ../../../../../../../build/diablo_teleop/diablo_teleop.egg-info/dependency_links.txt
+[2.543s] writing entry points to ../../../../../../../build/diablo_teleop/diablo_teleop.egg-info/entry_points.txt
+[2.543s] writing requirements to ../../../../../../../build/diablo_teleop/diablo_teleop.egg-info/requires.txt
+[2.543s] writing top-level names to ../../../../../../../build/diablo_teleop/diablo_teleop.egg-info/top_level.txt
+[2.548s] reading manifest file '../../../../../../../build/diablo_teleop/diablo_teleop.egg-info/SOURCES.txt'
+[2.549s] writing manifest file '../../../../../../../build/diablo_teleop/diablo_teleop.egg-info/SOURCES.txt'
+[2.550s] running build
+[2.551s] running build_py
+[2.551s] creating /home/wook/ros2/ros2_ws/build/diablo_teleop/build
+[2.551s] creating /home/wook/ros2/ros2_ws/build/diablo_teleop/build/lib
+[2.551s] creating /home/wook/ros2/ros2_ws/build/diablo_teleop/build/lib/diablo_teleop
+[2.551s] copying diablo_teleop/__init__.py -> /home/wook/ros2/ros2_ws/build/diablo_teleop/build/lib/diablo_teleop
+[2.551s] copying diablo_teleop/teleop.py -> /home/wook/ros2/ros2_ws/build/diablo_teleop/build/lib/diablo_teleop
+[2.553s] running install
+[2.554s] running install_lib
+[2.555s] creating /home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages/diablo_teleop
+[2.555s] copying /home/wook/ros2/ros2_ws/build/diablo_teleop/build/lib/diablo_teleop/__init__.py -> /home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages/diablo_teleop
+[2.555s] copying /home/wook/ros2/ros2_ws/build/diablo_teleop/build/lib/diablo_teleop/teleop.py -> /home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages/diablo_teleop
+[2.556s] byte-compiling /home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages/diablo_teleop/__init__.py to __init__.cpython-310.pyc
+[2.557s] byte-compiling /home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages/diablo_teleop/teleop.py to teleop.cpython-310.pyc
+[2.557s] running install_data
+[2.560s] copying resource/diablo_teleop -> /home/wook/ros2/ros2_ws/install/diablo_teleop/share/ament_index/resource_index/packages
+[2.561s] copying package.xml -> /home/wook/ros2/ros2_ws/install/diablo_teleop/share/diablo_teleop
+[2.561s] running install_egg_info
+[2.570s] Copying ../../../../../../../build/diablo_teleop/diablo_teleop.egg-info to /home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages/diablo_teleop-1.0.0-py3.10.egg-info
+[2.574s] running install_scripts
+[2.611s] Installing teleop_node script to /home/wook/ros2/ros2_ws/install/diablo_teleop/lib/diablo_teleop
+[2.615s] writing list of installed files to '/home/wook/ros2/ros2_ws/build/diablo_teleop/install.log'
+[2.683s] Invoked command in '/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/utilities/diablo_ros2/diablo_interaction/diablo_teleop' returned '0': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/build/diablo_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages:/home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../../../../build/diablo_teleop build --build-base /home/wook/ros2/ros2_ws/build/diablo_teleop/build install --record /home/wook/ros2/ros2_ws/build/diablo_teleop/install.log --single-version-externally-managed install_data --force

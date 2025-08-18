@@ -1,0 +1,24 @@
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:93:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   93 |     std::unique_ptr<tf2_ros/Buffer[01;31m[K>[m[K tf_buffer_;
+      |                                   [01;31m[K^[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:93:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:94:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   94 |     std::unique_ptr<tf2_ros/TransformListener[01;31m[K>[m[K tf_listener_;
+      |                                              [01;31m[K^[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:94:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:[m[K In constructor ‘[01m[KPointCloudAdapter::PointCloudAdapter()[m[K’:
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:37:55:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::_MakeUniq<tf2_ros::Buffer>::__single_object[m[K’ {aka ‘[01m[Kstd::unique_ptr<tf2_ros::Buffer, std::default_delete<tf2_ros::Buffer> >[m[K’} to ‘[01m[Kint[m[K’ in assignment
+   37 |         tf_buffer_ = [01;31m[Kstd::make_unique<tf2_ros::Buffer>(this->get_clock())[m[K;
+      |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+      |                                                       [01;31m[K|[m[K
+      |                                                       [01;31m[Kstd::_MakeUniq<tf2_ros::Buffer>::__single_object {aka std::unique_ptr<tf2_ros::Buffer, std::default_delete<tf2_ros::Buffer> >}[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:38:69:[m[K [01;31m[Kerror: [m[Kinvalid type argument of unary ‘[01m[K*[m[K’ (have ‘[01m[Kint[m[K’)
+   38 |         tf_listener_ = std::make_unique<tf2_ros::TransformListener>([01;31m[K*tf_buffer_[m[K);
+      |                                                                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:[m[K In member function ‘[01m[Kvoid PointCloudAdapter::cloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:54:72:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+   54 |             geometry_msgs::msg::TransformStamped transform = tf_buffer_[01;31m[K->[m[KlookupTransform(
+      |                                                                        [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/adapter_node.dir/build.make:76: CMakeFiles/adapter_node.dir/src/pointcloud_adapter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/adapter_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

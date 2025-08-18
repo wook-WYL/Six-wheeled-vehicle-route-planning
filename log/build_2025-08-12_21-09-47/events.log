@@ -1,0 +1,240 @@
+[0.000000] (-) TimerEvent: {}
+[0.000176] (-) JobUnselected: {'identifier': 'arise_slam_mid360'}
+[0.000203] (-) JobUnselected: {'identifier': 'arise_slam_mid360_msgs'}
+[0.000222] (-) JobUnselected: {'identifier': 'boundary_handler'}
+[0.000240] (-) JobUnselected: {'identifier': 'ception_msgs'}
+[0.000256] (-) JobUnselected: {'identifier': 'diablo_body'}
+[0.000273] (-) JobUnselected: {'identifier': 'diablo_ctrl'}
+[0.000289] (-) JobUnselected: {'identifier': 'diablo_teleop'}
+[0.000304] (-) JobUnselected: {'identifier': 'diablo_teleop_joy'}
+[0.000328] (-) JobUnselected: {'identifier': 'diablo_utils'}
+[0.000344] (-) JobUnselected: {'identifier': 'domain_bridge'}
+[0.000360] (-) JobUnselected: {'identifier': 'far_planner'}
+[0.000375] (-) JobUnselected: {'identifier': 'goalpoint_rviz_plugin'}
+[0.000391] (-) JobUnselected: {'identifier': 'graph_decoder'}
+[0.000405] (-) JobUnselected: {'identifier': 'livox_ros_driver2'}
+[0.000420] (-) JobUnselected: {'identifier': 'motion_msgs'}
+[0.000436] (-) JobUnselected: {'identifier': 'orbbec_camera'}
+[0.000450] (-) JobUnselected: {'identifier': 'orbbec_camera_msgs'}
+[0.000465] (-) JobUnselected: {'identifier': 'orbbec_description'}
+[0.000481] (-) JobUnselected: {'identifier': 'orbbec_rgb_publisher'}
+[0.000496] (-) JobUnselected: {'identifier': 'osr_bringup'}
+[0.000513] (-) JobUnselected: {'identifier': 'osr_control'}
+[0.000528] (-) JobUnselected: {'identifier': 'osr_gazebo'}
+[0.000543] (-) JobUnselected: {'identifier': 'osr_interfaces'}
+[0.000558] (-) JobUnselected: {'identifier': 'pointcloud_adapter'}
+[0.000575] (-) JobUnselected: {'identifier': 'receive_theta'}
+[0.000590] (-) JobUnselected: {'identifier': 'robot_bringup'}
+[0.000606] (-) JobUnselected: {'identifier': 'ros_tcp_endpoint'}
+[0.000621] (-) JobUnselected: {'identifier': 'sensor_scan_generation'}
+[0.000635] (-) JobUnselected: {'identifier': 'tare_planner'}
+[0.000652] (-) JobUnselected: {'identifier': 'teleop_rviz_plugin'}
+[0.000667] (-) JobUnselected: {'identifier': 'teleop_rviz_plugin_plus'}
+[0.000683] (-) JobUnselected: {'identifier': 'terrain_analysis'}
+[0.000701] (-) JobUnselected: {'identifier': 'terrain_analysis_ext'}
+[0.000712] (-) JobUnselected: {'identifier': 'vehicle_simulator'}
+[0.000724] (-) JobUnselected: {'identifier': 'visibility_graph_msg'}
+[0.000736] (-) JobUnselected: {'identifier': 'visualization_tools'}
+[0.000748] (-) JobUnselected: {'identifier': 'waypoint_example'}
+[0.000760] (-) JobUnselected: {'identifier': 'waypoint_rviz_plugin'}
+[0.000775] (local_planner) JobQueued: {'identifier': 'local_planner', 'dependencies': OrderedDict([('ception_msgs', '/home/wook/ros2/ros2_ws/install/ception_msgs'), ('motion_msgs', '/home/wook/ros2/ros2_ws/install/motion_msgs')])}
+[0.000795] (local_planner) JobStarted: {'identifier': 'local_planner'}
+[0.017009] (local_planner) JobProgress: {'identifier': 'local_planner', 'progress': 'cmake'}
+[0.017984] (local_planner) JobProgress: {'identifier': 'local_planner', 'progress': 'build'}
+[0.018641] (local_planner) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wook/ros2/ros2_ws/build/local_planner', '--', '-j32', '-l32'], 'cwd': '/home/wook/ros2/ros2_ws/build/local_planner', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'wook'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wook/ros2/ros2_ws/install/motion_msgs/lib:/home/wook/ros2/ros2_ws/install/ception_msgs/lib:/home/wook/ros2/ros2_ws/install/visibility_graph_msg/lib:/home/wook/ros2/ros2_ws/install/osr_interfaces/lib:/home/wook/ros2/ros2_ws/install/orbbec_camera/lib:/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs/lib:/home/wook/ros2/ros2_ws/install/diablo_body/lib:/home/wook/ros2/ros2_ws/install/diablo_utils/lib:/home/wook/ros2/ros2_ws/install/domain_bridge/lib:/home/wook/ros2/ros2_ws/install/arise_slam_mid360_msgs/lib:/home/wook/orbbec_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wook'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('CONNEXTDDS_DIR', '/opt/rti.com/rti_connext_dds-6.0.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('NDDSHOME', '/opt/rti.com/rti_connext_dds-6.0.1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2032'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=489a3c063587a616ad5e43c6689b393c'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/wook/ros2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'wook'), ('http_proxy', 'http://127.0.0.1:7890:8080/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wook'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/bin:/home/wook/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wook:@/tmp/.ICE-unix/2032,unix/wook:/tmp/.ICE-unix/2032'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/201437fb_7e34_4106_8e99_cfd6c42104e8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ORB_SLAM3_ROOT_DIR', '/home/wook/ros2/orb_slam3/ORB_SLAM3'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/wook/ros2/ros2_ws/install/waypoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/waypoint_example:/home/wook/ros2/ros2_ws/install/robot_bringup:/home/wook/ros2/ros2_ws/install/visualization_tools:/home/wook/ros2/ros2_ws/install/graph_decoder:/home/wook/ros2/ros2_ws/install/far_planner:/home/wook/ros2/ros2_ws/install/boundary_handler:/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/home/wook/ros2/ros2_ws/install/vehicle_simulator:/home/wook/ros2/ros2_ws/install/terrain_analysis_ext:/home/wook/ros2/ros2_ws/install/terrain_analysis:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin_plus:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin:/home/wook/ros2/ros2_ws/install/tare_planner:/home/wook/ros2/ros2_ws/install/sensor_scan_generation:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/receive_theta:/home/wook/ros2/ros2_ws/install/pointcloud_adapter:/home/wook/ros2/ros2_ws/install/osr_control:/home/wook/ros2/ros2_ws/install/osr_interfaces:/home/wook/ros2/ros2_ws/install/osr_gazebo:/home/wook/ros2/ros2_ws/install/osr_bringup:/home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher:/home/wook/ros2/ros2_ws/install/orbbec_description:/home/wook/ros2/ros2_ws/install/orbbec_camera:/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs:/home/wook/ros2/ros2_ws/install/local_planner:/home/wook/ros2/ros2_ws/install/diablo_ctrl:/home/wook/ros2/ros2_ws/install/diablo_body:/home/wook/ros2/ros2_ws/install/diablo_utils:/home/wook/ros2/ros2_ws/install/diablo_teleop_joy:/home/wook/ros2/ros2_ws/install/diablo_teleop:/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/goalpoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/domain_bridge:/home/wook/ros2/ros2_ws/install/ception_msgs:/home/wook/ros2/ros2_ws/install/arise_slam_mid360_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('CONNEXTDDS_ARCH', 'x64Linux4gcc7.3.0'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wook/ros2/ros2_ws/build/local_planner'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=489a3c063587a616ad5e43c6689b393c'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wook/ros2/ros2_ws/install/visualization_tools/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/visibility_graph_msg/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages:/home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages:/home/wook/ros2/ros2_ws/install/osr_interfaces/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages:/home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/ception_msgs/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/arise_slam_mid360_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890:8080/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/ception_msgs:/home/wook/ros2/ros2_ws/install/waypoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/waypoint_example:/home/wook/ros2/ros2_ws/install/robot_bringup:/home/wook/ros2/ros2_ws/install/visualization_tools:/home/wook/ros2/ros2_ws/install/graph_decoder:/home/wook/ros2/ros2_ws/install/far_planner:/home/wook/ros2/ros2_ws/install/boundary_handler:/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/home/wook/ros2/ros2_ws/install/vehicle_simulator:/home/wook/ros2/ros2_ws/install/terrain_analysis_ext:/home/wook/ros2/ros2_ws/install/terrain_analysis:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin_plus:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin:/home/wook/ros2/ros2_ws/install/tare_planner:/home/wook/ros2/ros2_ws/install/sensor_scan_generation:/home/wook/ros2/ros2_ws/install/receive_theta:/home/wook/ros2/ros2_ws/install/pointcloud_adapter:/home/wook/ros2/ros2_ws/install/osr_interfaces:/home/wook/ros2/ros2_ws/install/osr_gazebo:/home/wook/ros2/ros2_ws/install/osr_bringup:/home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher:/home/wook/ros2/ros2_ws/install/orbbec_description:/home/wook/ros2/ros2_ws/install/orbbec_camera:/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs:/home/wook/ros2/ros2_ws/install/local_planner:/home/wook/ros2/ros2_ws/install/diablo_ctrl:/home/wook/ros2/ros2_ws/install/diablo_body:/home/wook/ros2/ros2_ws/install/diablo_utils:/home/wook/ros2/ros2_ws/install/diablo_teleop_joy:/home/wook/ros2/ros2_ws/install/goalpoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/domain_bridge:/home/wook/ros2/ros2_ws/install/arise_slam_mid360_msgs:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/osr_control:/home/wook/ros2/ros2_ws/install/diablo_teleop:/opt/ros/humble')]), 'shell': False}
+[0.099340] (-) TimerEvent: {}
+[0.123751] (local_planner) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/pathFollower.dir/src/pathFollower.cpp.o\x1b[0m\n'}
+[0.126841] (local_planner) StdoutLine: {'line': b'[ 75%] Built target localPlanner\n'}
+[0.199431] (-) TimerEvent: {}
+[0.299591] (-) TimerEvent: {}
+[0.399744] (-) TimerEvent: {}
+[0.499894] (-) TimerEvent: {}
+[0.600040] (-) TimerEvent: {}
+[0.700192] (-) TimerEvent: {}
+[0.800347] (-) TimerEvent: {}
+[0.900490] (-) TimerEvent: {}
+[1.000634] (-) TimerEvent: {}
+[1.100777] (-) TimerEvent: {}
+[1.200924] (-) TimerEvent: {}
+[1.301081] (-) TimerEvent: {}
+[1.401230] (-) TimerEvent: {}
+[1.501378] (-) TimerEvent: {}
+[1.601530] (-) TimerEvent: {}
+[1.701679] (-) TimerEvent: {}
+[1.801830] (-) TimerEvent: {}
+[1.901984] (-) TimerEvent: {}
+[2.002126] (-) TimerEvent: {}
+[2.102262] (-) TimerEvent: {}
+[2.202399] (-) TimerEvent: {}
+[2.302557] (-) TimerEvent: {}
+[2.402692] (-) TimerEvent: {}
+[2.502825] (-) TimerEvent: {}
+[2.602958] (-) TimerEvent: {}
+[2.703093] (-) TimerEvent: {}
+[2.803226] (-) TimerEvent: {}
+[2.903356] (-) TimerEvent: {}
+[3.003510] (-) TimerEvent: {}
+[3.103637] (-) TimerEvent: {}
+[3.203777] (-) TimerEvent: {}
+[3.303943] (-) TimerEvent: {}
+[3.339398] (local_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.339537] (local_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:432:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around \xe2\x80\x98\x1b[01m\x1b[K&&\x1b[m\x1b[K\xe2\x80\x99 within \xe2\x80\x98\x1b[01m\x1b[K||\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.339595] (local_planner) StderrLine: {'line': b'  432 |       if (\x1b[01;35m\x1b[KodomTime < slowInitTime + slowTime1 && slowInitTime > 0\x1b[m\x1b[K || slowDown == 1) joySpeed3 *= slowRate1;\n'}
+[3.339641] (local_planner) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.339681] (local_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:433:64:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around \xe2\x80\x98\x1b[01m\x1b[K&&\x1b[m\x1b[K\xe2\x80\x99 within \xe2\x80\x98\x1b[01m\x1b[K||\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.339723] (local_planner) StderrLine: {'line': b'  433 |       else if (\x1b[01;35m\x1b[KodomTime < slowInitTime + slowTime1 + slowTime2 && slowInitTime > 0\x1b[m\x1b[K || slowDown == 2) joySpeed3 *= slowRate2;\n'}
+[3.339769] (local_planner) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.340752] (local_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:355:7:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KctrlInitFrameCount\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.340822] (local_planner) StderrLine: {'line': b'  355 |   int \x1b[01;35m\x1b[KctrlInitFrameCount\x1b[m\x1b[K = 150;\n'}
+[3.340860] (local_planner) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.404012] (-) TimerEvent: {}
+[3.504193] (-) TimerEvent: {}
+[3.604408] (-) TimerEvent: {}
+[3.704545] (-) TimerEvent: {}
+[3.804680] (-) TimerEvent: {}
+[3.904813] (-) TimerEvent: {}
+[4.004947] (-) TimerEvent: {}
+[4.105093] (-) TimerEvent: {}
+[4.205235] (-) TimerEvent: {}
+[4.305389] (-) TimerEvent: {}
+[4.405523] (-) TimerEvent: {}
+[4.505658] (-) TimerEvent: {}
+[4.605794] (-) TimerEvent: {}
+[4.705928] (-) TimerEvent: {}
+[4.806059] (-) TimerEvent: {}
+[4.906197] (-) TimerEvent: {}
+[5.006345] (-) TimerEvent: {}
+[5.106691] (-) TimerEvent: {}
+[5.206968] (-) TimerEvent: {}
+[5.307248] (-) TimerEvent: {}
+[5.407592] (-) TimerEvent: {}
+[5.507875] (-) TimerEvent: {}
+[5.608166] (-) TimerEvent: {}
+[5.708454] (-) TimerEvent: {}
+[5.808735] (-) TimerEvent: {}
+[5.908997] (-) TimerEvent: {}
+[6.009270] (-) TimerEvent: {}
+[6.109570] (-) TimerEvent: {}
+[6.209859] (-) TimerEvent: {}
+[6.310139] (-) TimerEvent: {}
+[6.410426] (-) TimerEvent: {}
+[6.510719] (-) TimerEvent: {}
+[6.610998] (-) TimerEvent: {}
+[6.711289] (-) TimerEvent: {}
+[6.811622] (-) TimerEvent: {}
+[6.911928] (-) TimerEvent: {}
+[7.012235] (-) TimerEvent: {}
+[7.112544] (-) TimerEvent: {}
+[7.212814] (-) TimerEvent: {}
+[7.313081] (-) TimerEvent: {}
+[7.413360] (-) TimerEvent: {}
+[7.513615] (-) TimerEvent: {}
+[7.613880] (-) TimerEvent: {}
+[7.714153] (-) TimerEvent: {}
+[7.814430] (-) TimerEvent: {}
+[7.914707] (-) TimerEvent: {}
+[8.014967] (-) TimerEvent: {}
+[8.115245] (-) TimerEvent: {}
+[8.215533] (-) TimerEvent: {}
+[8.315792] (-) TimerEvent: {}
+[8.416081] (-) TimerEvent: {}
+[8.516398] (-) TimerEvent: {}
+[8.616688] (-) TimerEvent: {}
+[8.716994] (-) TimerEvent: {}
+[8.817287] (-) TimerEvent: {}
+[8.917588] (-) TimerEvent: {}
+[9.017824] (-) TimerEvent: {}
+[9.118065] (-) TimerEvent: {}
+[9.218335] (-) TimerEvent: {}
+[9.318592] (-) TimerEvent: {}
+[9.418850] (-) TimerEvent: {}
+[9.519127] (-) TimerEvent: {}
+[9.619449] (-) TimerEvent: {}
+[9.719734] (-) TimerEvent: {}
+[9.820025] (-) TimerEvent: {}
+[9.920362] (-) TimerEvent: {}
+[10.020713] (-) TimerEvent: {}
+[10.121032] (-) TimerEvent: {}
+[10.221359] (-) TimerEvent: {}
+[10.321630] (-) TimerEvent: {}
+[10.421873] (-) TimerEvent: {}
+[10.522122] (-) TimerEvent: {}
+[10.622393] (-) TimerEvent: {}
+[10.722647] (-) TimerEvent: {}
+[10.822889] (-) TimerEvent: {}
+[10.923146] (-) TimerEvent: {}
+[11.023405] (-) TimerEvent: {}
+[11.123658] (-) TimerEvent: {}
+[11.223920] (-) TimerEvent: {}
+[11.324166] (-) TimerEvent: {}
+[11.424411] (-) TimerEvent: {}
+[11.524642] (-) TimerEvent: {}
+[11.624897] (-) TimerEvent: {}
+[11.725154] (-) TimerEvent: {}
+[11.825410] (-) TimerEvent: {}
+[11.925681] (-) TimerEvent: {}
+[12.025951] (-) TimerEvent: {}
+[12.126223] (-) TimerEvent: {}
+[12.226511] (-) TimerEvent: {}
+[12.326759] (-) TimerEvent: {}
+[12.427022] (-) TimerEvent: {}
+[12.527295] (-) TimerEvent: {}
+[12.627578] (-) TimerEvent: {}
+[12.727850] (-) TimerEvent: {}
+[12.828118] (-) TimerEvent: {}
+[12.928376] (-) TimerEvent: {}
+[13.028614] (-) TimerEvent: {}
+[13.128860] (-) TimerEvent: {}
+[13.229126] (-) TimerEvent: {}
+[13.329389] (-) TimerEvent: {}
+[13.429655] (-) TimerEvent: {}
+[13.529926] (-) TimerEvent: {}
+[13.630194] (-) TimerEvent: {}
+[13.730491] (-) TimerEvent: {}
+[13.830760] (-) TimerEvent: {}
+[13.931031] (-) TimerEvent: {}
+[14.031302] (-) TimerEvent: {}
+[14.131625] (-) TimerEvent: {}
+[14.231903] (-) TimerEvent: {}
+[14.332160] (-) TimerEvent: {}
+[14.432431] (-) TimerEvent: {}
+[14.532709] (-) TimerEvent: {}
+[14.632997] (-) TimerEvent: {}
+[14.727973] (local_planner) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pathFollower\x1b[0m\n'}
+[14.733076] (-) TimerEvent: {}
+[14.833280] (-) TimerEvent: {}
+[14.933613] (-) TimerEvent: {}
+[15.033888] (-) TimerEvent: {}
+[15.130281] (local_planner) StdoutLine: {'line': b'[100%] Built target pathFollower\n'}
+[15.133962] (-) TimerEvent: {}
+[15.139662] (local_planner) CommandEnded: {'returncode': 0}
+[15.140512] (local_planner) JobProgress: {'identifier': 'local_planner', 'progress': 'install'}
+[15.147149] (local_planner) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wook/ros2/ros2_ws/build/local_planner'], 'cwd': '/home/wook/ros2/ros2_ws/build/local_planner', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'wook'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wook/ros2/ros2_ws/install/motion_msgs/lib:/home/wook/ros2/ros2_ws/install/ception_msgs/lib:/home/wook/ros2/ros2_ws/install/visibility_graph_msg/lib:/home/wook/ros2/ros2_ws/install/osr_interfaces/lib:/home/wook/ros2/ros2_ws/install/orbbec_camera/lib:/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs/lib:/home/wook/ros2/ros2_ws/install/diablo_body/lib:/home/wook/ros2/ros2_ws/install/diablo_utils/lib:/home/wook/ros2/ros2_ws/install/domain_bridge/lib:/home/wook/ros2/ros2_ws/install/arise_slam_mid360_msgs/lib:/home/wook/orbbec_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wook'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('CONNEXTDDS_DIR', '/opt/rti.com/rti_connext_dds-6.0.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('NDDSHOME', '/opt/rti.com/rti_connext_dds-6.0.1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2032'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=489a3c063587a616ad5e43c6689b393c'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/wook/ros2/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'wook'), ('http_proxy', 'http://127.0.0.1:7890:8080/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wook'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/bin:/home/wook/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wook:@/tmp/.ICE-unix/2032,unix/wook:/tmp/.ICE-unix/2032'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/201437fb_7e34_4106_8e99_cfd6c42104e8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ORB_SLAM3_ROOT_DIR', '/home/wook/ros2/orb_slam3/ORB_SLAM3'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/wook/ros2/ros2_ws/install/waypoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/waypoint_example:/home/wook/ros2/ros2_ws/install/robot_bringup:/home/wook/ros2/ros2_ws/install/visualization_tools:/home/wook/ros2/ros2_ws/install/graph_decoder:/home/wook/ros2/ros2_ws/install/far_planner:/home/wook/ros2/ros2_ws/install/boundary_handler:/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/home/wook/ros2/ros2_ws/install/vehicle_simulator:/home/wook/ros2/ros2_ws/install/terrain_analysis_ext:/home/wook/ros2/ros2_ws/install/terrain_analysis:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin_plus:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin:/home/wook/ros2/ros2_ws/install/tare_planner:/home/wook/ros2/ros2_ws/install/sensor_scan_generation:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/receive_theta:/home/wook/ros2/ros2_ws/install/pointcloud_adapter:/home/wook/ros2/ros2_ws/install/osr_control:/home/wook/ros2/ros2_ws/install/osr_interfaces:/home/wook/ros2/ros2_ws/install/osr_gazebo:/home/wook/ros2/ros2_ws/install/osr_bringup:/home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher:/home/wook/ros2/ros2_ws/install/orbbec_description:/home/wook/ros2/ros2_ws/install/orbbec_camera:/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs:/home/wook/ros2/ros2_ws/install/local_planner:/home/wook/ros2/ros2_ws/install/diablo_ctrl:/home/wook/ros2/ros2_ws/install/diablo_body:/home/wook/ros2/ros2_ws/install/diablo_utils:/home/wook/ros2/ros2_ws/install/diablo_teleop_joy:/home/wook/ros2/ros2_ws/install/diablo_teleop:/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/goalpoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/domain_bridge:/home/wook/ros2/ros2_ws/install/ception_msgs:/home/wook/ros2/ros2_ws/install/arise_slam_mid360_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('CONNEXTDDS_ARCH', 'x64Linux4gcc7.3.0'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wook/ros2/ros2_ws/build/local_planner'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=489a3c063587a616ad5e43c6689b393c'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wook/ros2/ros2_ws/install/visualization_tools/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/visibility_graph_msg/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages:/home/wook/ros2/ros2_ws/install/osr_control/lib/python3.10/site-packages:/home/wook/ros2/ros2_ws/install/osr_interfaces/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/diablo_teleop/lib/python3.10/site-packages:/home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/domain_bridge/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/ception_msgs/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/arise_slam_mid360_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890:8080/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/ception_msgs:/home/wook/ros2/ros2_ws/install/waypoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/waypoint_example:/home/wook/ros2/ros2_ws/install/robot_bringup:/home/wook/ros2/ros2_ws/install/visualization_tools:/home/wook/ros2/ros2_ws/install/graph_decoder:/home/wook/ros2/ros2_ws/install/far_planner:/home/wook/ros2/ros2_ws/install/boundary_handler:/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/home/wook/ros2/ros2_ws/install/vehicle_simulator:/home/wook/ros2/ros2_ws/install/terrain_analysis_ext:/home/wook/ros2/ros2_ws/install/terrain_analysis:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin_plus:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin:/home/wook/ros2/ros2_ws/install/tare_planner:/home/wook/ros2/ros2_ws/install/sensor_scan_generation:/home/wook/ros2/ros2_ws/install/receive_theta:/home/wook/ros2/ros2_ws/install/pointcloud_adapter:/home/wook/ros2/ros2_ws/install/osr_interfaces:/home/wook/ros2/ros2_ws/install/osr_gazebo:/home/wook/ros2/ros2_ws/install/osr_bringup:/home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher:/home/wook/ros2/ros2_ws/install/orbbec_description:/home/wook/ros2/ros2_ws/install/orbbec_camera:/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs:/home/wook/ros2/ros2_ws/install/local_planner:/home/wook/ros2/ros2_ws/install/diablo_ctrl:/home/wook/ros2/ros2_ws/install/diablo_body:/home/wook/ros2/ros2_ws/install/diablo_utils:/home/wook/ros2/ros2_ws/install/diablo_teleop_joy:/home/wook/ros2/ros2_ws/install/goalpoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/domain_bridge:/home/wook/ros2/ros2_ws/install/arise_slam_mid360_msgs:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/osr_control:/home/wook/ros2/ros2_ws/install/diablo_teleop:/opt/ros/humble')]), 'shell': False}
+[15.152534] (local_planner) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[15.153093] (local_planner) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[15.153346] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/lib/local_planner/localPlanner\n'}
+[15.153426] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/lib/local_planner/pathFollower\n'}
+[15.153931] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/launch/local_planner.launch\n'}
+[15.154165] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/paths/correspondences.txt\n'}
+[15.154315] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/paths/pathList.ply\n'}
+[15.154470] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/paths/path_generator.m\n'}
+[15.154628] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/paths/paths.ply\n'}
+[15.154772] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/paths/startPaths.ply\n'}
+[15.154866] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/ament_index/resource_index/package_run_dependencies/local_planner\n'}
+[15.155044] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/ament_index/resource_index/parent_prefix_path/local_planner\n'}
+[15.155250] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/environment/ament_prefix_path.sh\n'}
+[15.155400] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/environment/ament_prefix_path.dsv\n'}
+[15.155561] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/environment/path.sh\n'}
+[15.155769] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/environment/path.dsv\n'}
+[15.155916] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/local_setup.bash\n'}
+[15.156071] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/local_setup.sh\n'}
+[15.156231] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/local_setup.zsh\n'}
+[15.156390] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/local_setup.dsv\n'}
+[15.156457] (local_planner) StdoutLine: {'line': b'-- Symlinking: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/package.dsv\n'}
+[15.163064] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/ament_index/resource_index/packages/local_planner\n'}
+[15.163236] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/cmake/local_plannerConfig.cmake\n'}
+[15.163381] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/cmake/local_plannerConfig-version.cmake\n'}
+[15.163557] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/package.xml\n'}
+[15.164757] (local_planner) CommandEnded: {'returncode': 0}
+[15.176897] (local_planner) JobEnded: {'identifier': 'local_planner', 'rc': 0}
+[15.177210] (-) EventReactorShutdown: {}

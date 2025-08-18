@@ -1,0 +1,12 @@
+[0.009s] Invoking command in '/home/wook/ros2/ros2_ws/build/pointcloud_adapter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/osr_control:/home/wook/ros2/ros2_ws/install/diablo_teleop:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/pointcloud_adapter -- -j32 -l32
+[0.065s] [35m[1mConsolidate compiler generated dependencies of target adapter_node[0m
+[0.095s] [ 50%] [32mBuilding CXX object CMakeFiles/adapter_node.dir/src/pointcloud_adapter.cpp.o[0m
+[2.914s] [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:[m[K In member function ‘[01m[Kvoid PointCloudAdapter::cloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.914s] [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/slam/pointcloud_adapter/src/pointcloud_adapter.cpp:64:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_rgb[m[K’ was not declared in this scope; did you mean ‘[01m[Kcloud_xyz[m[K’?
+[2.914s]    64 |         cloud_with_intensity->points.resize([01;31m[Kcloud_rgb[m[K->points.size());
+[2.914s]       |                                             [01;31m[K^~~~~~~~~[m[K
+[2.914s]       |                                             [32m[Kcloud_xyz[m[K
+[4.744s] gmake[2]: *** [CMakeFiles/adapter_node.dir/build.make:76: CMakeFiles/adapter_node.dir/src/pointcloud_adapter.cpp.o] Error 1
+[4.744s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/adapter_node.dir/all] Error 2
+[4.744s] gmake: *** [Makefile:146: all] Error 2
+[4.747s] Invoked command in '/home/wook/ros2/ros2_ws/build/pointcloud_adapter' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/osr_control:/home/wook/ros2/ros2_ws/install/diablo_teleop:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/pointcloud_adapter -- -j32 -l32

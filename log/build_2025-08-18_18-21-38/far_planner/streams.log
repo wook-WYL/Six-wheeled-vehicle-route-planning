@@ -1,0 +1,113 @@
+[0.011s] Invoking command in '/home/wook/ros2/ros2_ws/build/far_planner': CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/home/wook/ros2/ros2_ws/install/waypoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/waypoint_example:/home/wook/ros2/ros2_ws/install/robot_bringup:/home/wook/ros2/ros2_ws/install/visualization_tools:/home/wook/ros2/ros2_ws/install/graph_decoder:/home/wook/ros2/ros2_ws/install/far_planner:/home/wook/ros2/ros2_ws/install/boundary_handler:/home/wook/ros2/ros2_ws/install/vehicle_simulator:/home/wook/ros2/ros2_ws/install/terrain_analysis_ext:/home/wook/ros2/ros2_ws/install/terrain_analysis:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin_plus:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin:/home/wook/ros2/ros2_ws/install/tare_planner:/home/wook/ros2/ros2_ws/install/sensor_scan_generation:/home/wook/ros2/ros2_ws/install/receive_theta:/home/wook/ros2/ros2_ws/install/pointcloud_adapter:/home/wook/ros2/ros2_ws/install/osr_interfaces:/home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher:/home/wook/ros2/ros2_ws/install/orbbec_description:/home/wook/ros2/ros2_ws/install/orbbec_camera:/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs:/home/wook/ros2/ros2_ws/install/local_planner:/home/wook/ros2/ros2_ws/install/diablo_ctrl:/home/wook/ros2/ros2_ws/install/diablo_body:/home/wook/ros2/ros2_ws/install/diablo_utils:/home/wook/ros2/ros2_ws/install/diablo_teleop_joy:/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/goalpoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/domain_bridge:/home/wook/ros2/ros2_ws/install/arise_slam_mid360_msgs:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble /usr/bin/cmake /home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/far_planner -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/far_planner
+[0.020s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.093s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.101s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.125s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.126s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.130s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.138s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.146s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.169s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.170s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.255s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.289s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[0.295s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.314s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.325s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[0.349s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.374s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.597s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.601s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.696s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.700s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.705s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.796s] -- Found Qhull version 8.0.2
+[0.891s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.981s] [33mCMake Warning (dev) at CMakeLists.txt:24 (find_package):
+[0.981s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[0.981s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[0.981s]   command to set the policy and suppress this warning.
+[0.981s] 
+[0.982s]   CMake variable PCL_ROOT is set to:
+[0.982s] 
+[0.982s]     /usr
+[0.982s] 
+[0.982s]   For compatibility, CMake is ignoring the variable.
+[0.982s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.982s] [0m
+[0.993s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.005s] -- Found tf2: 0.25.13 (/opt/ros/humble/share/tf2/cmake)
+[1.008s] -- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.058s] -- Found tf2_geometry_msgs: 0.25.13 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.061s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.062s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.063s] -- Found tf2_sensor_msgs: 0.25.13 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)
+[1.065s] -- Found visibility_graph_msg: 0.0.1 (/home/wook/ros2/ros2_ws/install/visibility_graph_msg/share/visibility_graph_msg/cmake)
+[1.127s] -- Configuring done
+[1.153s] -- Generating done
+[1.159s] -- Build files have been written to: /home/wook/ros2/ros2_ws/build/far_planner
+[1.170s] Invoked command in '/home/wook/ros2/ros2_ws/build/far_planner' returned '0': CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/home/wook/ros2/ros2_ws/install/waypoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/waypoint_example:/home/wook/ros2/ros2_ws/install/robot_bringup:/home/wook/ros2/ros2_ws/install/visualization_tools:/home/wook/ros2/ros2_ws/install/graph_decoder:/home/wook/ros2/ros2_ws/install/far_planner:/home/wook/ros2/ros2_ws/install/boundary_handler:/home/wook/ros2/ros2_ws/install/vehicle_simulator:/home/wook/ros2/ros2_ws/install/terrain_analysis_ext:/home/wook/ros2/ros2_ws/install/terrain_analysis:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin_plus:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin:/home/wook/ros2/ros2_ws/install/tare_planner:/home/wook/ros2/ros2_ws/install/sensor_scan_generation:/home/wook/ros2/ros2_ws/install/receive_theta:/home/wook/ros2/ros2_ws/install/pointcloud_adapter:/home/wook/ros2/ros2_ws/install/osr_interfaces:/home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher:/home/wook/ros2/ros2_ws/install/orbbec_description:/home/wook/ros2/ros2_ws/install/orbbec_camera:/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs:/home/wook/ros2/ros2_ws/install/local_planner:/home/wook/ros2/ros2_ws/install/diablo_ctrl:/home/wook/ros2/ros2_ws/install/diablo_body:/home/wook/ros2/ros2_ws/install/diablo_utils:/home/wook/ros2/ros2_ws/install/diablo_teleop_joy:/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/goalpoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/domain_bridge:/home/wook/ros2/ros2_ws/install/arise_slam_mid360_msgs:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble /usr/bin/cmake /home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/far_planner -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/wook/ros2/ros2_ws/install/far_planner
+[1.171s] Invoking command in '/home/wook/ros2/ros2_ws/build/far_planner': CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/home/wook/ros2/ros2_ws/install/waypoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/waypoint_example:/home/wook/ros2/ros2_ws/install/robot_bringup:/home/wook/ros2/ros2_ws/install/visualization_tools:/home/wook/ros2/ros2_ws/install/graph_decoder:/home/wook/ros2/ros2_ws/install/far_planner:/home/wook/ros2/ros2_ws/install/boundary_handler:/home/wook/ros2/ros2_ws/install/vehicle_simulator:/home/wook/ros2/ros2_ws/install/terrain_analysis_ext:/home/wook/ros2/ros2_ws/install/terrain_analysis:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin_plus:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin:/home/wook/ros2/ros2_ws/install/tare_planner:/home/wook/ros2/ros2_ws/install/sensor_scan_generation:/home/wook/ros2/ros2_ws/install/receive_theta:/home/wook/ros2/ros2_ws/install/pointcloud_adapter:/home/wook/ros2/ros2_ws/install/osr_interfaces:/home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher:/home/wook/ros2/ros2_ws/install/orbbec_description:/home/wook/ros2/ros2_ws/install/orbbec_camera:/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs:/home/wook/ros2/ros2_ws/install/local_planner:/home/wook/ros2/ros2_ws/install/diablo_ctrl:/home/wook/ros2/ros2_ws/install/diablo_body:/home/wook/ros2/ros2_ws/install/diablo_utils:/home/wook/ros2/ros2_ws/install/diablo_teleop_joy:/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/goalpoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/domain_bridge:/home/wook/ros2/ros2_ws/install/arise_slam_mid360_msgs:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/far_planner -- -j32 -l32
+[1.215s] [35m[1mConsolidate compiler generated dependencies of target far_planner[0m
+[1.287s] [  8%] [32mBuilding CXX object CMakeFiles/far_planner.dir/src/far_planner.cpp.o[0m
+[1.287s] [ 16%] [32mBuilding CXX object CMakeFiles/far_planner.dir/src/dynamic_graph.cpp.o[0m
+[1.288s] [ 25%] [32mBuilding CXX object CMakeFiles/far_planner.dir/src/planner_visualizer.cpp.o[0m
+[1.291s] [ 33%] [32mBuilding CXX object CMakeFiles/far_planner.dir/src/graph_planner.cpp.o[0m
+[1.291s] [ 41%] [32mBuilding CXX object CMakeFiles/far_planner.dir/src/utility.cpp.o[0m
+[1.292s] [ 50%] [32mBuilding CXX object CMakeFiles/far_planner.dir/src/contour_detector.cpp.o[0m
+[1.293s] [ 58%] [32mBuilding CXX object CMakeFiles/far_planner.dir/src/contour_graph.cpp.o[0m
+[1.294s] [ 66%] [32mBuilding CXX object CMakeFiles/far_planner.dir/src/map_handler.cpp.o[0m
+[1.295s] [ 75%] [32mBuilding CXX object CMakeFiles/far_planner.dir/src/scan_handler.cpp.o[0m
+[1.297s] [ 83%] [32mBuilding CXX object CMakeFiles/far_planner.dir/src/graph_msger.cpp.o[0m
+[1.298s] [ 91%] [32mBuilding CXX object CMakeFiles/far_planner.dir/src/terrain_planner.cpp.o[0m
+[5.895s] [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/far_planner/src/contour_detector.cpp:[m[K In member function ‘[01m[Kvoid ContourDetector::ShowCornerImage(const cv::Mat&, const PointCloudPtr&)[m[K’:
+[5.901s] [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/far_planner/src/contour_detector.cpp:94:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kimg_mat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.902s]    94 | void ContourDetector::ShowCornerImage([01;35m[Kconst cv::Mat& img_mat[m[K, const PointCloudPtr& pc) {
+[5.902s]       |                                       [01;35m[K~~~~~~~~~~~~~~~^~~~~~~[m[K
+[6.803s] In file included from [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/far_planner/src/far_planner.cpp:9[m[K:
+[6.803s] [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/far_planner/include/far_planner/far_planner.h:[m[K In member function ‘[01m[Kvoid FARMaster::ResetGraphCallBack(std_msgs::msg::Empty_<std::allocator<void> >::SharedPtr)[m[K’:
+[6.803s] [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/far_planner/include/far_planner/far_planner.h:154:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.803s]   154 | etGraphCallBack([01;35m[Kconst std_msgs::msg::Empty::SharedPtr msg[m[K) {
+[6.803s]       |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[6.803s] 
+[6.807s] [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/far_planner/include/far_planner/far_planner.h:[m[K In member function ‘[01m[Kvoid FARMaster::ReadFileCommand(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[6.807s] [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/far_planner/include/far_planner/far_planner.h:193:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.807s]   193 | eadFileCommand([01;35m[Kconst std_msgs::msg::String::SharedPtr msg[m[K) {
+[6.807s]       |                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[6.807s] 
+[6.807s] [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/far_planner/include/far_planner/far_planner.h:[m[K In member function ‘[01m[Kvoid FARMaster::SaveFileCommand(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[6.807s] [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/route_planner/far_planner/include/far_planner/far_planner.h:200:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.807s]   200 | aveFileCommand([01;35m[Kconst std_msgs::msg::String::SharedPtr msg[m[K) {
+[6.807s]       |                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[6.807s] 
+[24.597s] [100%] [32m[1mLinking CXX executable far_planner[0m
+[25.201s] [100%] Built target far_planner
+[25.227s] Invoked command in '/home/wook/ros2/ros2_ws/build/far_planner' returned '0': CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/home/wook/ros2/ros2_ws/install/waypoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/waypoint_example:/home/wook/ros2/ros2_ws/install/robot_bringup:/home/wook/ros2/ros2_ws/install/visualization_tools:/home/wook/ros2/ros2_ws/install/graph_decoder:/home/wook/ros2/ros2_ws/install/far_planner:/home/wook/ros2/ros2_ws/install/boundary_handler:/home/wook/ros2/ros2_ws/install/vehicle_simulator:/home/wook/ros2/ros2_ws/install/terrain_analysis_ext:/home/wook/ros2/ros2_ws/install/terrain_analysis:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin_plus:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin:/home/wook/ros2/ros2_ws/install/tare_planner:/home/wook/ros2/ros2_ws/install/sensor_scan_generation:/home/wook/ros2/ros2_ws/install/receive_theta:/home/wook/ros2/ros2_ws/install/pointcloud_adapter:/home/wook/ros2/ros2_ws/install/osr_interfaces:/home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher:/home/wook/ros2/ros2_ws/install/orbbec_description:/home/wook/ros2/ros2_ws/install/orbbec_camera:/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs:/home/wook/ros2/ros2_ws/install/local_planner:/home/wook/ros2/ros2_ws/install/diablo_ctrl:/home/wook/ros2/ros2_ws/install/diablo_body:/home/wook/ros2/ros2_ws/install/diablo_utils:/home/wook/ros2/ros2_ws/install/diablo_teleop_joy:/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/goalpoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/domain_bridge:/home/wook/ros2/ros2_ws/install/arise_slam_mid360_msgs:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/far_planner -- -j32 -l32
+[25.229s] Invoking command in '/home/wook/ros2/ros2_ws/build/far_planner': CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/home/wook/ros2/ros2_ws/install/waypoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/waypoint_example:/home/wook/ros2/ros2_ws/install/robot_bringup:/home/wook/ros2/ros2_ws/install/visualization_tools:/home/wook/ros2/ros2_ws/install/graph_decoder:/home/wook/ros2/ros2_ws/install/far_planner:/home/wook/ros2/ros2_ws/install/boundary_handler:/home/wook/ros2/ros2_ws/install/vehicle_simulator:/home/wook/ros2/ros2_ws/install/terrain_analysis_ext:/home/wook/ros2/ros2_ws/install/terrain_analysis:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin_plus:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin:/home/wook/ros2/ros2_ws/install/tare_planner:/home/wook/ros2/ros2_ws/install/sensor_scan_generation:/home/wook/ros2/ros2_ws/install/receive_theta:/home/wook/ros2/ros2_ws/install/pointcloud_adapter:/home/wook/ros2/ros2_ws/install/osr_interfaces:/home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher:/home/wook/ros2/ros2_ws/install/orbbec_description:/home/wook/ros2/ros2_ws/install/orbbec_camera:/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs:/home/wook/ros2/ros2_ws/install/local_planner:/home/wook/ros2/ros2_ws/install/diablo_ctrl:/home/wook/ros2/ros2_ws/install/diablo_body:/home/wook/ros2/ros2_ws/install/diablo_utils:/home/wook/ros2/ros2_ws/install/diablo_teleop_joy:/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/goalpoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/domain_bridge:/home/wook/ros2/ros2_ws/install/arise_slam_mid360_msgs:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/far_planner
+[25.233s] -- Install configuration: "Release"
+[25.234s] -- Execute custom install script
+[25.234s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/lib/far_planner/far_planner
+[25.241s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/launch/far_planner.launch
+[25.248s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/rviz/default.rviz
+[25.255s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/config/indoor.yaml
+[25.260s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/config/outdoor.yaml
+[25.267s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/data/boundary.ply
+[25.273s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/data/boundary_graph.vgh
+[25.279s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/data/indoor.vgh
+[25.285s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/data/trajectory.txt
+[25.291s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/ament_index/resource_index/package_run_dependencies/far_planner
+[25.297s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/ament_index/resource_index/parent_prefix_path/far_planner
+[25.304s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/environment/ament_prefix_path.sh
+[25.309s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/environment/ament_prefix_path.dsv
+[25.316s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/environment/path.sh
+[25.322s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/environment/path.dsv
+[25.328s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/local_setup.bash
+[25.334s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/local_setup.sh
+[25.339s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/local_setup.zsh
+[25.345s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/local_setup.dsv
+[25.350s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/package.dsv
+[25.356s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/ament_index/resource_index/packages/far_planner
+[25.362s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/cmake/far_plannerConfig.cmake
+[25.368s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/cmake/far_plannerConfig-version.cmake
+[25.374s] -- Symlinking: /home/wook/ros2/ros2_ws/install/far_planner/share/far_planner/package.xml
+[25.389s] Invoked command in '/home/wook/ros2/ros2_ws/build/far_planner' returned '0': CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/visibility_graph_msg:/home/wook/ros2/ros2_ws/install/waypoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/waypoint_example:/home/wook/ros2/ros2_ws/install/robot_bringup:/home/wook/ros2/ros2_ws/install/visualization_tools:/home/wook/ros2/ros2_ws/install/graph_decoder:/home/wook/ros2/ros2_ws/install/far_planner:/home/wook/ros2/ros2_ws/install/boundary_handler:/home/wook/ros2/ros2_ws/install/vehicle_simulator:/home/wook/ros2/ros2_ws/install/terrain_analysis_ext:/home/wook/ros2/ros2_ws/install/terrain_analysis:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin_plus:/home/wook/ros2/ros2_ws/install/teleop_rviz_plugin:/home/wook/ros2/ros2_ws/install/tare_planner:/home/wook/ros2/ros2_ws/install/sensor_scan_generation:/home/wook/ros2/ros2_ws/install/receive_theta:/home/wook/ros2/ros2_ws/install/pointcloud_adapter:/home/wook/ros2/ros2_ws/install/osr_interfaces:/home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher:/home/wook/ros2/ros2_ws/install/orbbec_description:/home/wook/ros2/ros2_ws/install/orbbec_camera:/home/wook/ros2/ros2_ws/install/orbbec_camera_msgs:/home/wook/ros2/ros2_ws/install/local_planner:/home/wook/ros2/ros2_ws/install/diablo_ctrl:/home/wook/ros2/ros2_ws/install/diablo_body:/home/wook/ros2/ros2_ws/install/diablo_utils:/home/wook/ros2/ros2_ws/install/diablo_teleop_joy:/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/goalpoint_rviz_plugin:/home/wook/ros2/ros2_ws/install/domain_bridge:/home/wook/ros2/ros2_ws/install/arise_slam_mid360_msgs:/home/wook/ros2/ros2_ws/install/ros_tcp_endpoint:/home/wook/ros2/ros2_ws/install/diablo_teleop:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/far_planner

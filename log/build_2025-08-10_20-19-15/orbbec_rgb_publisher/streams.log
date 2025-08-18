@@ -1,0 +1,30 @@
+[0.226s] Invoking command in '/home/wook/ros2/ros2_ws/build/orbbec_rgb_publisher': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/orbbec_rgb_publisher -- -j32 -l32
+[0.291s] [35m[1mConsolidate compiler generated dependencies of target orbbec_rgb_node[0m
+[0.292s] [35m[1mConsolidate compiler generated dependencies of target orbbec_depth_node[0m
+[0.292s] [35m[1mConsolidate compiler generated dependencies of target orbbec_combined_node[0m
+[0.293s] [ 33%] Built target orbbec_rgb_node
+[0.298s] [ 66%] Built target orbbec_depth_node
+[0.299s] [100%] Built target orbbec_combined_node
+[0.355s] Invoked command in '/home/wook/ros2/ros2_ws/build/orbbec_rgb_publisher' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/orbbec_rgb_publisher -- -j32 -l32
+[0.356s] Invoking command in '/home/wook/ros2/ros2_ws/build/orbbec_rgb_publisher': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/orbbec_rgb_publisher
+[0.401s] -- Install configuration: "Release"
+[0.401s] -- Execute custom install script
+[0.401s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/lib/orbbec_rgb_publisher/orbbec_combined_node
+[0.401s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/lib/orbbec_rgb_publisher/orbbec_rgb_node
+[0.401s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/lib/orbbec_rgb_publisher/orbbec_depth_node
+[0.401s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/ament_index/resource_index/package_run_dependencies/orbbec_rgb_publisher
+[0.401s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/ament_index/resource_index/parent_prefix_path/orbbec_rgb_publisher
+[0.401s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/environment/ament_prefix_path.sh
+[0.401s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/environment/ament_prefix_path.dsv
+[0.401s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/environment/path.sh
+[0.401s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/environment/path.dsv
+[0.401s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/local_setup.bash
+[0.401s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/local_setup.sh
+[0.401s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/local_setup.zsh
+[0.401s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/local_setup.dsv
+[0.402s] -- Symlinking: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/package.dsv
+[0.402s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/ament_index/resource_index/packages/orbbec_rgb_publisher
+[0.402s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/cmake/orbbec_rgb_publisherConfig.cmake
+[0.402s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/cmake/orbbec_rgb_publisherConfig-version.cmake
+[0.402s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/orbbec_rgb_publisher/share/orbbec_rgb_publisher/package.xml
+[0.537s] Invoked command in '/home/wook/ros2/ros2_ws/build/orbbec_rgb_publisher' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/orbbec_rgb_publisher

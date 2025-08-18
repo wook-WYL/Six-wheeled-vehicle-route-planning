@@ -1,0 +1,11 @@
+source;share/arise_slam_mid360_msgs/hook/cmake_prefix_path.ps1
+source;share/arise_slam_mid360_msgs/hook/cmake_prefix_path.dsv
+source;share/arise_slam_mid360_msgs/hook/cmake_prefix_path.sh
+source;share/arise_slam_mid360_msgs/hook/ld_library_path_lib.ps1
+source;share/arise_slam_mid360_msgs/hook/ld_library_path_lib.dsv
+source;share/arise_slam_mid360_msgs/hook/ld_library_path_lib.sh
+source;share/arise_slam_mid360_msgs/local_setup.bash
+source;share/arise_slam_mid360_msgs/local_setup.dsv
+source;share/arise_slam_mid360_msgs/local_setup.ps1
+source;share/arise_slam_mid360_msgs/local_setup.sh
+source;share/arise_slam_mid360_msgs/local_setup.zsh

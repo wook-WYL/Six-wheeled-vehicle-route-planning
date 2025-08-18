@@ -1,9 +1,10 @@
 import os
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
+from launch.actions import DeclareLaunchArgument,IncludeLaunchDescription
 from launch.substitutions import LaunchConfiguration, PythonExpression,PathJoinSubstitution
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 def generate_launch_description():
 
@@ -12,24 +13,44 @@ def generate_launch_description():
     # =================================================================================
     bringup_dir = get_package_share_directory('robot_bringup')
     vehicle_simulator_dir = get_package_share_directory('vehicle_simulator')
-    boundary_handler_dir = get_package_share_directory('boundary_handler')
+    #boundary_handler_dir = get_package_share_directory('boundary_handler')
     far_planner_dir = get_package_share_directory('far_planner')
-    graph_decoder_dir = get_package_share_directory('graph_decoder')
+    #graph_decoder_dir = get_package_share_directory('graph_decoder')
     local_planner_dir = get_package_share_directory('local_planner')
-    
+    orbbec_camera_dir = get_package_share_directory('orbbec_camera')
     # 加载所有YAML配置文件
     local_planner_config = os.path.join(bringup_dir, 'config', 'local_planner.yaml')
     path_follower_config = os.path.join(bringup_dir, 'config', 'path_follower.yaml')
     terrain_analysis_config = os.path.join(bringup_dir, 'config', 'terrain_analysis.yaml')
     visualization_tools_config = os.path.join(bringup_dir, 'config', 'visualization_tools.yaml')
     # ... (加载route_planner的config)
-    boundary_handler_config = os.path.join(boundary_handler_dir, 'config', 'default.yaml')
+    #boundary_handler_config = os.path.join(boundary_handler_dir, 'config', 'default.yaml')
+    boundary_handler_config = os.path.join(bringup_dir, 'config', 'boundary_handler.yaml')
+    boundary_handler_data_folder = os.path.join(bringup_dir, 'data', '')
     far_planner_config = os.path.join(far_planner_dir, 'config', 'indoor.yaml') # 假设使用indoor配置
-    graph_decoder_config = os.path.join(graph_decoder_dir, 'config', 'default.yaml')
+    #graph_decoder_config = os.path.join(graph_decoder_dir, 'config', 'default.yaml')
+    graph_decoder_config = os.path.join(bringup_dir, 'config', 'graph_decoder.yaml')
+    # RViz配置文件
     rviz_config_file = os.path.join(bringup_dir, 'rviz', 'autonomy_config.rviz')
     terrain_analysis_ext_config = os.path.join(bringup_dir, 'config', 'terrain_analysis_ext.yaml')
     # 新增 checkTerrainConn 启动参数
     check_terrain_conn_arg = DeclareLaunchArgument('checkTerrainConn', default_value='true', description='')
+
+    # #################################################
+    # ##          为 boundary_handler 定义启动参数      ##
+    # #################################################
+    # 我们可以直接在这里定义默认文件名，使其更清晰
+    boundary_file_arg = DeclareLaunchArgument(
+        'boundary_file', default_value='boundary.ply'
+    )
+    traj_file_arg = DeclareLaunchArgument(
+        'traj_file', default_value='trajectory.txt'
+    )
+    graph_file_arg = DeclareLaunchArgument(
+        'graph_file', default_value='boundary_graph.vgh'
+    )
+
+
 
     use_sim_time_arg = DeclareLaunchArgument(
         'use_sim_time', default_value='false',
@@ -39,9 +60,48 @@ def generate_launch_description():
         'world_name', default_value='garage',
         description='Name of the simulation world to load map from')
     # =================================================================================
+    # == 相机启动
+    # =================================================================================
+    start_camera_node = IncludeLaunchDescription(
+    PythonLaunchDescriptionSource(
+        # 明确指向您提供的这个复杂的相机启动文件
+        os.path.join(orbbec_camera_dir, 'launch', 'gemini_330_series.launch.py') 
+    ),
+    # 使用 launch_arguments 来强制覆盖默认值
+    launch_arguments={
+        # #######################################################
+        # ##               <--- 性能优化的关键 --->              ##
+        # #######################################################
+        
+        # 1. 降低分辨率 (从默认的最高 -> 640x480)
+        'color_width': '424',
+        'color_height': '240',
+        'depth_width': '424',
+        'depth_height': '240',
+
+        # 2. 降低帧率 (从默认的最高 -> 15 FPS)
+        'color_fps': '30',
+        'depth_fps': '30',
+
+        # 3. 启用IMU (如果您的RTAB-Map需要)
+        #'enable_accel': 'true',
+        #'enable_gyro': 'true',
+        #'accel_rate': '200hz', # 根据您的需求设置
+        #'gyro_rate': '200hz',
+        'enable_sync_output_accel_gyro': 'true',
+        'enable_point_cloud': 'true',
+
+        # 4. 启用硬件同步 (如果相机支持，对RTAB-Map非常重要)
+        'enable_frame_sync': 'true',
+
+        # 5. (可选但推荐) 指定配置文件路径，让YAML中的其他设置生效
+        # 'config_file_path': os.path.join(orbbec_camera_dir, 'config', 'camera_params.yaml')
+
+    }.items()
+)
+    # =================================================================================
     # == 2. 核心：传感器与SLAM层 (用RTAB-Map替换旧的激光雷达SLAM)
     # =================================================================================
-    # (这里直接复制我们之前最终调试好的RTAB-Map, pointcloud_adapter, sensor_scan_generation的Node定义)
     
      # ######################################################################
     # ## 2.1. 静态TF树配置
@@ -50,9 +110,7 @@ def generate_launch_description():
         package='tf2_ros',
         executable='static_transform_publisher',
         name='static_tf_base_to_camera',
-       #arguments=[  x,     y,     z,  yaw_rad, pitch_rad, roll_rad, parent_frame, child_frame]
-        #arguments=['0.157', '-0.262', '0.548', '-1.570796', '0.0', '-1.570796', 'base_link', 'camera_link']
-        arguments=['0.157', '-0.262', '0.63', '0.0', '0.0', '0.0', 'base_link', 'camera_link']
+        arguments=['0.1', '0.0', '0.2', '0.0', '0.0', '0.0', 'base_link', 'camera_link']
     )
     
     static_tf_base_to_vehicle = Node(
@@ -69,7 +127,7 @@ def generate_launch_description():
         package='rtabmap_odom',
         executable='rgbd_odometry',
         name='rgbd_odometry',
-        output='screen',
+        # output='screen',
         parameters=[{
             'frame_id': 'base_link',
             'odom_frame_id': 'odom',
@@ -101,9 +159,10 @@ def generate_launch_description():
         package='rtabmap_slam',
         executable='rtabmap',
         name='rtabmap',
-        output='screen',
+        # output='screen',
         parameters=[{'subscribe_depth': False,
             'subscribe_rgb': False,
+            #'Mem/IncrementalMemory': True, # false = 定位模式
             'subscribe_odom_info': True,
             'subscribe_odom_info': True, 
             'frame_id': 'base_link', 
@@ -155,7 +214,7 @@ def generate_launch_description():
         package='terrain_analysis_ext',
         executable='terrainAnalysisExt', # 假设的可执行文件名
         name='terrainAnalysisExt',
-        output='screen',
+        # output='screen',
         parameters=[
             terrain_analysis_ext_config,
             # 允许通过命令行覆盖 'checkTerrainConn' 参数
@@ -182,13 +241,26 @@ def generate_launch_description():
         package='boundary_handler',
         executable='boundary_handler',
         name='boundary_handler',
-        parameters=[boundary_handler_config, {'folder_path': os.path.join(far_planner_dir, 'data', '')}]
+        output='screen',
+        parameters=[
+            # 1. 首先加载从YAML文件读取的配置
+            boundary_handler_config, 
+            
+            # 2. 然后用一个字典传递所有文件路径相关的参数
+            {
+                'folder_path': boundary_handler_data_folder,
+                'boundary_file': LaunchConfiguration('boundary_file'),
+                'traj_file': LaunchConfiguration('traj_file'),
+                'graph_file': LaunchConfiguration('graph_file')
+            }
+        ]
     )
 
     far_planner_node = Node(
         package='far_planner',
         executable='far_planner',
         name='far_planner',
+        output='screen',
         parameters=[far_planner_config],
         remappings=[
             ('/odom_world', '/state_estimation_at_scan'),
@@ -204,6 +276,7 @@ def generate_launch_description():
         package='graph_decoder',
         executable='graph_decoder',
         name='graph_decoder',
+        output='screen',
         parameters=[graph_decoder_config]
     )
 
@@ -230,6 +303,7 @@ def generate_launch_description():
         package='local_planner',
         executable='pathFollower',
         name='path_follower',
+        output='screen',
         parameters=[
             path_follower_config,
             {'operating_mode': 'autonomous'} # 控制器也应处于自主模式
@@ -271,10 +345,13 @@ def generate_launch_description():
     
 
     return LaunchDescription([
+        start_camera_node,
         use_sim_time_arg,
         world_name_arg,
         check_terrain_conn_arg, # <--- 加入新参数
-        
+        boundary_file_arg,
+        traj_file_arg,
+        graph_file_arg,
         # ... (所有其他Node对象)
         static_tf_base_to_camera,
         static_tf_base_to_vehicle,
@@ -285,10 +362,10 @@ def generate_launch_description():
         terrain_analysis_node,
         terrain_analysis_ext_node, # <--- 加入新节点
         boundary_handler_node,
-        far_planner_node,
-        graph_decoder_node,
         local_planner_node,
         path_follower_node,
-        visualization_tools_node,
+        far_planner_node,
+        graph_decoder_node,
+        #visualization_tools_node,
         rviz_node
     ])
