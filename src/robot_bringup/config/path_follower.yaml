@@ -13,7 +13,7 @@ path_follower:  # 节点名，与启动文件中的 name='...' 对应
     stopYawRateGain: 4.5
     maxYawRate: 60.0
     # --- 速度与行为限制 ---
-    maxSpeed: 0.5  # 可以通过启动参数覆盖
+    maxSpeed: 0.2  # 可以通过启动参数覆盖
     maxAccel: 1.0
     switchTimeThre: 1.0
     dirDiffThre: 0.4
