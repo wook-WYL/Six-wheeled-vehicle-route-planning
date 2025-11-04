@@ -1,0 +1,319 @@
+[0.000000] (-) TimerEvent: {}
+[0.000399] (-) JobUnselected: {'identifier': 'arise_slam_mid360'}
+[0.000682] (-) JobUnselected: {'identifier': 'arise_slam_mid360_msgs'}
+[0.000701] (-) JobUnselected: {'identifier': 'boundary_handler'}
+[0.000716] (-) JobUnselected: {'identifier': 'ception_msgs'}
+[0.000729] (-) JobUnselected: {'identifier': 'diablo_body'}
+[0.000747] (-) JobUnselected: {'identifier': 'diablo_ctrl'}
+[0.000760] (-) JobUnselected: {'identifier': 'diablo_teleop'}
+[0.000775] (-) JobUnselected: {'identifier': 'diablo_teleop_joy'}
+[0.000791] (-) JobUnselected: {'identifier': 'diablo_utils'}
+[0.000806] (-) JobUnselected: {'identifier': 'domain_bridge'}
+[0.000820] (-) JobUnselected: {'identifier': 'far_planner'}
+[0.000835] (-) JobUnselected: {'identifier': 'goalpoint_rviz_plugin'}
+[0.000850] (-) JobUnselected: {'identifier': 'graph_decoder'}
+[0.000864] (-) JobUnselected: {'identifier': 'livox_ros_driver2'}
+[0.000880] (-) JobUnselected: {'identifier': 'motion_msgs'}
+[0.000894] (-) JobUnselected: {'identifier': 'orbbec_camera'}
+[0.000909] (-) JobUnselected: {'identifier': 'orbbec_camera_msgs'}
+[0.000924] (-) JobUnselected: {'identifier': 'orbbec_description'}
+[0.000939] (-) JobUnselected: {'identifier': 'orbbec_rgb_publisher'}
+[0.000953] (-) JobUnselected: {'identifier': 'osr_bringup'}
+[0.000969] (-) JobUnselected: {'identifier': 'osr_control'}
+[0.000984] (-) JobUnselected: {'identifier': 'osr_gazebo'}
+[0.000999] (-) JobUnselected: {'identifier': 'osr_interfaces'}
+[0.001014] (-) JobUnselected: {'identifier': 'pointcloud_adapter'}
+[0.001029] (-) JobUnselected: {'identifier': 'receive_theta'}
+[0.001044] (-) JobUnselected: {'identifier': 'robot_bringup'}
+[0.001059] (-) JobUnselected: {'identifier': 'ros_tcp_endpoint'}
+[0.001075] (-) JobUnselected: {'identifier': 'sensor_scan_generation'}
+[0.001089] (-) JobUnselected: {'identifier': 'tare_planner'}
+[0.001104] (-) JobUnselected: {'identifier': 'teleop_rviz_plugin'}
+[0.001118] (-) JobUnselected: {'identifier': 'teleop_rviz_plugin_plus'}
+[0.001134] (-) JobUnselected: {'identifier': 'terrain_analysis'}
+[0.001149] (-) JobUnselected: {'identifier': 'terrain_analysis_ext'}
+[0.001164] (-) JobUnselected: {'identifier': 'vehicle_simulator'}
+[0.001178] (-) JobUnselected: {'identifier': 'visibility_graph_msg'}
+[0.001193] (-) JobUnselected: {'identifier': 'visualization_tools'}
+[0.001209] (-) JobUnselected: {'identifier': 'waypoint_example'}
+[0.001224] (-) JobUnselected: {'identifier': 'waypoint_rviz_plugin'}
+[0.001242] (local_planner) JobQueued: {'identifier': 'local_planner', 'dependencies': OrderedDict([('ception_msgs', '/home/wook/ros2/ros2_ws/install/ception_msgs'), ('motion_msgs', '/home/wook/ros2/ros2_ws/install/motion_msgs')])}
+[0.001280] (local_planner) JobStarted: {'identifier': 'local_planner'}
+[0.014241] (local_planner) JobProgress: {'identifier': 'local_planner', 'progress': 'cmake'}
+[0.014927] (local_planner) JobProgress: {'identifier': 'local_planner', 'progress': 'build'}
+[0.015578] (local_planner) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wook/ros2/ros2_ws/build/local_planner', '--', '-j32', '-l32'], 'cwd': '/home/wook/ros2/ros2_ws/build/local_planner', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'wook'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wook/ros2/ros2_ws/install/motion_msgs/lib:/home/wook/ros2/ros2_ws/install/ception_msgs/lib:/home/wook/orbbec_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wook'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('CONNEXTDDS_DIR', '/opt/rti.com/rti_connext_dds-6.0.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('NDDSHOME', '/opt/rti.com/rti_connext_dds-6.0.1'), ('ROS_IP', '192.168.2.1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2036'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=db6c948ba27d4f2f21d3d3fd68ce317c'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'wook'), ('http_proxy', 'http://127.0.0.1:7890:8080/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wook'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/bin:/home/wook/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wook:@/tmp/.ICE-unix/2036,unix/wook:/tmp/.ICE-unix/2036'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/34b6d81d_60df_4003_96dd_e73e7b0af2ee'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ORB_SLAM3_ROOT_DIR', '/home/wook/ros2/orb_slam3/ORB_SLAM3'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://192.168.2.1:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('CONNEXTDDS_ARCH', 'x64Linux4gcc7.3.0'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wook/ros2/ros2_ws/build/local_planner'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=db6c948ba27d4f2f21d3d3fd68ce317c'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/ception_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890:8080/'), ('ROS_HOSTNAME', 'wook'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble')]), 'shell': False}
+[0.099148] (local_planner) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pathFollower\x1b[0m\n'}
+[0.099721] (-) TimerEvent: {}
+[0.128500] (local_planner) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/pathFollower.dir/src/pathFollower.cpp.o\x1b[0m\n'}
+[0.133489] (local_planner) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable localPlanner\x1b[0m\n'}
+[0.199811] (-) TimerEvent: {}
+[0.299968] (-) TimerEvent: {}
+[0.400106] (-) TimerEvent: {}
+[0.500274] (-) TimerEvent: {}
+[0.600471] (-) TimerEvent: {}
+[0.700629] (-) TimerEvent: {}
+[0.746076] (local_planner) StdoutLine: {'line': b'[ 75%] Built target localPlanner\n'}
+[0.800713] (-) TimerEvent: {}
+[0.900855] (-) TimerEvent: {}
+[1.001011] (-) TimerEvent: {}
+[1.101178] (-) TimerEvent: {}
+[1.201339] (-) TimerEvent: {}
+[1.301500] (-) TimerEvent: {}
+[1.401652] (-) TimerEvent: {}
+[1.501819] (-) TimerEvent: {}
+[1.601972] (-) TimerEvent: {}
+[1.702126] (-) TimerEvent: {}
+[1.802274] (-) TimerEvent: {}
+[1.902415] (-) TimerEvent: {}
+[2.002573] (-) TimerEvent: {}
+[2.102723] (-) TimerEvent: {}
+[2.202876] (-) TimerEvent: {}
+[2.303032] (-) TimerEvent: {}
+[2.403193] (-) TimerEvent: {}
+[2.503368] (-) TimerEvent: {}
+[2.603524] (-) TimerEvent: {}
+[2.703691] (-) TimerEvent: {}
+[2.803848] (-) TimerEvent: {}
+[2.903981] (-) TimerEvent: {}
+[3.004135] (-) TimerEvent: {}
+[3.104295] (-) TimerEvent: {}
+[3.204435] (-) TimerEvent: {}
+[3.304580] (-) TimerEvent: {}
+[3.404723] (-) TimerEvent: {}
+[3.417355] (local_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.417516] (local_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:433:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around \xe2\x80\x98\x1b[01m\x1b[K&&\x1b[m\x1b[K\xe2\x80\x99 within \xe2\x80\x98\x1b[01m\x1b[K||\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.417556] (local_planner) StderrLine: {'line': b'  433 |       if (\x1b[01;35m\x1b[KodomTime < slowInitTime + slowTime1 && slowInitTime > 0\x1b[m\x1b[K || slowDown == 1) joySpeed3 *= slowRate1;\n'}
+[3.417590] (local_planner) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.417621] (local_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:434:64:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around \xe2\x80\x98\x1b[01m\x1b[K&&\x1b[m\x1b[K\xe2\x80\x99 within \xe2\x80\x98\x1b[01m\x1b[K||\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.417652] (local_planner) StderrLine: {'line': b'  434 |       else if (\x1b[01;35m\x1b[KodomTime < slowInitTime + slowTime1 + slowTime2 && slowInitTime > 0\x1b[m\x1b[K || slowDown == 2) joySpeed3 *= slowRate2;\n'}
+[3.417683] (local_planner) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.504849] (-) TimerEvent: {}
+[3.605122] (-) TimerEvent: {}
+[3.705405] (-) TimerEvent: {}
+[3.805666] (-) TimerEvent: {}
+[3.905915] (-) TimerEvent: {}
+[4.006188] (-) TimerEvent: {}
+[4.106477] (-) TimerEvent: {}
+[4.206721] (-) TimerEvent: {}
+[4.306972] (-) TimerEvent: {}
+[4.407240] (-) TimerEvent: {}
+[4.507540] (-) TimerEvent: {}
+[4.607810] (-) TimerEvent: {}
+[4.708076] (-) TimerEvent: {}
+[4.808346] (-) TimerEvent: {}
+[4.908612] (-) TimerEvent: {}
+[5.008895] (-) TimerEvent: {}
+[5.109161] (-) TimerEvent: {}
+[5.209438] (-) TimerEvent: {}
+[5.309705] (-) TimerEvent: {}
+[5.409960] (-) TimerEvent: {}
+[5.510217] (-) TimerEvent: {}
+[5.610487] (-) TimerEvent: {}
+[5.710742] (-) TimerEvent: {}
+[5.811019] (-) TimerEvent: {}
+[5.911278] (-) TimerEvent: {}
+[6.011562] (-) TimerEvent: {}
+[6.111847] (-) TimerEvent: {}
+[6.212123] (-) TimerEvent: {}
+[6.312415] (-) TimerEvent: {}
+[6.412687] (-) TimerEvent: {}
+[6.512967] (-) TimerEvent: {}
+[6.613244] (-) TimerEvent: {}
+[6.713528] (-) TimerEvent: {}
+[6.813805] (-) TimerEvent: {}
+[6.914072] (-) TimerEvent: {}
+[7.014324] (-) TimerEvent: {}
+[7.114595] (-) TimerEvent: {}
+[7.214876] (-) TimerEvent: {}
+[7.315156] (-) TimerEvent: {}
+[7.415450] (-) TimerEvent: {}
+[7.515739] (-) TimerEvent: {}
+[7.616014] (-) TimerEvent: {}
+[7.716315] (-) TimerEvent: {}
+[7.816620] (-) TimerEvent: {}
+[7.916914] (-) TimerEvent: {}
+[8.017202] (-) TimerEvent: {}
+[8.117526] (-) TimerEvent: {}
+[8.217813] (-) TimerEvent: {}
+[8.318100] (-) TimerEvent: {}
+[8.418401] (-) TimerEvent: {}
+[8.518692] (-) TimerEvent: {}
+[8.618982] (-) TimerEvent: {}
+[8.719267] (-) TimerEvent: {}
+[8.819535] (-) TimerEvent: {}
+[8.919825] (-) TimerEvent: {}
+[9.020127] (-) TimerEvent: {}
+[9.120419] (-) TimerEvent: {}
+[9.220718] (-) TimerEvent: {}
+[9.321005] (-) TimerEvent: {}
+[9.421300] (-) TimerEvent: {}
+[9.521573] (-) TimerEvent: {}
+[9.621836] (-) TimerEvent: {}
+[9.722111] (-) TimerEvent: {}
+[9.822395] (-) TimerEvent: {}
+[9.922671] (-) TimerEvent: {}
+[10.022942] (-) TimerEvent: {}
+[10.123212] (-) TimerEvent: {}
+[10.223476] (-) TimerEvent: {}
+[10.323730] (-) TimerEvent: {}
+[10.423985] (-) TimerEvent: {}
+[10.524247] (-) TimerEvent: {}
+[10.624538] (-) TimerEvent: {}
+[10.724807] (-) TimerEvent: {}
+[10.825102] (-) TimerEvent: {}
+[10.925384] (-) TimerEvent: {}
+[11.025658] (-) TimerEvent: {}
+[11.125919] (-) TimerEvent: {}
+[11.226190] (-) TimerEvent: {}
+[11.326472] (-) TimerEvent: {}
+[11.426764] (-) TimerEvent: {}
+[11.527049] (-) TimerEvent: {}
+[11.627323] (-) TimerEvent: {}
+[11.727600] (-) TimerEvent: {}
+[11.827877] (-) TimerEvent: {}
+[11.928169] (-) TimerEvent: {}
+[12.028451] (-) TimerEvent: {}
+[12.128745] (-) TimerEvent: {}
+[12.229037] (-) TimerEvent: {}
+[12.329354] (-) TimerEvent: {}
+[12.429627] (-) TimerEvent: {}
+[12.529890] (-) TimerEvent: {}
+[12.630138] (-) TimerEvent: {}
+[12.730402] (-) TimerEvent: {}
+[12.830674] (-) TimerEvent: {}
+[12.930950] (-) TimerEvent: {}
+[13.031208] (-) TimerEvent: {}
+[13.131486] (-) TimerEvent: {}
+[13.231756] (-) TimerEvent: {}
+[13.332030] (-) TimerEvent: {}
+[13.432308] (-) TimerEvent: {}
+[13.532582] (-) TimerEvent: {}
+[13.632842] (-) TimerEvent: {}
+[13.733106] (-) TimerEvent: {}
+[13.833424] (-) TimerEvent: {}
+[13.933714] (-) TimerEvent: {}
+[14.034017] (-) TimerEvent: {}
+[14.134239] (-) TimerEvent: {}
+[14.234400] (-) TimerEvent: {}
+[14.334593] (-) TimerEvent: {}
+[14.434783] (-) TimerEvent: {}
+[14.534992] (-) TimerEvent: {}
+[14.635194] (-) TimerEvent: {}
+[14.735487] (-) TimerEvent: {}
+[14.835728] (-) TimerEvent: {}
+[14.936015] (-) TimerEvent: {}
+[15.036244] (-) TimerEvent: {}
+[15.136451] (-) TimerEvent: {}
+[15.236667] (-) TimerEvent: {}
+[15.336941] (-) TimerEvent: {}
+[15.437229] (-) TimerEvent: {}
+[15.537519] (-) TimerEvent: {}
+[15.637787] (-) TimerEvent: {}
+[15.738055] (-) TimerEvent: {}
+[15.838317] (-) TimerEvent: {}
+[15.938568] (-) TimerEvent: {}
+[16.038851] (-) TimerEvent: {}
+[16.139157] (-) TimerEvent: {}
+[16.239444] (-) TimerEvent: {}
+[16.339657] (-) TimerEvent: {}
+[16.439830] (-) TimerEvent: {}
+[16.540115] (-) TimerEvent: {}
+[16.640440] (-) TimerEvent: {}
+[16.740766] (-) TimerEvent: {}
+[16.841067] (-) TimerEvent: {}
+[16.941332] (-) TimerEvent: {}
+[17.041582] (-) TimerEvent: {}
+[17.141813] (-) TimerEvent: {}
+[17.242038] (-) TimerEvent: {}
+[17.342296] (-) TimerEvent: {}
+[17.442543] (-) TimerEvent: {}
+[17.542800] (-) TimerEvent: {}
+[17.643073] (-) TimerEvent: {}
+[17.743322] (-) TimerEvent: {}
+[17.843576] (-) TimerEvent: {}
+[17.943853] (-) TimerEvent: {}
+[18.044120] (-) TimerEvent: {}
+[18.144371] (-) TimerEvent: {}
+[18.244634] (-) TimerEvent: {}
+[18.344909] (-) TimerEvent: {}
+[18.445183] (-) TimerEvent: {}
+[18.545482] (-) TimerEvent: {}
+[18.645733] (-) TimerEvent: {}
+[18.745995] (-) TimerEvent: {}
+[18.846280] (-) TimerEvent: {}
+[18.946542] (-) TimerEvent: {}
+[19.046795] (-) TimerEvent: {}
+[19.147042] (-) TimerEvent: {}
+[19.247313] (-) TimerEvent: {}
+[19.347577] (-) TimerEvent: {}
+[19.447837] (-) TimerEvent: {}
+[19.548103] (-) TimerEvent: {}
+[19.648373] (-) TimerEvent: {}
+[19.748657] (-) TimerEvent: {}
+[19.848929] (-) TimerEvent: {}
+[19.949179] (-) TimerEvent: {}
+[20.049443] (-) TimerEvent: {}
+[20.149703] (-) TimerEvent: {}
+[20.249977] (-) TimerEvent: {}
+[20.350245] (-) TimerEvent: {}
+[20.450558] (-) TimerEvent: {}
+[20.550836] (-) TimerEvent: {}
+[20.651103] (-) TimerEvent: {}
+[20.751377] (-) TimerEvent: {}
+[20.851635] (-) TimerEvent: {}
+[20.951887] (-) TimerEvent: {}
+[21.052157] (-) TimerEvent: {}
+[21.152434] (-) TimerEvent: {}
+[21.252686] (-) TimerEvent: {}
+[21.352955] (-) TimerEvent: {}
+[21.453224] (-) TimerEvent: {}
+[21.553514] (-) TimerEvent: {}
+[21.653759] (-) TimerEvent: {}
+[21.754028] (-) TimerEvent: {}
+[21.854314] (-) TimerEvent: {}
+[21.954599] (-) TimerEvent: {}
+[22.054881] (-) TimerEvent: {}
+[22.155167] (-) TimerEvent: {}
+[22.255460] (-) TimerEvent: {}
+[22.355736] (-) TimerEvent: {}
+[22.456009] (-) TimerEvent: {}
+[22.556292] (-) TimerEvent: {}
+[22.656561] (-) TimerEvent: {}
+[22.756839] (-) TimerEvent: {}
+[22.827227] (local_planner) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pathFollower\x1b[0m\n'}
+[22.856934] (-) TimerEvent: {}
+[22.957160] (-) TimerEvent: {}
+[23.057421] (-) TimerEvent: {}
+[23.157689] (-) TimerEvent: {}
+[23.169626] (local_planner) StdoutLine: {'line': b'[100%] Built target pathFollower\n'}
+[23.178999] (local_planner) CommandEnded: {'returncode': 0}
+[23.179696] (local_planner) JobProgress: {'identifier': 'local_planner', 'progress': 'install'}
+[23.185869] (local_planner) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wook/ros2/ros2_ws/build/local_planner'], 'cwd': '/home/wook/ros2/ros2_ws/build/local_planner', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'wook'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wook/ros2/ros2_ws/install/motion_msgs/lib:/home/wook/ros2/ros2_ws/install/ception_msgs/lib:/home/wook/orbbec_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wook'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('CONNEXTDDS_DIR', '/opt/rti.com/rti_connext_dds-6.0.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('NDDSHOME', '/opt/rti.com/rti_connext_dds-6.0.1'), ('ROS_IP', '192.168.2.1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2036'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=db6c948ba27d4f2f21d3d3fd68ce317c'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'wook'), ('http_proxy', 'http://127.0.0.1:7890:8080/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wook'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/rti.com/rti_connext_dds-6.0.1/lib/x64Linux4gcc7.3.0:/opt/rti.com/rti_connext_dds-6.0.1/bin:/opt/ros/humble/bin:/home/wook/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/wook:@/tmp/.ICE-unix/2036,unix/wook:/tmp/.ICE-unix/2036'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/34b6d81d_60df_4003_96dd_e73e7b0af2ee'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ORB_SLAM3_ROOT_DIR', '/home/wook/ros2/orb_slam3/ORB_SLAM3'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://192.168.2.1:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('CONNEXTDDS_ARCH', 'x64Linux4gcc7.3.0'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wook/ros2/ros2_ws/build/local_planner'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=db6c948ba27d4f2f21d3d3fd68ce317c'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/ception_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890:8080/'), ('ROS_HOSTNAME', 'wook'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble')]), 'shell': False}
+[23.190826] (local_planner) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[23.191390] (local_planner) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[23.191570] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/lib/local_planner/localPlanner\n'}
+[23.191660] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/lib/local_planner/pathFollower\n'}
+[23.192071] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/launch/local_planner.launch\n'}
+[23.192221] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/paths/correspondences.txt\n'}
+[23.192316] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/paths/pathList.ply\n'}
+[23.192410] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/paths/path_generator.m\n'}
+[23.192489] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/paths/paths.ply\n'}
+[23.192567] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/paths/startPaths.ply\n'}
+[23.192649] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/ament_index/resource_index/package_run_dependencies/local_planner\n'}
+[23.192751] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/ament_index/resource_index/parent_prefix_path/local_planner\n'}
+[23.192841] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/environment/ament_prefix_path.sh\n'}
+[23.192927] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/environment/ament_prefix_path.dsv\n'}
+[23.193015] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/environment/path.sh\n'}
+[23.193101] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/environment/path.dsv\n'}
+[23.193184] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/local_setup.bash\n'}
+[23.193270] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/local_setup.sh\n'}
+[23.193364] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/local_setup.zsh\n'}
+[23.193447] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/local_setup.dsv\n'}
+[23.193505] (local_planner) StdoutLine: {'line': b'-- Symlinking: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/package.dsv\n'}
+[23.200196] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/ament_index/resource_index/packages/local_planner\n'}
+[23.200309] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/cmake/local_plannerConfig.cmake\n'}
+[23.200378] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/cmake/local_plannerConfig-version.cmake\n'}
+[23.200460] (local_planner) StdoutLine: {'line': b'-- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/package.xml\n'}
+[23.202130] (local_planner) CommandEnded: {'returncode': 0}
+[23.215639] (local_planner) JobEnded: {'identifier': 'local_planner', 'rc': 0}
+[23.216215] (-) EventReactorShutdown: {}

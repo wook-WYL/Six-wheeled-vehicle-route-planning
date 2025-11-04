@@ -1,0 +1,42 @@
+[0.015s] Invoking command in '/home/wook/ros2/ros2_ws/build/local_planner': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/ception_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs/lib:/home/wook/ros2/ros2_ws/install/ception_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/ception_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/local_planner -- -j32 -l32
+[0.098s] [35m[1mConsolidate compiler generated dependencies of target pathFollower[0m
+[0.127s] [ 25%] [32mBuilding CXX object CMakeFiles/pathFollower.dir/src/pathFollower.cpp.o[0m
+[0.132s] [ 50%] [32m[1mLinking CXX executable localPlanner[0m
+[0.745s] [ 75%] Built target localPlanner
+[3.416s] [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.416s] [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:433:47:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K&&[m[K’ within ‘[01m[K||[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[3.416s]   433 |       if ([01;35m[KodomTime < slowInitTime + slowTime1 && slowInitTime > 0[m[K || slowDown == 1) joySpeed3 *= slowRate1;
+[3.416s]       |           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[3.416s] [01m[K/home/wook/ros2/ros2_ws/src/autonomy_stack_diablo_setup/src/base_autonomy/local_planner/src/pathFollower.cpp:434:64:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K&&[m[K’ within ‘[01m[K||[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[3.416s]   434 |       else if ([01;35m[KodomTime < slowInitTime + slowTime1 + slowTime2 && slowInitTime > 0[m[K || slowDown == 2) joySpeed3 *= slowRate2;
+[3.416s]       |                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[22.826s] [100%] [32m[1mLinking CXX executable pathFollower[0m
+[23.168s] [100%] Built target pathFollower
+[23.178s] Invoked command in '/home/wook/ros2/ros2_ws/build/local_planner' returned '0': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/ception_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs/lib:/home/wook/ros2/ros2_ws/install/ception_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/ception_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wook/ros2/ros2_ws/build/local_planner -- -j32 -l32
+[23.185s] Invoking command in '/home/wook/ros2/ros2_ws/build/local_planner': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/ception_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs/lib:/home/wook/ros2/ros2_ws/install/ception_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/ception_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/local_planner
+[23.190s] -- Install configuration: "Release"
+[23.190s] -- Execute custom install script
+[23.190s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/lib/local_planner/localPlanner
+[23.190s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/lib/local_planner/pathFollower
+[23.191s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/launch/local_planner.launch
+[23.191s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/paths/correspondences.txt
+[23.191s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/paths/pathList.ply
+[23.191s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/paths/path_generator.m
+[23.191s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/paths/paths.ply
+[23.191s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/paths/startPaths.ply
+[23.191s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/ament_index/resource_index/package_run_dependencies/local_planner
+[23.191s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/ament_index/resource_index/parent_prefix_path/local_planner
+[23.192s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/environment/ament_prefix_path.sh
+[23.192s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/environment/ament_prefix_path.dsv
+[23.192s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/environment/path.sh
+[23.192s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/environment/path.dsv
+[23.192s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/local_setup.bash
+[23.192s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/local_setup.sh
+[23.192s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/local_setup.zsh
+[23.192s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/local_setup.dsv
+[23.192s] -- Symlinking: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/package.dsv
+[23.199s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/ament_index/resource_index/packages/local_planner
+[23.199s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/cmake/local_plannerConfig.cmake
+[23.199s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/cmake/local_plannerConfig-version.cmake
+[23.199s] -- Up-to-date symlink: /home/wook/ros2/ros2_ws/install/local_planner/share/local_planner/package.xml
+[23.201s] Invoked command in '/home/wook/ros2/ros2_ws/build/local_planner' returned '0': AMENT_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/ception_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs:/home/wook/ros2/ros2_ws/install/ception_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/wook/ros2/ros2_ws/install/motion_msgs/lib:/home/wook/ros2/ros2_ws/install/ception_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wook/ros2/ros2_ws/install/motion_msgs/local/lib/python3.10/dist-packages:/home/wook/ros2/ros2_ws/install/ception_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wook/ros2/ros2_ws/build/local_planner

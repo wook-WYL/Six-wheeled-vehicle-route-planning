@@ -1,3 +1,4 @@
+/home/wook/ros2/ros2_ws/install/robot_bringup/share/robot_bringup/launch/1.launch.py
 /home/wook/ros2/ros2_ws/install/robot_bringup/share/robot_bringup/launch/autonomy.launch.py
 /home/wook/ros2/ros2_ws/install/robot_bringup/share/robot_bringup/launch/final_bringup.launch.py
 /home/wook/ros2/ros2_ws/install/robot_bringup/share/robot_bringup/launch/navigate_with_route_planner.launch.py

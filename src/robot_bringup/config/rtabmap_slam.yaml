@@ -29,7 +29,7 @@ rtabmap:
     # --- SLAM 模式 ---
     # Mem/IncrementalMemory=true : 标准的SLAM模式
     # Mem/IncrementalMemory=false: 定位模式（需要预先加载地图）
-    Mem/IncrementalMemory: true
+    Mem/IncrementalMemory: false
     
     # #################################################
     # ##             回环检测 (Loop Closure)          ##

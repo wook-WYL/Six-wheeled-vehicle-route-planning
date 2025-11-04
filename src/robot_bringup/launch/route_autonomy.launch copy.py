@@ -83,7 +83,7 @@ def generate_launch_description():
         'color_fps': '30',
         'depth_fps': '30',
 
-        # 3. 启用IMU (如果您的RTAB-Map需要)
+        # 3. 启用IMU (如果RTAB-Map需要)
         #'enable_accel': 'true',
         #'enable_gyro': 'true',
         #'accel_rate': '200hz', # 根据您的需求设置
@@ -91,7 +91,7 @@ def generate_launch_description():
         'enable_sync_output_accel_gyro': 'true',
         'enable_point_cloud': 'true',
 
-        # 4. 启用硬件同步 (如果相机支持，对RTAB-Map非常重要)
+        # 4. 启用硬件同步 (对RTAB-Map非常重要)
         'enable_frame_sync': 'true',
 
         # 5. (可选但推荐) 指定配置文件路径，让YAML中的其他设置生效
@@ -110,9 +110,12 @@ def generate_launch_description():
         package='tf2_ros',
         executable='static_transform_publisher',
         name='static_tf_base_to_camera',
-        arguments=['0.1', '0.0', '0.2', '0.0', '0.0', '0.0', 'base_link', 'camera_link']
+        #arguments=[  x,     y,     z,  yaw_rad, pitch_rad, roll_rad, parent_frame, child_frame]
+        #arguments=['0.157', '-0.262', '0.548', '-1.570796', '0.0', '-1.570796', 'base_link', 'camera_link']
+        arguments=['0.157', '-0.262', '0.63', '0.0', '0.0', '0.0', 'base_link', 'camera_link']
     )
     
+    #路径规划器的坐标系基座是 vehicle，但是我们的里程计和RTAB-Map都是基于 base_link，所以需要一个额外的TF，表明 base_link 到 vehicle 的偏移
     static_tf_base_to_vehicle = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
@@ -159,19 +162,52 @@ def generate_launch_description():
         package='rtabmap_slam',
         executable='rtabmap',
         name='rtabmap',
-        # output='screen',
-        parameters=[{'subscribe_depth': False,
-            'subscribe_rgb': False,
-            #'Mem/IncrementalMemory': True, # false = 定位模式
-            'subscribe_odom_info': True,
-            'subscribe_odom_info': True, 
-            'frame_id': 'base_link', 
-            'map_frame_id': 'map', 
-            'use_sim_time': LaunchConfiguration('use_sim_time'), 
-            'approx_sync': False}],
-        remappings=[('odom', '/odom')]
+        output='screen',
+        parameters=[{
+            # --- 核心框架参数 ---
+            'frame_id': 'base_link',
+            'map_frame_id': 'map',
+            'use_sim_time': LaunchConfiguration('use_sim_time'),
+
+            # --- 数据流与同步配置 (关键！) ---
+            # 告诉后端，现在你需要订阅原始的RGB和Depth图像来生成点云
+            'subscribe_depth': 'true',
+            'subscribe_rgb': 'true',
+            'subscribe_odom_info': 'false', # 当订阅原始图像时，通常不再需要odom_info
+            'approx_sync': 'true',        # 必须使用近似同步来处理图像、深度和里程计
+
+            # --- 建图模式 ---
+            'Mem/IncrementalMemory': 'true',
+
+            # #################################################
+            # ##         <--- 生成点云地图的关键参数 --->         ##
+            # #################################################
+            # 参数组Grid/来自旧版rtabmap_ros，新版可能前缀不同，但功能类似
+            
+            # 1. 开启地图生成
+            'Grid/FromDepth': 'true', # 必须为 "true"，告诉 rtabmap 从深度图生成点云
+            
+            # 2. (可选但推荐) 配置输出的点云地图
+            'Grid/RangeMax': '5.0',       # 只考虑5米范围内的深度点，过滤远处噪点
+            'Grid/VoxelSize': '0.05',     # 输出地图的点云分辨率（体素大小）
+            'Grid/ClusterMinSize': '10',  # 过滤掉少于10个点的孤立小点云簇
+            'Grid/NormalsSegmentation': 'false', # 通常关闭以提高速度
+            
+            # 3. (可选) 开启占据栅格地图生成
+            'Grid/3D': 'false',            # 如果设为true，会生成3D OctoMap
+            'Grid/CellSize': '0.05',       # 2D占据栅格的分辨率
+            'Grid/RangeMin': '0.5',        # 忽略近处0.5米内的点（可能是机器人自身）
+        }],
+        remappings=[
+            ('odom', '/odom'),
+            # <--- 新增! 将原始图像话题也重映射给后端 --->
+            ('rgb/image', '/camera/color/image_raw'),
+            ('depth/image', '/camera/depth/image_raw'),
+            ('rgb/camera_info', '/camera/color/camera_info'),
+        ],
     )
 
+    
     # ######################################################################
     # ## 2.3. 我们的适配与分析层
     # ######################################################################
@@ -182,7 +218,7 @@ def generate_launch_description():
         parameters=[{'target_frame': 'map'}]
     )
 
-    # <--- 新增! 启动关键的同步节点 --->
+    
     sensor_scan_node = Node(
         package='sensor_scan_generation',
         executable='sensorScanGeneration',
@@ -203,7 +239,8 @@ def generate_launch_description():
         name='terrainAnalysis',
         parameters=[terrain_analysis_config],
         remappings=[
-            ('/state_estimation', '/state_estimation_at_scan'),
+            #('/state_estimation', '/state_estimation_at_scan'),
+            ('/state_estimation', '/odom'),
             ('/registered_scan', '/registered_scan')
         ]
         # 输出: /terrain_map
@@ -222,16 +259,12 @@ def generate_launch_description():
         ],
         remappings=[
             # 假设它使用与 terrain_analysis 相同的输入
-            ('/state_estimation', '/state_estimation_at_scan'),
-            ('/registered_scan', '/registered_scan')
+            #('/state_estimation', '/state_estimation_at_scan'),
+            ('/state_estimation', '/odom'),
+            #('/registered_scan', '/registered_scan')
         ]
         # 输出: /terrain_map_ext (这是我们的关键推断)
     )
-
-    
-
-    # 注意: 旧系统还有一个 terrain_analysis_ext, 如果需要，也需要在这里启动
-    # terrain_analysis_ext_node = Node(...)
 
 
     # =================================================================================
@@ -263,9 +296,8 @@ def generate_launch_description():
         output='screen',
         parameters=[far_planner_config],
         remappings=[
-            ('/odom_world', '/state_estimation_at_scan'),
-            # '/terrain_cloud' 在旧系统中被重映射到了 '/terrain_map_ext'
-            # 我们推断 terrain_analysis_ext 会发布这个话题
+            #('/odom_world', '/state_estimation_at_scan'),
+            ('/odom_world', '/odom'),
             ('/terrain_cloud', '/terrain_map_ext'), 
             ('/scan_cloud', '/terrain_map'),
             ('/terrain_local_cloud', '/registered_scan')
@@ -295,7 +327,8 @@ def generate_launch_description():
             }
         ],
         remappings=[
-            ('/state_estimation', '/state_estimation_at_scan')
+            #('/state_estimation', '/state_estimation_at_scan')
+            ('/state_estimation', '/odom'),
         ]
     )
 
@@ -309,7 +342,8 @@ def generate_launch_description():
             {'operating_mode': 'autonomous'} # 控制器也应处于自主模式
         ],
         remappings=[
-            ('/state_estimation', '/state_estimation_at_scan')
+            #('/state_estimation', '/state_estimation_at_scan')
+            ('/state_estimation', '/odom'),
         ]
     )
     # ######################################################################
@@ -331,7 +365,8 @@ def generate_launch_description():
         ],
         remappings=[
              # 这里的位姿来源已是正确的
-            ('/state_estimation', '/state_estimation_at_scan'),
+            #('/state_estimation', '/state_estimation_at_scan'),
+            ('/state_estimation', '/odom'),
         ]
     )
 
